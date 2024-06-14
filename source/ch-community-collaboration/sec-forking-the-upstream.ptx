@@ -40,7 +40,7 @@
     >
     <title>Creating your Fork</title>
     <introduction>
-      Using your web browser visit the URL that your instructor gave you to use as the upstream repository for these activities. Once on that page, complete the following steps.
+      Using your web browser visit the URL that your instructor gave you to use as the upstream repository for these activities. Once on that page, complete the following exercises.
     </introduction>
 
     <exercise xml:id="ch-cc_sec-ftu_ex-upstream-url">
@@ -117,7 +117,7 @@
         >
         <statement>
           <p>
-            Click the “Fork” button to create your own fork of the upstream repository. Make sure that you create the fork in the GitHub account that you listed in <xref ref="ch-cc_sec-ga_exs_ex-github-account-url" />.
+            Click the “Fork” button to create your own fork of the upstream repository. Make sure that you create the fork in the GitHub account that you listed in <xref ref="ch-cc_sec-ga_ex-github-account-url" />.
           </p>
         </statement>
       </task>

@@ -39,9 +39,11 @@ For example, an `<exercises>` division following the naming convention defined b
     - followed by the filename contaning the section
   - `<subsection>`: `ch-adh_ssec-opqr-stuv`
     - similar to above
+    - text following `ssec` matches the title used for the section
     - note no indication of nesting in section for simplicity
   - `<subsubsection>`: `ch-adh_sssec-wx-yz`
     - similar to above
+    - text following `sssec` matches the title used for the section
     - note no indication of nesting in section for simplicity
 
 - Elements in Divisions:

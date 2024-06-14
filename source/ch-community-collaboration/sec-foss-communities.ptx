@@ -18,7 +18,7 @@
     <title>FOSS Community Principles</title>
     <introduction>
       <p>
-        In class we discussed some of the key principles that guide FOSS communities.  These were <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>. 
+        Some of the key principles that guide FOSS communities are <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>. 
       </p>
       <p>
         Consider each of the following statements about the operation of a FOSS community and choose the principle (or principles if multiple apply equally) with which it most closely aligns.
@@ -118,7 +118,7 @@
     </p>
 
     <p>
-      A reference to the subsection block works: <xref ref="ch-cc_sec-fc_ss-foss-community-principles" />
+      A reference to the subsection block works: <xref ref="ch-cc_sec-fc_ssec-foss-community-principles" />
     </p>
 
     <p>
@@ -128,8 +128,8 @@
   </subsection>
 
   <subsection
-    xml:id="ch-cc_sec-fc_ss-foss-community-roles"
-    label="ch-cc_sec-fc_ss-foss-community-roles"
+    xml:id="ch-cc_sec-fc_ssec-foss-community-roles"
+    label="ch-cc_sec-fc_ssec-foss-community-roles"
     >
     <title>FOSS Community Roles</title>
     <introduction>
@@ -171,7 +171,7 @@
 
     <p>
       A reference to the subsection: 
-      <xref ref="ch-cc_sec-fc_ss-foss-community-roles" />
+      <xref ref="ch-cc_sec-fc_ssec-foss-community-roles" />
     </p>
 
     <p>

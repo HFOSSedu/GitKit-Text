@@ -25,7 +25,10 @@
     </figure>
   </p>
   
-  <subsection xml:id="ch-cc_sec-it_ss-exploring-the-issue-tracker">
+  <subsection 
+    xml:id="ch-cc_sec-it_ssec-exploring-the-issue-tracker"
+    label="ch-cc_sec-it_ssec-exploring-the-issue-tracker"
+    >
     <title>Exploring the Issue Tracker</title>
 
     <exercises 
@@ -47,7 +50,6 @@
         xml:id="ch-cc_sec-it_exs-etit_ex_issue-title"
         label="ch-cc_sec-it_exs-etit_ex_issue-title"
         >
-        <title>Issue Title</title>
         <statement>
           <p>
             Every issue has a number and a title.  What is the title of issue #10?
@@ -112,10 +114,9 @@
       </exercise>
     
       <exercise 
-        xml:id="ch-cc_sec-it_exs-etit_ex_issue-tags"
-        label="ch-cc_sec-it_exs-etit_ex_issue-tags"
+        xml:id="ch-cc_sec-it_ex_issue-tags"
+        label="ch-cc_sec-it_ex_issue-tags"
         >
-        <title>Issue Tags</title>
         <statement>
           <p>
             Each issue can have <term>tags</term> that can be used to sort and categorize issues. Select all of the tags that are associated with issue #8?
@@ -211,8 +212,8 @@
   </subsection>
 
   <subsection
-    xml:id="ch-cc_sec-it_ss-claiming-an-issue"
-    label="ch-cc_sec-it_ss-claiming-an-issue"
+    xml:id="ch-cc_sec-it_ssec-claiming-an-issue"
+    label="ch-cc_sec-it_ssec-claiming-an-issue"
     >
     <title>Claiming an Issue</title>
 
@@ -229,10 +230,9 @@
       </introduction>
       
       <exercise 
-        xml:id="ch-cc_sec-it_exs-etit_ex-assigned-issues"
-        label="ch-cc_sec-it_exs-etit_ex-assigned-issues"
+        xml:id="ch-cc_sec-it_ex-assigned-issues"
+        label="ch-cc_sec-it_ex-assigned-issues"
         >
-        <title>Assigned Issues</title>
         <statement>
           <p>
             Examine the issue tracker for the FarmData2 upstream that you are using for this activity.Some of the issues have already been assigned.  How can you tell that a specific issue has been assigned to someone?

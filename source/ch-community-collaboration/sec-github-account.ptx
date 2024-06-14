@@ -5,13 +5,12 @@
   label="ch-cc_sec-github-account" 
   xmlns:xi="http://www.w3.org/2001/XInclude"
   >
-  <title>Creating a GitHub Account</title>
+  <title>GitHub Account</title>
 
   <p>
     You will be using git and GitHub in many of the GitKit activities. In order to use GitHub it is necessary that you have an account.
   </p>
-
-
+      
   <exercises 
     xml:id="ch-cc_sec-ga_exs-github-account"
     label="ch-cc_sec-ga_exs-github-account"
@@ -23,8 +22,8 @@
     </introduction>
 
     <exercise 
-      xml:id="ch-cc_sec-ga_exs_ex-github-account-url"
-      label="ch-cc_sec-ga_exs_ex-github-account-url"
+      xml:id="ch-cc_sec-ga_ex-github-account-url"
+      label="ch-cc_sec-ga_ex-github-account-url"
       >
       <statement>
         <p>

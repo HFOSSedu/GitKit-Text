@@ -5,15 +5,15 @@
   label="ch-cc_sec-basic-foss-workflow"  
   xmlns:xi="http://www.w3.org/2001/XInclude"
   >
-  <title>The Basic FOSS Workflow</title>
+  <title>Basic FOSS Workflow</title>
 
   <p>
-    Now that you have found an issue to work on, you will need to colloaborate with the project community to fix that issue. Collaboration in FOSS communities follows patterns of behavior known as <term>workflows</term>. <xref ref="ch-cc_sec-bwf_fig-basic-foss-workflow" /> shows a basic version of a FOSS workflow that is used by contributors working on FOSS projects.
+    Now that you have found an issue to work on, you will need to colloaborate with the project community to fix that issue. Collaboration in FOSS communities follows patterns of behavior known as <term>workflows</term>. <xref ref="ch-cc_sec-bfw_fig-basic-foss-workflow" /> shows a basic version of a FOSS workflow that is used by contributors working on FOSS projects.
   </p>
   <p>
     <figure 
-      xml:id="ch-cc_sec-bwf_fig-basic-foss-workflow"
-      label="ch-cc_sec-bwf_fig-basic-foss-workflow"
+      xml:id="ch-cc_sec-bfw_fig-basic-foss-workflow"
+      label="ch-cc_sec-bfw_fig-basic-foss-workflow"
       >
       <caption>
         The basic FOSS workflow.  
@@ -26,17 +26,18 @@
   </p>
 
   <exercises
-    xml:id="ch-cc_sec-bwf_exs-github-repository-terminology"
-    label="ch-cc_sec-bwf_exs-github-repository-terminology"
+    xml:id="ch-cc_sec-bfw_exs-github-repository-terminology"
+    label="ch-cc_sec-bfw_exs-github-repository-terminology"
     >
+    <title />
     
     <exercise 
-      xml:id="ch-cc_sec-bwf_ex-github-repository-terminology"
-      label="ch-cc_sec-bwf_ex-github-repository-terminology"
+      xml:id="ch-cc_sec-bfw_ex-github-repository-terminology"
+      label="ch-cc_sec-bfw_ex-github-repository-terminology"
       >
       <statement>
         <p>
-          GitHub (and other repository hosting services) use specific terminology to refer to the copies of the repository.  Match the terminology on the left with the repository in <xref ref="ch-cc_sec-bwf_fig-basic-foss-workflow" /> to which it refers on the right.
+          GitHub (and other repository hosting services) use specific terminology to refer to the copies of the repository.  Match the terminology on the left with the repository in <xref ref="ch-cc_sec-bfw_fig-basic-foss-workflow" /> to which it refers on the right.
         </p>
       </statement>
 
@@ -62,12 +63,12 @@
     </exercise>
 
     <exercise 
-      xml:id="ch-cc_sec-bwf_ex-workflow-step-definitions"
-      label="ch-cc_sec-bwf_ex-workflow-step-definitions"
+      xml:id="ch-cc_sec-bfw_ex-workflow-step-definitions"
+      label="ch-cc_sec-bfw_ex-workflow-step-definitions"
       >
       <statement>
         <p>
-          <xref ref="ch-cc_sec-bwf_fig-basic-foss-workflow" /> illustrates a basic workflow that is used in many FOSS projects.  This workflow has the following 5 steps: <term>Fork</term>, <term>Clone</term>, <term>Edit</term>, <term>Push</term>, and <term>Pull Request</term>. Match each term on the left with the appropraite description on the right.
+          <xref ref="ch-cc_sec-bfw_fig-basic-foss-workflow" /> illustrates a basic workflow that is used in many FOSS projects.  This workflow has the following 5 steps: <term>Fork</term>, <term>Clone</term>, <term>Edit</term>, <term>Push</term>, and <term>Pull Request</term>. Match each term on the left with the appropraite description on the right.
         </p>
       </statement>
 
@@ -111,8 +112,8 @@
     </exercise>
 
     <exercise 
-      xml:id="ch-cc_sec-bwf_ex-workflow-step-order"
-      label="ch-cc_sec-bwf_ex-workflow-step-order"
+      xml:id="ch-cc_sec-bfw_ex-workflow-step-order"
+      label="ch-cc_sec-bfw_ex-workflow-step-order"
       >
       <statement>
         <p>
