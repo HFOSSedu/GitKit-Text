@@ -16,20 +16,22 @@
     label="ch-cc_sec-fc_ssec-foss-community-principles"
     > 
     <title>FOSS Community Principles</title>
-    <introduction>
-      <p>
-        Some of the key principles that guide FOSS communities are <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>. 
-      </p>
-      <p>
-        Consider each of the following statements about the operation of a FOSS community and choose the principle (or principles if multiple apply equally) with which it most closely aligns.
-      </p>
-    </introduction>
+
+    <p>
+      Some of the key principles that guide FOSS communities are <term>shared values</term>, <term>collaboration</term>, <term>transparency</term>, <term>inclusivity</term>, <term>meritocracy</term> and <term>release early and often</term>. 
+    </p>
 
     <exercises
       xml:id="ch-cc_sec-fc_exs-foss-community-principles"
       label="ch-cc_sec-fc_exs-foss-community-principles"
       >
       <title /> <!-- intentionally empty -->
+
+      <introduction>
+        <p>
+          Consider each of the following statements about the operation of a FOSS community and choose the principle (or principles if multiple apply equally) with which it most closely aligns.
+        </p>
+      </introduction>
 
       <exercise 
         xml:id="ch-cc_sec-fc_ex-foss-community-principles-1"
@@ -64,19 +66,6 @@
           </p>
         </feedback>
       </exercise>
-    
-      <p>
-        Some interveining text here.
-      </p>
-
-      <subsubsection 
-        xml:id="ch-cc_sssec-test"
-        label="ch-cc_sssec-test"
-        >
-        <title>test</title>
-        <p>A sub-section in an exercises block.</p>
-
-      </subsubsection>
 
       <exercise 
         xml:id="ch-cc_sec-fc_ex-foss-community-principles-2"
@@ -124,6 +113,10 @@
     <p>
       A reference to a specific exercise: <xref ref="ch-cc_sec-fc_ex-foss-community-principles-1" />
     </p>  
+
+    <p>
+      A reference to a specific exercise in another section: <xref ref="ch-cc_sec-ga_ex-github-account-url" />
+    </p>  
   
   </subsection>
 
@@ -141,28 +134,28 @@
     <exercises>
       <title />
 
-    <exercise 
-      xml:id="ch-cc_sec-fc_ex-foss-community-roles-1" 
-      label="ch-cc_sec-fc_ex-foss-community-roles-1">
-      <statement>
-        <p>
-          Choosing the license under which the project will be released.
-        </p>
-        <p /> 
-        </statement>
-      <areas>
-        <tabular top="minor" bottom="minor" left="minor" right="minor">
-          <row>
-            <cell><area correct="no">Users</area></cell>
-            <cell><area correct="no">Requestors</area></cell>
-            <cell><area correct="no">Contributors</area></cell>
-            <cell><area correct="no">Maintainers</area></cell>
-            <cell><area correct="yes">Leaders</area></cell>
-          </row>
-        </tabular> 
-        <p /> 
-      </areas>
-    </exercise>
+      <exercise 
+        xml:id="ch-cc_sec-fc_ex-foss-community-roles-1" 
+        label="ch-cc_sec-fc_ex-foss-community-roles-1">
+        <statement>
+          <p>
+            Choosing the license under which the project will be released.
+          </p>
+          <p /> 
+          </statement>
+        <areas>
+          <tabular top="minor" bottom="minor" left="minor" right="minor">
+            <row>
+              <cell><area correct="no">Users</area></cell>
+              <cell><area correct="no">Requestors</area></cell>
+              <cell><area correct="no">Contributors</area></cell>
+              <cell><area correct="no">Maintainers</area></cell>
+              <cell><area correct="yes">Leaders</area></cell>
+            </row>
+          </tabular> 
+          <p /> 
+        </areas>
+      </exercise>
     </exercises>
 
     <p>

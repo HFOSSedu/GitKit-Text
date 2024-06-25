@@ -10,16 +10,16 @@
   <p>
     You will be using git and GitHub in many of the GitKit activities. In order to use GitHub it is necessary that you have an account.
   </p>
-      
+
   <exercises 
     xml:id="ch-cc_sec-ga_exs-github-account"
     label="ch-cc_sec-ga_exs-github-account"
     >
     <title />
 
-    <introduction>
+    <p>
       If you do not have a GitHub account, or would like to have a separate account just for this course, you can create a GitHub account here:  <url href="https://github.com/signup" visual="github.com/signup">https://github.com/signup</url>
-    </introduction>
+    </p>
 
     <exercise 
       xml:id="ch-cc_sec-ga_ex-github-account-url"

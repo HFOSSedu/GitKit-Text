@@ -6,7 +6,7 @@ This repository contains the pretext source for the GitKit activites.
 
 Licensing information for the GitKit activites can be found in the [LICENSE.md](LICENSE.md) file.
 
-## Document Structure
+## Overall Structure
 
 The files and folders in `source` include:
 - `main.ptx` 
@@ -17,6 +17,50 @@ The files and folders in `source` include:
     - gives some introductory text and then includes the `.ptx` files for the sections of the chapter.
 - `sec-ghi-jkl.ptx`
   - contains the markup and text for the setion, sub-sections, exercises, etc.
+
+## Images
+
+Each chapter folder should have an `images` folder to contain the images used in that chapter.  
+
+When a new chapter is added, edit and run the `assets/link-images.bash` script to update the links to the images folders.
+
+Images can be placed in the text by using the chapter name in the `source`:
+```
+    <image source="images/ch-community-collaboration/basic-foss-workflow.png" width="75%">
+      <description>The main project repo is forked into your GitHub space to create your remote copy.  Your remote copy is then cloned into your local development environment to create your local copy. Changes to your local copy are pushed to your remote copy and a pull request is made to the main project.
+      </description>
+    </image>
+```
+
+## Section File Structure
+
+```
+<section>
+  <title>...</title>
+  ...
+  <subsection>
+    ...
+    <exercises>
+      <title />
+      ...
+      <exercise>
+      </exercise>
+      ...
+      <exercise>
+      </exercise>
+      ...
+    </exercises>
+    ...
+  </subsection>
+  ...
+</section>
+```
+
+Notes:
+- The `...` can be most any content.
+- The `<exercises>` division should be used even if there is only one `<exercise>` because it forces the questions to be expanded and not shown as *pop-open* elements.
+- The `<exercise>` divisions in an `<exercises>` division are numbered sequentially.  The numbering restarts in a new `<exercises>` division.  Thus each sub-[sub-]section should have only one `<exercises>` division.
+- If a section is short and does not require sub-sections then the `<subsection>` division should be omitted.
 
 ## Naming Conventions:
 

@@ -7,6 +7,18 @@
   >
   <title>To The Instructor</title>
 
-  <p> Instructor guide goes here.</p>
+  <p> 
+    Instructor guide goes here.
+  </p>
 
+
+  <p>
+    Click the following link to
+    
+    <url href="https://gitpod.io/?autostart=true#https://github.com/hfossedu/gitkit-deployer-gitpod" 
+    visual="gitpod.io/?autostart=true#https://github.com/hfossedu/gitkit-deployer-gitpod">
+      Deploy the GitKit
+    </url>
+  </p>
+  
 </section>
