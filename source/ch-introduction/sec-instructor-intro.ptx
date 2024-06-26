@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section 
+  xml:id="ch-i_sec-instructor-intro" 
+  label="ch-i_sec-instructor-intro" 
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  >
+  <title>To The Instructor</title>
+
+  <p> 
+    Introduction for the instructor goes here.  This will include an overview, advice on picking a KitClient and the deploy instructions.
+  </p>
+
+  <p>
+    Click the following link to
+    
+    <url href="https://gitpod.io/?autostart=true#https://github.com/hfossedu/gitkit-deployer-gitpod" 
+    visual="gitpod.io/?autostart=true#https://github.com/hfossedu/gitkit-deployer-gitpod">
+      Deploy the GitKit
+    </url>
+  </p>
+
+  <p>
+    Instructor guide informatoin will appear in the instructor version of the document as follows:
+
+    <tabular top="major" bottom="major" left="major" right="major">
+      <row>
+        <cell>
+          <image source="images/shared-images/instructor-info" width="40%">
+            <description>
+              Instructor icon that indicates instructor guide information.
+            </description>
+          </image> 
+        </cell>
+        <cell>
+          <p>
+            Information for the instructor appears here and will typically be long enough to shrink the column on the left down to the size of the icon.
+          </p>
+        </cell>
+      </row>
+    </tabular>
+  </p>
+
+  <p> 
+    For example the instructor information below will not appear if the <em>web</em> or <em>print</em> source is built.
+
+    <commentary component="instructor">
+      <tabular top="major" bottom="major" left="major" right="major">
+        <row>
+          <cell>
+            <image source="images/shared-images/instructor-info" width="40%">
+              <description>
+                Instructor icon that indicates instructor guide information.
+              </description>
+            </image> 
+          </cell>
+          <cell>
+            <p>
+              Information for the instructor appears here and will typically be long enough to shrink the column on the left down to the size of the icon.
+            </p>
+          </cell>
+        </row>
+      </tabular>
+    </commentary>
+  </p>
+  
+</section>

@@ -7,9 +7,11 @@
   >
   <title>FOSS Communities</title>
 
-  <p>
-    Some introductory text here.
-  </p>
+  <introduction>
+    <p>
+      Some introductory text here.
+    </p>
+  </introduction>
 
   <subsection
     xml:id="ch-cc_sec-fc_ssec-foss-community-principles"

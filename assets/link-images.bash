@@ -10,9 +10,13 @@ rm -rf "$PROJECT_DIR/assets/images"
 mkdir "$PROJECT_DIR/assets/images"
 
 ln --symbolic --force \
+   "$PROJECT_DIR/source/shared-images" \
+   "$PROJECT_DIR/assets/images/shared-images"
+
+ln --symbolic --force \
    "$PROJECT_DIR/source/ch-community-collaboration/images" \
    "$PROJECT_DIR/assets/images/ch-community-collaboration"
 
 ln --symbolic --force \
-   "$PROJECT_DIR/source/ch-preface/images" \
-   "$PROJECT_DIR/assets/images/ch-preface"
+   "$PROJECT_DIR/source/ch-introduction/images" \
+   "$PROJECT_DIR/assets/images/ch-introduction"

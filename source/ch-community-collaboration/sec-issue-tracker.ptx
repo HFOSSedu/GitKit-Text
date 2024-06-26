@@ -7,24 +7,26 @@
   >
   <title>The Issue Tracker</title>
 
-  <p>
-    <xref ref="ch-cc_sec-it_fig-issue-tracker"/> shows the FarmData2 issue tracker.  As described in class, FOSS projects often use an <term>issue tracker</term> to maintain a list of bugs to be fixed, features to be added and other tasks to be completed. Thus, the issue tracker is a good place to go in order to find something to work on in a FOSS project.
-  </p>
+  <introduction>
+    <p>
+      <xref ref="ch-cc_sec-it_fig-issue-tracker"/> shows the FarmData2 issue tracker.  As described in class, FOSS projects often use an <term>issue tracker</term> to maintain a list of bugs to be fixed, features to be added and other tasks to be completed. Thus, the issue tracker is a good place to go in order to find something to work on in a FOSS project.
+    </p>
 
-  <p>
-    <figure 
-      xml:id="ch-cc_sec-it_fig-issue-tracker"
-      label="ch-cc_sec-it_fig-issue-tracker"
-      >
-      <caption>
-        The GitHub issue tracker displaying issues from the FarmData2 project.
-      </caption>
-      <image source="images/ch-community-collaboration/issue-tracker.png">
-        <description>The GitHub issue tracker displaying issues from the FarmData2 project.</description>
-      </image>
-    </figure>
-  </p>
-  
+    <p>
+      <figure 
+        xml:id="ch-cc_sec-it_fig-issue-tracker"
+        label="ch-cc_sec-it_fig-issue-tracker"
+        >
+        <caption>
+          The GitHub issue tracker displaying issues from the FarmData2 project.
+        </caption>
+        <image source="images/ch-community-collaboration/issue-tracker.png">
+          <description>The GitHub issue tracker displaying issues from the FarmData2 project.</description>
+        </image>
+      </figure>
+    </p>
+  </introduction>
+
   <subsection 
     xml:id="ch-cc_sec-it_ssec-exploring-the-issue-tracker"
     label="ch-cc_sec-it_ssec-exploring-the-issue-tracker"

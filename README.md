@@ -62,7 +62,7 @@ Notes:
 - The `<exercise>` divisions in an `<exercises>` division are numbered sequentially.  The numbering restarts in a new `<exercises>` division.  Thus each sub-[sub-]section should have only one `<exercises>` division.
 - If a section is short and does not require sub-sections then the `<subsection>` division should be omitted.
 
-## Naming Conventions:
+## Naming Conventions
 
 Every XML element that may need to be cross referenced using an `xref` must have an `xml:id` attribute.  In addition any elements that are recognized by Runestone must have a `label`.  For simplicity and consistency all of the elements identified below will have both an `xml:id` attribute and a `label` attribute with the same value.
 
@@ -105,3 +105,32 @@ For example, an `<exercises>` division following the naming convention defined b
   - `<task>`: `ch-abh_ws-jl_task_mnop-qrs` 
     - simialr to above
     - note no indication of nesting in `<exercise>` or `<exercises>`
+
+
+## Instructor Guide
+
+Information for the instructor can be added directly in the source text at the apporpriate location and then an instructor version of the full document can be built as a pdf.
+
+Content for the instructor is added as:
+```
+ <commentary component="instructor">
+    <tabular top="major" bottom="major" left="major" right="major">
+      <row>
+        <cell>
+          <image source="images/shared-images/instructor-info">
+            <description>
+              Instructor icon that indicates instructor guide information.
+            </description>
+          </image> 
+        </cell>
+        <cell>
+          <p>
+            This text is included only when the <em>instructor</em> target is built. It can be used to insert instructor guide information directly in place in the document.  Then when the instructor target is built a new version is created that will include the commentary for the instructor in context.
+          </p>
+        </cell>
+      </row>
+    </tabular>
+  </commentary>
+```
+
+The instructor guide is built using: `pretext build instructor-web` or `pretext build instructor-print`

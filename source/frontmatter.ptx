@@ -17,14 +17,13 @@
 
   <preface>
     <title>Preface</title>
+    
     <introduction>
       <p>
         The GitKit introduces students to the fundamental skills and concepts (including git / GitHub) used in collaborative Free and Open Source Software (FOSS) development. It introduces students to the <url href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow" visual="atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</url> and guides them through its use. The GitKit provides classroom materials, hands-on assignments, project artifacts (repository, code, documentation, issues), and a development environment that support teaching these skills and concepts in the context of an authentic FOSS project.
       </p>
     </introduction>
 
-    <xi:include href="./ch-preface/sec-instructor-preface.ptx" />
-    <xi:include href="./ch-preface/sec-student-preface.ptx" />
   </preface>
 
   <colophon>

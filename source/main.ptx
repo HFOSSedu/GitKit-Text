@@ -12,6 +12,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->    
+    <xi:include href="./ch-introduction/ch-introduction.ptx" />
     <xi:include href="./ch-community-collaboration/ch-community-collaboration.ptx" />
     
     <!-- Include backmatter -->
