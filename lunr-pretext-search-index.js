@@ -286,7 +286,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.8",
   "title": "Review and Reflection",
-  "body": " Review and Reflection  Text of section.  "
+  "body": " Review and Reflection  Text of section.   "
 },
 {
   "id": "ch-cc_sec-extra-practice",
