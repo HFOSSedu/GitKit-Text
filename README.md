@@ -6,6 +6,13 @@ This repository contains the pretext source for the GitKit activities.
 
 Licensing information for the GitKit activities can be found in the [LICENSE.md](LICENSE.md) file.
 
+## Contributing
+
+1. Fork the upstream repo.
+2. Open your fork in a Codespace using the green "Code" button.
+3. Commit chagnes to a feature branch.
+4. Push and make a Pull Request
+
 ## Overall Structure
 
 The files and folders in `source` include:
