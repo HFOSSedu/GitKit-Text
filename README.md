@@ -10,8 +10,9 @@ Licensing information for the GitKit activities can be found in the [LICENSE.md]
 
 1. Fork the upstream repo.
 2. Open your fork in a Codespace using the green "Code" button.
-3. Commit chagnes to a feature branch.
-4. Push and make a Pull Request
+3. Run `assets/link-images.bash`
+4. Edit and commit chagnes to a feature branch.
+5. Push and make a Pull Request
 
 ## Overall Structure
 
