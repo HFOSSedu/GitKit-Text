@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "To The Instructor",
-  "body": " To The Instructor  Introduction for the instructor goes here. This will include an overview, advice on picking a KitClient and the deploy instructions.  Click the following link to Deploy the GitKit   Instructor guide information will appear in the instructor version of the document as follows:      Instructor Note: : Information for the instructor appears here.      For example an instructor note will appear below in the instructor-web and instructor-print versions of the document but it will not appear in the web or print versions.      Instructor Note: : Information for the instructor appears here.      "
+  "body": " To The Instructor  Introduction for the instructor goes here. This will include an overview, advice on picking a KitClient and the deploy instructions.  Click the following link to Deploy the GitKit   Instructor guide information will appear in the instructor version of the document as follows:      Instructor Note: : Information for the instructor appears here.      For example an instructor note will appear below in the instructor-web , instructor-print , web and print versions of the document but it will not appear in the student-web or student-print versions.      Instructor Note: : Information for the instructor appears here.      "
 },
 {
   "id": "ch-i_sec-student-preface",
