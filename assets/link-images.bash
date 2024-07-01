@@ -4,19 +4,17 @@
 # be stored with their source and still get
 # pulled into the built document.
 
-PROJECT_DIR="/workspaces/GitKit-Text"
-
-rm -rf "$PROJECT_DIR/assets/images"
-mkdir "$PROJECT_DIR/assets/images"
+rm -rf "assets/images"
+mkdir "assets/images"
 
 ln --symbolic --force \
-   "$PROJECT_DIR/source/shared-images" \
-   "$PROJECT_DIR/assets/images/shared-images"
+   "../../source/shared-images" \
+   "assets/images/shared-images"
 
 ln --symbolic --force \
-   "$PROJECT_DIR/source/ch-community-collaboration/images" \
-   "$PROJECT_DIR/assets/images/ch-community-collaboration"
+   "../../source/ch-community-collaboration/images" \
+   "assets/images/ch-community-collaboration"
 
 ln --symbolic --force \
-   "$PROJECT_DIR/source/ch-introduction/images" \
-   "$PROJECT_DIR/assets/images/ch-introduction"
+   "../../source/ch-introduction/images" \
+   "assets/images/ch-introduction"
