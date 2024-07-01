@@ -33,7 +33,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude"
 </p>
 
 <p>
-	For example an instructor note will appear below in the <em>instructor-web</em> and <em>instructor-print</em> versions of the document but it will not appear in the <em>web</em> or <em>print</em> versions.
+	For example an instructor note will appear below in the <em>instructor-web</em>, <em>instructor-print</em>, <em>web</em> and <em>print</em> versions of the document but it will not appear in the  <em>student-web</em> or <em>student-print</em> versions.
 	<commentary component="instructor">
 	<tabular top="major" bottom="major" left="major" right="major">
     <col width="100%" />
