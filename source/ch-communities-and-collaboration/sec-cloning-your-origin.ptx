@@ -478,11 +478,9 @@
     <exercise xml:id="ex-check-remotes-b" label="ex-check-remotes-b">
     <statement>
       <p>
-        Execute the command <c>git remote -v</c> in your terminal.
-        How can you tell from that output that your clone knows about your origin?
+        Execute the command <c>git remote -v</c> in your terminal. How can you tell from that output that your clone knows about your origin?
       </p>
     </statement>
-
 
     <choices randomize="yes">
       <choice correct="yes">
