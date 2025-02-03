@@ -461,7 +461,7 @@
         </blocks>
         <hint>
           <p>
-            See <xref ref="topic-staging-changes" /> and <xref ref="source/ch-upstreaming-changes/sec-committing-to-your-local-repository.ptx" /> for a review.
+            See <xref ref="topic-staging-changes" /> and <xref ref="topic-committing-to-your-local-repository" /> for a review.
           </p>
         </hint>      
       </exercise>
