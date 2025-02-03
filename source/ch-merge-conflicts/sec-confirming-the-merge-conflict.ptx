@@ -222,7 +222,9 @@
           </p>
         </statement>
       </task>
-      <task>
+      <task
+        xml:id="ex-can-branch-be-auto-merged"
+        label="ex-can-branch-be-auto-merged">
         <statement>
           <p>
             Which of the following messages do you see?
