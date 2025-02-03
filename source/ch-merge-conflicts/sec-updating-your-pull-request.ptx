@@ -8,7 +8,7 @@
 
   <introduction>
  		<p>
-      At this point you have resolved the merge conflict on the feature branch in your local repository.  What is left is to push that branch to your <c>origin</c>.  When you do so, GitHub will automatically update your pull request to the <c>upstream</c> for that branch.
+      At this point you have resolved the merge conflict and committed the changes to the feature branch in your local repository.  What is left is to push that branch to your <c>origin</c>.  When you do so, GitHub will automatically update your pull request to the <c>upstream</c> for that branch.
     </p>
   </introduction>
 
