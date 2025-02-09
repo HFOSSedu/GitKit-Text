@@ -183,7 +183,7 @@
   </subsection>
 
   <subsection xml:id="topic-setting-the-upstream" label="topic-setting-the-upstream">
-    <title>Setting the Upstream URL</title>
+    <title>Adding the Upstream Remote</title>
 
     <introduction>
       <p>
