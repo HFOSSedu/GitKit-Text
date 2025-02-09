@@ -7,7 +7,7 @@
   <title />
   <statement>
     <p>
-      The next step is to pull the changes to the <c>main</c> branch from the upstream repo to your local repo.
+      The next step in getting synchronized with the upstream is to pull the changes to the <c>main</c> branch from the upstream repo to your local repo.
     </p>
 
     <p>
