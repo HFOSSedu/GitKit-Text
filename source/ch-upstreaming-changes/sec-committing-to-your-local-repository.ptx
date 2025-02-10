@@ -265,7 +265,7 @@
 
 
       <choices>
-        <choice correct="yes">
+        <choice correct="no">
           <statement>
             <p>
               No files appear listed as modified in red (meaning they are unstaged).
@@ -297,6 +297,11 @@
           </statement>
         </choice>
       </choices>
+          <hint>
+      <p>
+        All of your changes have been staged and committed. So there should be no modified files and nothing to commit.
+      </p>
+    </hint>
     </task>
 
 
@@ -307,68 +312,43 @@
         </p>
       </statement>
 
-
       <choices>
         <choice correct="yes">
           <statement>
             <p>
-              Option 1
+              The <c>git commit</c> message showed a new SHA.
             </p>
           </statement>
+        </choice>
 
-          <feedback>
+        <choice correct="yes">
+          <statement>
             <p>
-              Feedback 1
+              The <c>git status</c> command does not show the files you modified for your change.
             </p>
-          </feedback>
+          </statement>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 2
+              The <c>git status</c> command shows your modified files in green.
             </p>
           </statement>
-
-          <feedback>
-            <p>
-              Feedback 2
-            </p>
-          </feedback>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 3
+              The <c>git commit</c> message says "no changes added to commit".
             </p>
           </statement>
-
-          <feedback>
-            <p>
-              Feedback 3
-            </p>
-          </feedback>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              Option 4
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Feedback 4
-            </p>
-          </feedback>
         </choice>
       </choices>
 
       <hint>
         <p>
-          Hint here
+          There should be no modified files that are still staged and the <c>git commit</c> should have showed you the number of lines changed.
         </p>
       </hint>
     </task>
@@ -387,35 +367,24 @@
         <choice correct="yes">
           <statement>
             <p>
-              Option 1
+              The top commit shown is your latest commit.
             </p>
           </statement>
 
-          <feedback>
-            <p>
-              Feedback 1
-            </p>
-          </feedback>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 2
+              The bottom commit shown is your latest commit.
             </p>
           </statement>
-
-          <feedback>
-            <p>
-              Feedback 2
-            </p>
-          </feedback>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 3
+            Your commit is not shown.
             </p>
           </statement>
 
@@ -425,25 +394,11 @@
             </p>
           </feedback>
         </choice>
-
-        <choice>
-          <statement>
-            <p>
-              Option 4
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Feedback 4
-            </p>
-          </feedback>
-        </choice>
       </choices>
 
       <hint>
         <p>
-          Hint here
+          The log shows the latest commits first.
         </p>
       </hint>
     </task>
@@ -525,7 +480,7 @@
 
 
     <task xml:id="ex-committing-changes-f" label="ex-committing-changes-f">
-      <statement correct="yes">
+      <statement correct="false">
         <p>
           The output of the <c>git log</c> command now shows the information about the commit you made.
         </p>
@@ -533,7 +488,7 @@
 
       <hint>
         <p>
-          What branch are you on, the <c>main</c> branch our your feature branch? In which branch did you make your changes?
+          What branch are you on, the <c>main</c> branch or your feature branch? In which branch did you make your changes?
         </p>
       </hint>
     </task>
