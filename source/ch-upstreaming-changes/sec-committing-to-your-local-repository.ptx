@@ -525,7 +525,7 @@
 
 
     <task xml:id="ex-committing-changes-f" label="ex-committing-changes-f">
-      <statement correct="no">
+      <statement correct="yes">
         <p>
           The output of the <c>git log</c> command now shows the information about the commit you made.
         </p>
