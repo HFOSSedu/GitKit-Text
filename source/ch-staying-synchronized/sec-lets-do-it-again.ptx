@@ -7,545 +7,588 @@
     <p>
       You’ve learned a lot about Git and GitHub.
       But, to become proficient with these tools takes a lot of repetition and practice.
-      This section asks you to go through the process of finding an issue, fixing it and creating a pull request again.
-      This is good practice but what you will be asked to do has also been carefully planned to set us up for the next chapter too!
+      The exercises in this section ask you to repeat the process of finding an issue, fixing it and creating a pull request as you did in <xref ref="topic-upstreaming-changes" text="type-global-title"/>.
+      This will give you more good practice. But also, the issue you will be fixing this time has been carefully planned as a setup for the next chapter too!
     </p>
   </introduction>
 
 
-  <subsection>
-    <title>Overview of Fixing an Issue</title>
-
-    <exercises>
-    <title/>
-    <introduction>
-      <p>
-        Now you will go through the process of fixing the issue and making a pull request.
-        You will use the same process that you used for your “Round1” issue earlier.
-        That process had a number of steps.
-      </p>
-    </introduction>
-
-    <exercise xml:id="ex-fixing-issue-ordering" label="ex-fixing-issue-ordering">
-      <statement>
-        <p>
-          The steps are listed below in a jumbled-up order, determine the proper order.
-        </p>
-      </statement>
-      <blocks randomize="yes"> <block>
-      <p>
-        Claim an issue
-      </p>
-      </block> <block>
-
-      <p>
-        Create a new feature branch
-      </p>
-      </block> <block>
-
-      <p>
-        Switch to the feature branch
-      </p>
-      </block> <block>
-
-      <p>
-        Edit the local files
-      </p>
-      </block><block>
-
-      <p>
-        Stage your changes
-      </p>
-      </block> <block>
-
-      <p>
-        Commit changes to the feature branch
-      </p>
-      </block> <block>
-
-      <p>
-        Push the feature branch to your origin
-      </p>
-      </block> <block>
-
-      <p>
-        Make a pull request to the upstream
-      </p>
-      </block> </blocks>
-
-      <hint>
-        <p>
-          Think about the full process that you've completed thus far starting from claiming the issue to work on it and getting it merged into the upstream repository.
-        </p>
-      </hint>
-    </exercise>
-    </exercises>
-  </subsection>
-
-
-  <subsection>
-    <title>Claim Round 2 Issue</title>
-
-    <exercises>
-    <title />
-    <exercise xml:id="ex-claim-issue" label="ex-claim-issue">
+  <subsection xml:id="topic-process-of-fixing-an-issue">
+    <title>Process of Fixing an Issue</title>
       <introduction>
         <p>
-          The issue tracker in the <em>upstream FarmData2 repository</em> being used for these tasks.
+          Before you get into the work of fixing a new issue, it will be helpful to review the steps that you'll need to use and they were and how they fit together.
         </p>
       </introduction>
 
-      <statement>
-        <p>
-          Use the label dropdown in the issue tracker to filter for issues labeled with the “Round2” tag.
-          How many issues are tagged with this label?
-        </p>
-      </statement>
-
-
-      <choices>
-        <choice correct="yes">
-          <statement>
+    <exercises>
+      <title/>
+      <exercise xml:id="ex-fixing-issue-ordering" label="ex-fixing-issue-ordering">
+        <statement>
+          <p>
+            The steps you carried out in <xref ref="topic-upstreaming-changes" /> are listed below in a jumbled-up order, drag them to the right to arrange them the proper order.
+          </p>
+        </statement>
+        <blocks randomize="yes"> 
+          <block>
             <p>
-              4
+              Claim an issue
             </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
+          </block> 
+          <block>
             <p>
-              6
+              Create a new feature branch
             </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
+          </block>
+          <block>
             <p>
-              35
+              Switch to the feature branch
             </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
+          </block>
+          <block>
             <p>
-              40
+              Edit the local files
             </p>
-          </statement>
-        </choice>
-      </choices>
-
-      <hint>
-        <p>
-          Make sure you have the Round2 tag selected in the issue tracker.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise xml:id="ex-claim-issue-b" label="ex-claim-issue-b">
-      <statement>
-        <p>
-          Clearly there are not enough “Round2” issues for everyone to have their own as was the case with the “Round1” issues.
-          So, this time there will be multiple people working on the same issue.
-        </p>
-
-        <p>
-          Pick one of the “Round2” issues to work on and make a comment on it to indicate your interest in working on it.
-          Note it is not necessary that the issue be assigned to you this time.
-          Try to spread out across the issues so that multiple people have commented that they are working on each one.
-          Type in the number of the issue you chose.
-          Do not include the #.
-        </p>
-
-        <p>
-          <var width="45" />
-        </p>
-      </statement>
-      <setup> <var> <condition string="^36|37|38|39$">
-      <feedback>
-        <p>
-          Thank you for selecting an issue.
-        </p>
-      </feedback>
-      </condition> <condition string=".*">
-
-      <feedback>
-        <p>
-          Make sure you have only typed in the issue number (25 for example) and that it is a Round2 issue.
-        </p>
-      </feedback>
-      </condition> </var> </setup>
-    </exercise>
+          </block>
+          <block>
+            <p>
+              Stage your changes
+            </p>
+          </block>
+          <block>
+            <p>
+              Commit changes to the feature branch
+            </p>
+          </block>
+          <block>
+            <p>
+              Push the feature branch to your origin
+            </p>
+          </block>
+          <block>
+            <p>
+              Make a pull request to the upstream
+            </p>
+          </block>
+        </blocks>
+        <hint>
+          <p>
+            Think about the full process that you worked through from claiming your Round1 issue through making a pull request for your changes.
+          </p>
+        </hint>
+      </exercise>
     </exercises>
   </subsection>
 
 
-  <subsection>
-    <title>Fix the Issue</title>
+  <subsection xml:id="topic-claim-round-two-issue" label="topic-claim-round-two-issue">
+    <title>Claim a Round2 Issue</title>
+    <introduction>
+      <p>
+        Now it is time to find a new issue to work on.
+      </p>
+    </introduction>
 
     <exercises>
     <title />
-    <exercise xml:id="ex-fixing-issue-process" label="ex-fixing-issue-process">
-      <task xml:id="ex-fixing-issue-process-a" label="ex-fixing-issue-process-a">
+      <exercise xml:id="ex-claim-issue" label="ex-claim-issue">
         <statement>
           <p>
-            Which of the following Git commands did you use for the steps indicated below.
-            The command references that you created in <xref ref="ex-git-commands-summary-synching"/> may also come in handy here.
+            Go to the issue tracker in the <em>upstream FarmData2 repository</em> that you are using for your course.
+          </p>
+          <p>
+            Use the "Labels" dropdown in the issue tracker to filter for issues labeled with the “Round2” tag.
+          </p>
+          <p>
+            How many issues have the Round2 tag?
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                4
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct.
+              </p>
+            </feedback>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                6
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Be sure you have selected the "Round2" label.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                35
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Be sure you have selected the "Round2" label.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                39
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Be sure you have selected the "Round2" label.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+        <hint>
+          <p>
+            Make sure you have the Round2 tag selected in the "Labels" dropdown. The "Labels" dropdown is between the "Author" and "Projects" dropdowns.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise xml:id="ex-claim-issue-b" label="ex-claim-issue-b">
+        <statement>
+          <p>
+            Clearly there are not enough “Round2” issues for everyone to have their own as was the case with the “Round1” issues.
+            So, this time there will be multiple people working on the same issue.
+          </p>
+
+          <p>
+            Pick one of the “Round2” issues to work on and make a comment on it to indicate your interest in working on it.
+            Note it is not necessary that the issue be assigned to you this time.
+            Try to spread out across the issues so that multiple people have commented that they are working on each one.
+          </p>
+          <p>
+            Give the number of the issue you chose.
+          </p>
+
+          <p>
+            <var width="10" />
+          </p>
+        </statement>
+        <setup>
+          <var> 
+            <condition string="^#?(36|37|38|39)$">
+              <feedback>
+                <p>
+                  Thank you for selecting a Round2 issue.
+                </p>
+              </feedback>
+            </condition> 
+            <condition string=".*">
+              <feedback>
+                <p>
+                  Make sure that your issue is labeled as a Round2 issue.
+                </p>
+              </feedback>
+            </condition> 
+          </var> 
+        </setup>
+      </exercise>
+    </exercises>
+  </subsection>
+
+  <subsection>
+    <title>Fix the Issue</title>
+    <introduction>
+      <p>
+        Now that you have an issue to work on, it is time to fix it. But before you actually start fixing the issue, let's review some of the Git commands and a few other important ideas you'll need to use to carry out the steps from <xref ref="ex-fixing-issue-ordering" />.
+      </p>
+    </introduction>
+
+    <exercises>
+    <title />
+      <exercise xml:id="ex-fixing-issue-process" label="ex-fixing-issue-process">
+
+        <task xml:id="ex-fixing-issue-process-a" label="ex-fixing-issue-process-a">
+          <statement>
+            <p>
+              Match the Git commands will you use for each of the tasks indicated below.
+            </p>
+          </statement>
+          <matches> 
+          <match>
+            <premise>
+              <c>git branch &lt;branch&gt;</c>
+            </premise> 
+            <response>
+              Create your feature branch
+            </response> 
+          </match> 
+          <match>
+            <premise>
+              <c>git switch &lt;branch&gt;</c>
+            </premise> 
+            <response>
+              Switch to your feature branch
+            </response> 
+          </match> 
+          <match>
+            <premise>
+              <c>git stage &lt;file&gt;</c>
+            </premise> 
+              <response>
+                Stage your changes for a commit.
+            </response> 
+          </match> 
+          <match>
+            <premise>
+              <c>git commit -m "message"</c>
+            </premise> 
+            <response>
+              Commit your changes to the active branch.
+            </response> 
+          </match> 
+          <match>
+            <premise>
+              <c>git push origin &lt;branch&gt;</c>
+            </premise> 
+            <response>
+              Push your feature branch to your origin.
+            </response> 
+          </match> 
+          </matches>
+          <hint>
+            <p>
+              The command reference that you created in <xref ref="topic-git-command-summary-upstreaming"/> may come in handy here.
+            </p>
+          </hint>
+        </task>
+
+
+        <task xml:id="ex-fixing-issue-process-b" label="ex-fixing-issue-process-b">
+          <statement>
+            <p>
+              When creating branches you should always use name that describes what is being done in the branch, without being too long.  This will help you to remember the purpose of the branch, but not make it onerous to type.
+            </p>
+            <p>
+              Which of the following would be the best name for a feature branch for issue #37 that adds a link to the NSF award in the Acknowledgements section?
+            </p>
+          </statement>
+
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  issue37
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  This branch name identifies the issue but you would have to remember what that issue is to know what the branch does.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  adding-link
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  This branch sort of describes what is being done, but isn't specific enough to know what the branch really does.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  link-nsf-award
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Correct. This branch name has enough context to describe what the branch does without being excessively long.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  add-link-to-nsf-award-in-acknowledgements-section
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  This branch name is very descriptive but seems excessively long. Can you imagine typing that over and over again?
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+          <hint>
+            <p>
+              Refer back to <xref ref="topic-creating-a-feature-branch" text="type-global-title"/> for information on branch names.
+            </p>
+          </hint>
+        </task>
+
+        <task xml:id="ex-fixing-issue-process-c" label="ex-fixing-issue-process-c">
+          <statement>
+            <p>
+              When writing commit messages for the <c>git commit</c> the message should be descriptive of what the changes in the commit do.
+            </p>
+            <p>
+              Which of the following would be the best commit message for the fix for issue 38 that adds a link to the GNOME Community Engagement Challenge in the acknowledgements?
+            </p>
+          </statement>
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>
+                <p>
+                  Adds the URL for GNOME to the acknowledgements section of the REAMDE.md file.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Correct. This commit message briefly but completing describes the change made.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  Added URL.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  This commit message doesn't provide enough information about the URL added.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  Updated README.md.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  This commit message doesn't provide enough information about what has been changed in the README.md file.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  Fixed a typo.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  This commit message is too generic and does not actually describe the changes that would be committed for this issue.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+          <hint>
+            <p>
+              Refer back to <xref ref="topic-committing-to-your-local-repository" text="type-global-title"/> for information on commit messages.
+            </p>
+          </hint>
+        </task>
+      </exercise>
+    </exercises>
+  </subsection>
+
+
+
+
+
+
+
+
+  <subsection xml:id="topic-upstreaming-round2-changes" label="topic-upstreaming-round2-changes">
+    <title>Upstreaming the Changes</title>
+
+    <exercises>
+    <title />
+      <exercise xml:id="ex-pull-request-info-b" label="ex-pull-request-info-b">
+        <statement>
+          <p>
+            Enter the full URL of your PR below.
+          </p>
+
+          <p>
+            <var width="55" />
+          </p>
+        </statement>
+        <setup> <var> <condition string="^https://github\.com/.+/pull/[0-9]+$">
+        <feedback>
+          <p>
+            Thank you for supplying your pull request URL.
+          </p>
+        </feedback>
+        </condition> <condition string=".*">
+
+        <feedback>
+          <p>
+            Make sure you have the complete URL of the PR starting with https and ending with the number of your pull request.
+          </p>
+        </feedback>
+        </condition> </var> </setup>
+      </exercise>
+
+      <exercise xml:id="ex-pull-request-info-c" label="ex-pull-request-info-c">
+        <statement>
+          <p>
+            Look at the base and head repositories listed in the PR.
+            Which of the following statements are true?
+          </p>
+        </statement>
+
+
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                The base repository is the upstream repository.
+              </p>
+            </statement>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                The base repository is my origin repository.
+              </p>
+            </statement>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                The base repository is my local repository.
+              </p>
+            </statement>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                The head repository is the upstream repository.
+              </p>
+            </statement>
+          </choice>
+
+          <choice correct="yes">
+            <statement>
+              <p>
+                The head repository is my origin repository.
+              </p>
+            </statement>
+          </choice>
+
+          <choice>
+            <statement>
+              <p>
+                The head repository is my local repository.
+              </p>
+            </statement>
+          </choice>
+        </choices>
+
+        <hint>
+          <p>
+            In order for your work to be merged, it must be on GitHub.
+            Think about where you pushed your changes to (head) and where you want them merged int (base).
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise xml:id="ex-pull-request-info-e" label="ex-pull-request-info-e">
+        <statement>
+          <p>
+            Match the term to the appropriate branch.
           </p>
         </statement>
 
         <feedback>
           <p>
-            Review the git commands by looking at the git command summary in this and previous chapters.
+            Try again.
           </p>
         </feedback>
         <matches> <match>
         <premise>
-        <c>git branch &lt;branch&gt;</c></premise> <response>Create feature branch</response> </match> <match>
+        <c>base branch</c></premise> <response>upstream <c>main</c> branch</response> </match> <match>
         <premise>
-        <c>git switch &lt;branch&gt;</c></premise> <response>Switch to feature branch</response> </match> <match>
-        <premise>
-        <c>git stage &lt;file&gt;</c></premise> <response>Add changes to stage</response> </match> <match>
-        <premise>
-        <c>git commit -m "message"</c></premise> <response>Commit changes</response> </match> <match>
-        <premise>
-        <c>git push</c></premise> <response>Push feature branch</response> </match> </matches>
+        <c>compare branch</c></premise> <response><c>feature branch</c> in your origin repo</response> </match> </matches>
         <hint>
           <p>
-            Note that the tasks listed are in approximately the same order as they appear in the sections of this chapter.
+            Think about where you want to merge into (base) and what is being merged (compare).
           </p>
         </hint>
-      </task>
+      </exercise>
 
-
-      <task xml:id="ex-fixing-issue-process-b" label="ex-fixing-issue-process-b">
+      <exercise xml:id="ex-pull-request-info-g" label="ex-pull-request-info-g">
         <statement>
           <p>
-            Which of the following would be the best name for a feature branch for issue #37 that adds a link to the NSF award in the Acknowledgements section?
+            What is the line number of the README.md file that you changed.
+            Hint: use the diff you saw in the prior chapter <xref ref="ex-pull-request-files"/>.
+          </p>
+
+          <p>
+            <var width="45" />
+          </p>
+        </statement>
+        <setup> <var> <condition string="[0-9]+">
+        <feedback>
+          <p>
+            Thank you.
+          </p>
+        </feedback>
+        </condition> <condition string=".*">
+
+        <feedback>
+          <p>
+            Make sure you are only putting the line number that changed in the README file.
+          </p>
+        </feedback>
+        </condition> </var> </setup>
+      </exercise>
+
+      <exercise xml:id="ex-pull-request-problem" label="ex-pull-request-problem">
+        <statement>
+          <p>
+            Because there were a limited number of “Round2” issues, other students will have been simultaneously making changes to fix the same lines in the same files.
+            Which of the following describe how this might create a problem in the future.
           </p>
         </statement>
 
 
-        <choices randomize="yes">
+        <choices>
           <choice>
             <statement>
               <p>
-                issue37
+                
               </p>
             </statement>
-
-            <feedback>
-              <p>
-                This branch name doesn't provide enough information.
-                What is issue 37?
-              </p>
-            </feedback>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                adding-link
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                This branch name is too generic.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice correct="yes">
-            <statement>
-              <p>
-                adding-nsf-link-acknowledgement
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                Correct! This branch name describes the work to be done in the branch.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                nsf-acknowledgement
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                This branch name doesn't specify what is being done with regard to the NSF acknowledgement.
-              </p>
-            </feedback>
           </choice>
         </choices>
 
         <hint>
           <p>
-            Refer back to the section on creating branches <xref ref="topic-creating-a-feature-branch"/> for information on branch names.
+            Look at the lines numbers again using the diff command.
           </p>
         </hint>
-      </task>
-
-
-      <task xml:id="ex-fixing-issue-process-c" label="ex-fixing-issue-process-c">
-        <statement>
-          <p>
-            Which of the following would be the best commit message for the fix for issue 38 that adds a link to the GNOME Community Engagement Challenge in the acknowledgements?
-          </p>
-        </statement>
-
-
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                Added the URL for GNOME to the acknowledgements section of the REAMDE file.
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                Correct! This commit message briefly but completing describes the change made.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                Added URL.
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                This commit message doesn't provide enough information about the URL added.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                Updated README.
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                This commit message doesn't provide enough information about what has been changed in the README file.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                Fixed typo.
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                This commit message is too generic and does not describe the change for this issue.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-
-        <hint>
-          <p>
-            Refer back to the section on creating branches <xref ref="topic-committing-to-your-local-repository"/> for information on commit messages.
-          </p>
-        </hint>
-      </task>
-    </exercise>
-    </exercises>
-  </subsection>
-
-
-  <subsection>
-    <title>Upstream the Changes</title>
-
-    <exercises>
-    <title />
-    <exercise xml:id="ex-pull-request-info-b" label="ex-pull-request-info-b">
-      <statement>
-        <p>
-          Enter the full URL of your PR below.
-        </p>
-
-        <p>
-          <var width="45" />
-        </p>
-      </statement>
-      <setup> <var> <condition string="^https://github.com/.+/pulls/[0-9]+$">
-      <feedback>
-        <p>
-          Thank you for supplying your pull request URL.
-        </p>
-      </feedback>
-      </condition> <condition string=".*">
-
-      <feedback>
-        <p>
-          Make sure you have the complete URL of the PR starting with https and ending with the number of your pull request.
-        </p>
-      </feedback>
-      </condition> </var> </setup>
-    </exercise>
-
-    <exercise xml:id="ex-pull-request-info-c" label="ex-pull-request-info-c">
-      <statement>
-        <p>
-          Look at the base and head repositories listed in the PR.
-          Which of the following statements are true?
-        </p>
-      </statement>
-
-
-      <choices>
-        <choice correct="yes">
-          <statement>
-            <p>
-              The base repository is the upstream repository.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              The base repository is my origin repository.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              The base repository is my local repository.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              The head repository is the upstream repository.
-            </p>
-          </statement>
-        </choice>
-
-        <choice correct="yes">
-          <statement>
-            <p>
-              The head repository is my origin repository.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              The head repository is my local repository.
-            </p>
-          </statement>
-        </choice>
-      </choices>
-
-      <hint>
-        <p>
-          In order for your work to be merged, it must be on GitHub.
-          Think about where you pushed your changes to (head) and where you want them merged int (base).
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise xml:id="ex-pull-request-info-e" label="ex-pull-request-info-e">
-      <statement>
-        <p>
-          Match the term to the appropriate branch.
-        </p>
-      </statement>
-
-      <feedback>
-        <p>
-          Try again.
-        </p>
-      </feedback>
-      <matches> <match>
-      <premise>
-      <c>base branch</c></premise> <response>upstream <c>main</c> branch</response> </match> <match>
-      <premise>
-      <c>compare branch</c></premise> <response><c>feature branch</c> in your origin repo</response> </match> </matches>
-      <hint>
-        <p>
-          Think about where you want to merge into (base) and what is being merged (compare).
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise xml:id="ex-pull-request-info-g" label="ex-pull-request-info-g">
-      <statement>
-        <p>
-          What is the line number of the README.md file that you changed.
-          Hint: use the diff you saw in the prior chapter <xref ref="ex-pull-request-files"/>.
-        </p>
-
-        <p>
-          <var width="45" />
-        </p>
-      </statement>
-      <setup> <var> <condition string="[0-9]+">
-      <feedback>
-        <p>
-          Thank you.
-        </p>
-      </feedback>
-      </condition> <condition string=".*">
-
-      <feedback>
-        <p>
-          Make sure you are only putting the line number that changed in the README file.
-        </p>
-      </feedback>
-      </condition> </var> </setup>
-    </exercise>
-
-    <exercise xml:id="ex-pull-request-problem" label="ex-pull-request-problem">
-      <statement>
-        <p>
-          Because there were a limited number of “Round2” issues, other students will have been simultaneously making changes to fix the same lines in the same files.
-          Which of the following describe how this might create a problem in the future.
-        </p>
-      </statement>
-
-
-      <choices>
-        <choice>
-          <statement>
-            <p>
-              
-            </p>
-          </statement>
-        </choice>
-      </choices>
-
-      <hint>
-        <p>
-          Look at the lines numbers again using the diff command.
-        </p>
-      </hint>
-    </exercise>
+      </exercise>
     </exercises>
   </subsection>
 </section>
