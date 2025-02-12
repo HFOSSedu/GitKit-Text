@@ -499,7 +499,7 @@
           What are some advantages and disadvantages of assigning issues to specific individuals?
         </p>
         <p>
-          Match the reasons on the left with "Advantage" or "Disadvantage" on the right.
+          Select each of the statements that describe an advantage of assigning issues.
         </p>
       </statement>
       <feedback>
@@ -507,20 +507,44 @@
           You can do it! Try again!
         </p>
       </feedback>
-      <matches>
-        <match>
-          <premise>To prevent wasting effort by having two developers work on the same issue</premise>
-          <response>Advantage</response>
-        </match>
-        <match>
-          <premise>Allow a developer to "hold on" to an issue, even if they are not currently working on it.</premise>
-          <response>Disadvantage</response>
-        </match>
-        <match>
-          <premise>To plan in advance who will be working each issue</premise>
-          <response>Advantage</response>
-        </match>
-      </matches>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              To prevent wasting effort by having two developers work on the same issue.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Assigning issues can help prevent people from duplicating work.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Allow a developer to "hold on" to an issue, even if they are not currently working on it.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Holding onto an issue that is not being worked on may prevent someone else from working on it.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              To plan in advance who will be working each issue.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Assigning issues could work like creating a ToDo list for core project contributors.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
       <hint>
         <p>
           Think about this from both the individual developer's perspective and from the overall project's perspective.

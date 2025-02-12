@@ -137,29 +137,19 @@
   Now that you have the clone URL for your origin repository, use the steps in this section to clone your origin into your development environment.
 </p>
 
-<p>
-  You will use the following command in the Terminal to clone your origin repository into your development environment:
-</p>
-
-<p>
-  <c>git clone &lt;URL&gt;</c>
-</p>
-
-<p>
-  Be sure to replace <c>&lt;URL&gt;</c> with the clone URL you found in <xref ref="ex-clone-url-linux" />.
-</p>
-
 <exercises>
 <title />
   
 <exercise xml:id="ex-clone-origin-linux" label="ex-clone-origin-linux">
   <statement>
     <p>
-      Enter the full command that you will use to clone your origin as your answer to this exercise.
+      The <c>git clone &lt;URL&gt;</c> command is used to clone your origin repository into your development environment.
     </p>
-
     <p>
-      <var width="55" />
+      Give a command that will clone your origin into your development environment.
+    </p>
+    <p>
+      <var width="65" />
     </p>
   </statement>
   <setup> <var> <condition string="^https://github.com/(?!(FarmData2|DickinsonCollege)).+/.+.git$">
@@ -186,14 +176,14 @@
 
   <feedback>
     <p>
-      The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.
+      Be sure to replace <c>&lt;URL&gt;</c> with the clone URL you found in <xref ref="ex-clone-url-linux" />. The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.  
     </p>
   </feedback>
   </condition> </var> </setup>
 </exercise>
 <exercise xml:id="ex-clone-origin-linux-a" label="ex-clone-origin-linux-a">
   <p>
-    Execute the command from <xref ref="ex-clone-origin-linux" /> in your terminal.
+    Execute your command from <xref ref="ex-clone-origin-linux" /> in your terminal.
   </p>
 </exercise>
 
