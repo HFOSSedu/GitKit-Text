@@ -408,186 +408,186 @@
     </exercises>
   </subsection>
 
-
-
-
-
-
-
-
   <subsection xml:id="topic-upstreaming-round2-changes" label="topic-upstreaming-round2-changes">
     <title>Upstreaming the Changes</title>
-
+    <introduction>
+      <p>
+        Now that you have fixed the issue and pushed your feature branch, the last thing to do is to make a pull request.
+      </p>
+    </introduction>
     <exercises>
     <title />
       <exercise xml:id="ex-pull-request-info-b" label="ex-pull-request-info-b">
         <statement>
           <p>
+            Make a pull request for your feature branch to the upstream repository for your course.
+          </p>
+          <p>
             Enter the full URL of your PR below.
           </p>
 
           <p>
-            <var width="55" />
+            <var width="65" />
           </p>
         </statement>
-        <setup> <var> <condition string="^https://github\.com/.+/pull/[0-9]+$">
-        <feedback>
-          <p>
-            Thank you for supplying your pull request URL.
-          </p>
-        </feedback>
-        </condition> <condition string=".*">
-
-        <feedback>
-          <p>
-            Make sure you have the complete URL of the PR starting with https and ending with the number of your pull request.
-          </p>
-        </feedback>
-        </condition> </var> </setup>
-      </exercise>
-
-      <exercise xml:id="ex-pull-request-info-c" label="ex-pull-request-info-c">
-        <statement>
-          <p>
-            Look at the base and head repositories listed in the PR.
-            Which of the following statements are true?
-          </p>
-        </statement>
-
-
-        <choices>
-          <choice correct="yes">
-            <statement>
-              <p>
-                The base repository is the upstream repository.
-              </p>
-            </statement>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                The base repository is my origin repository.
-              </p>
-            </statement>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                The base repository is my local repository.
-              </p>
-            </statement>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                The head repository is the upstream repository.
-              </p>
-            </statement>
-          </choice>
-
-          <choice correct="yes">
-            <statement>
-              <p>
-                The head repository is my origin repository.
-              </p>
-            </statement>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                The head repository is my local repository.
-              </p>
-            </statement>
-          </choice>
-        </choices>
-
-        <hint>
-          <p>
-            In order for your work to be merged, it must be on GitHub.
-            Think about where you pushed your changes to (head) and where you want them merged int (base).
-          </p>
-        </hint>
-      </exercise>
-
-      <exercise xml:id="ex-pull-request-info-e" label="ex-pull-request-info-e">
-        <statement>
-          <p>
-            Match the term to the appropriate branch.
-          </p>
-        </statement>
-
-        <feedback>
-          <p>
-            Try again.
-          </p>
-        </feedback>
-        <matches> <match>
-        <premise>
-        <c>base branch</c></premise> <response>upstream <c>main</c> branch</response> </match> <match>
-        <premise>
-        <c>compare branch</c></premise> <response><c>feature branch</c> in your origin repo</response> </match> </matches>
-        <hint>
-          <p>
-            Think about where you want to merge into (base) and what is being merged (compare).
-          </p>
-        </hint>
-      </exercise>
-
-      <exercise xml:id="ex-pull-request-info-g" label="ex-pull-request-info-g">
-        <statement>
-          <p>
-            What is the line number of the README.md file that you changed.
-            Hint: use the diff you saw in the prior chapter <xref ref="ex-pull-request-files"/>.
-          </p>
-
-          <p>
-            <var width="45" />
-          </p>
-        </statement>
-        <setup> <var> <condition string="[0-9]+">
-        <feedback>
-          <p>
-            Thank you.
-          </p>
-        </feedback>
-        </condition> <condition string=".*">
-
-        <feedback>
-          <p>
-            Make sure you are only putting the line number that changed in the README file.
-          </p>
-        </feedback>
-        </condition> </var> </setup>
+        <setup> 
+          <var> 
+            <condition string="^https://github\.com/.+/pull/[0-9]+$">
+              <feedback>
+                <p>
+                  Thank you for supplying your pull request URL.
+                </p>
+              </feedback>
+            </condition> 
+            <condition string=".*">
+              <feedback>
+                <p>
+                  Make sure you have the complete URL of the PR starting with https and ending with the number of your pull request.
+                </p>
+              </feedback>
+            </condition> 
+          </var> 
+        </setup>
       </exercise>
 
       <exercise xml:id="ex-pull-request-problem" label="ex-pull-request-problem">
-        <statement>
+        <introduction>
           <p>
-            Because there were a limited number of “Round2” issues, other students will have been simultaneously making changes to fix the same lines in the same files.
-            Which of the following describe how this might create a problem in the future.
+            Because there were a limited number of “Round2” issues, other students in your class will have worked on the same Round2 issue as you id.  Thus, they will also have made pull requests that contain changes to the same line(s) in the <c>README.md</c> file as you did. The tasks below will ask you some questions about this situation.
           </p>
-        </statement>
+        </introduction>
 
+        <task xml:id="ex-round-two-pull-request-pre-merge" label="ex-round-two-pull-request-pre-merge">
+          <statement>
+            <p>
+              Assume for now that the maintainers have not merged any pull requests that fix the Round2 issue that is addressed by your pull request.
+            </p>
+            <p>
+              Which of the following statements best describes this situation.
+            </p>
+          </statement>
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>
+                <p>
+                  GitHub will indicate that your PR can be merged automatically because it does not contain any conflicts with the upstream <c>main</c> branch.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Correct. While your PR changes the same lines of the <c>README.md</c> file as the other PRs, none of those PRs have been merged into the upstream <c>main</c>.  Thus, your PR will not contain any conflicts with the upstream <c>main</c> branch.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  GitHub will indicate that your PR cannot be merged automatically because it contains a conflict with the upstream <c>main</c> branch. 
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  While your PR changes the same lines of the <c>README.md</c> file as the other PRs, none of those PRs have been merged into the upstream <c>main</c>.  Thus, your PR will not contain any conflicts with the upstream <c>main</c> branch.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  If your PR was the first one submitted for your Round2 issue, GitHub will indicate that it can be merged automatically, otherwise it will indicate that it cannot because there is a conflict with the upstream <c>main</c>.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  The order in which the PR's are created does not matter. A conflict will only arise after the changes in one of the PRs are merged into the upstream <c>main</c>. Thus, because no PRs have been merged there is no conflict between your PR and the upstream <c>main</c> at this point.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  GitHub will indicate that your PR can be merged automatically because it does not contain conflicts with any of the other PRs that have been submitted for your Round2 issue.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Your PR and the others for your Round2 issue change the same lines, so in some sense your PR conflicts with the other PRs. However, none of them have been merged into the upstream <c>main</c> yet.  Thus, there is no conflict between your PR and the upstream <c>main</c> at this point.
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+          <hint>
+            <p>
+              Visit your PR in the upstream repo and see what GitHub tells you about whether it can be merged or not.
+            </p>
+          </hint>
+        </task>
 
-        <choices>
-          <choice>
-            <statement>
-              <p>
-                
-              </p>
-            </statement>
-          </choice>
-        </choices>
-
-        <hint>
-          <p>
-            Look at the lines numbers again using the diff command.
-          </p>
-        </hint>
+        <task xml:id="ex-round-two-pull-request-post-merge" label="ex-round-two-pull-request-post-merge">
+          <statement>
+            <p>
+              Now assume that the maintainers have merged one of the other pull requests (not yours) that fix your Round2 issue.
+            </p>
+            <p>
+              Which of the following statements best describes this situation.
+            </p>
+          </statement>
+          <choices randomize="yes">
+            <choice>
+              <statement>
+                <p>
+                  GitHub will indicate that your PR can be merged automatically because it does not contain any conflicts with the upstream <c>main</c> branch.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Your PR will have changed the same lines in <c>README.md</c> as the merged PR.  The changes from the merged PR are now in the upstream <c>main</c> branch. Thus, your feature branch will now have conflicts with the upstream <c>main</c> branch and will not be able to be merged automatically.
+                </p>
+              </feedback>
+            </choice>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  GitHub will indicate that your PR cannot be merged automatically because it contains a conflict with the upstream <c>main</c> branch. 
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Correct. A PR for the Round2 issue you were working on has been merged into the upstream <c>main</c>. Your PR contained changes that changed the same lines of the <c>README.md</c> file as the merged PR. Thus, your PR will have conflicts with the upstream <c>main</c> branch and will not be able to be merged automatically.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  If your PR for your Round2 issue was submitted before the other one was merged, GitHub will indicate that your PR can be merged automatically.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  The order in which the PR's are created does not matter. GitHub reevaluates whether there is a conflict each time you visit the PR page. Thus, because the other PR was merged, and it changed the same lines in <c>README.md</c> as your PR, your PR will now contain a conflict with the upstream <c>main</c> branch.
+                </p>
+              </feedback>
+            </choice>
+            <choice>
+              <statement>
+                <p>
+                  GitHub will indicate that your PR cannot be merged automatically because it contain conflicts with all of the other PRs that have been submitted for your Round2 issue.
+                </p>
+              </statement>
+              <feedback>
+                <p>
+                  Your PR will in some sense contain conflicts with all of the other PRs for the same Round2 issue.  However, only the conflict with the upstream <c>main</c> branch matter here. That conflict was created when the other PR for your Round2 issue was merged. 
+                </p>
+              </feedback>
+            </choice>
+          </choices>
+          <hint>
+            <p>
+              Visit your PR in the upstream repo and see what GitHub tells you about whether it can be merged or not.
+            </p>
+          </hint>
+        </task>
       </exercise>
     </exercises>
   </subsection>
