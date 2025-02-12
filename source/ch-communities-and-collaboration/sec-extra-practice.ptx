@@ -115,43 +115,30 @@
       label="ex-extra-practice-clone-linux">
            <statement>
         <p>
-           Pick and order the commands to change to your home directory, clone your fork of the project you chose and confirm that a local copy of the repo was created and check its remotes.        </p>
+           Pick and order the commands to change to your home directory, clone your fork of the project you chose and check its remotes.        
+        </p>
       </statement>
       <blocks>
         <block order="1">
-          <p>
-            cd ~
-          </p>
+          <c>cd ~</c>
         </block>
         <block order="2">
-          <p>
-            git clone &lt;URL&gt;
-          </p>
+          <c>git clone &lt;URL&gt;</c>
         </block>
         <block order="3">
-          <p>
-            cd &lt;dir&gt;
-          </p>
+          <c>cd &lt;dir&gt;</c>
         </block>
         <block order="4">
-          <p>
-            ls
-          </p>
-        </block>
-        <block order="5">
-          <p>
-            git remote -v
-          </p>
+          <c>git remote -v</c>
         </block>
         <block correct="no">
-          <p>
-            git config
-          </p>
+          <c>ls</c>
         </block>
         <block correct="no">
-          <p>
-            copy &lt;URL&gt;
-          </p>
+          <c>git config</c>
+        </block>
+        <block correct="no">
+          <c>copy &lt;URL&gt;</c>
         </block>
       </blocks>
       <hint>
@@ -169,7 +156,7 @@
               In your terminal enter the commands from <xref ref="ex-extra-practice-clone-linux" />.
             </p>
             <p>
-              Which of the following do you see in the output from entering those commands?
+              Which of the following do you see in the output of the <c>git remote -v</c> command?
             </p>
           </statement>
 
@@ -177,37 +164,37 @@
         <choices randomize="yes">
           <choice correct="yes">
             <statement>
-              The output from <c>git remote -v</c> contains <c>origin</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
+              <c>origin</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
             </statement>
           </choice>
 
           <choice correct="no">
             <statement>
-              The output from <c>git remote -v</c> contains <c>origin</c> followed by the URL in <xref ref="table-foss-projects" />
+              <c>origin</c> followed by the URL in <xref ref="table-foss-projects" />
              </statement>
           </choice>
 
           <choice correct="no">
             <statement>
-               The output from <c>git remote -v</c> contains <c>upstream</c> followed by the URL in <xref ref="table-foss-projects" />
+              <c>upstream</c> followed by the URL in <xref ref="table-foss-projects" />
             </statement>
           </choice>
 
           <choice correct="no">
             <statement>
-              The output from <c>git remote -v</c> contains <c>upstream</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
+              <c>upstream</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
             </statement>
           </choice>
 
          <choice correct="no">
             <statement>
-               The output from <c>git remote -v</c> contains <c>fork</c> followed by the URL in <xref ref="table-foss-projects" />
+              <c>fork</c> followed by the URL in <xref ref="table-foss-projects" />
             </statement>
           </choice>
 
           <choice correct="no">
             <statement>
-              The output from <c>git remote -v</c> contains <c>fork</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
+              <c>fork</c> followed by the URL that you entered in <xref ref="ex-extra-practice-fork" />
             </statement>
           </choice>
           </choices>
