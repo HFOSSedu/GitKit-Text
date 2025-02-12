@@ -214,11 +214,11 @@
     <exercise xml:id="ex-git-pull-doit" label="ex-git-pull-doit">
       <statement>
         <p>
-          Run the command from <xref ref="ex-active-branch-c"/> in the terminal and examine the output.
+          Run the command from <xref ref="ex-git-pull-cmd"/> in the terminal and examine the output.
         </p>
         <p>
           It should not contain any error messages.
-          If it does, look at the format of the command from <xref ref="ex-active-branch-c"/> and try again.
+          If it does, look at the format of the command from <xref ref="ex-git-pull-cmd"/> and try again.
         </p>
         <p>
           Which of the following appear in the output of the <c>git pull</c> command?
