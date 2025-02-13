@@ -33,33 +33,44 @@
   </introduction>
 
   <exercise xml:id="ex-staging-changes" label="ex-staging-changes">
-    <introduction>
-      <p>
+    <statement>
+            <p>
         The <c>git stage &lt;file&gt;</c> command adds the indicated file to the stage, preparing it to become a part of the next commit.
         Use the <c>git stage &lt;file&gt;</c> command now to stage the file that you edited.
       </p>
-    </introduction>
-
-
-    <task xml:id="ex-staging-changes-a" label="ex-staging-changes-a">
-      <statement>
-        <p>
-          Paste the output of the <c>git stage</c> command here.
-        </p>
-      </statement>
-      <response />
-    </task>
-    <!--
-    <task xml:id="ex-staging-changes-a" label="ex-staging-changes-a">
-      <statement>
-        <p>
+              <p>
           Provide the command you entered.
         </p>
-      </statement>
-      <response />
-    </task>
-    --> <!-- QUESTIONS C & D BELOW NEED TO BE UPDATED BASED UP COMPARING THE TWO OUTPUTS -->
-    <task xml:id="ex-staging-changes-c" label="ex-staging-changes-c">
+        <p>
+          <var width="55" />
+        </p>
+        </statement>
+          <setup>
+        <var>
+          <condition string="^git stage (CODE_OF_CONDUCT.md|CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+            <feedback>
+              <p>
+                Thank you.
+              </p>
+            </feedback>
+          </condition>
+          <condition string="^git stage !(CODE_OF_CONDUCT.md|CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+            <feedback>
+              <p>
+                Are you sure that is the file that the issue asked you to edit?
+              </p>
+            </feedback>
+          </condition>
+        </var>
+      </setup>
+      <hint>
+        <p>
+          Check your issue again to see which file you should have edited.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise xml:id="ex-staging-changes-c" label="ex-staging-changes-c">
       <statement>
         <p>
           Now run the <c>git status</c> command again.
@@ -96,7 +107,7 @@
 
           <feedback>
             <p>
-              Once you have issued the <c>git stage</c> command it show that the file is ready to be committed.
+              Once you have issued the <c>git stage</c> command it shows that the file is ready to be committed.
             </p>
           </feedback>
         </choice>
@@ -135,9 +146,9 @@
           Staged means a file has been modified and added to the commit.
         </p>
       </hint>
-    </task>
+    </exercise>
 
-
+<!--
     <task xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
       <statement>
         <p>
@@ -209,8 +220,8 @@
           Staged means a file has been modified and added to the commit.
         </p>
       </hint>
-    </task>
-  </exercise>
+    </task>-->
+
 
   <exercise xml:id="ex-staging-changes-diff" label="ex-staging-changes-diff">
     <statement>
