@@ -126,7 +126,7 @@
         <hint>
           <p>
             The base is where you want your changes merged into.
-            The head is where your changes are being pulled from.
+            The compare is where your changes are being pulled from.
           </p>
         </hint>
       </task>
