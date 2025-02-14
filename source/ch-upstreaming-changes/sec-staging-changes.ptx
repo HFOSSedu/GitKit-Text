@@ -160,8 +160,7 @@
       </hint>
     </exercise>
 
-<!--
-    <task xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
+    <exercise xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
       <statement>
         <p>
           How many files are listed as ready to be committed?
@@ -229,10 +228,10 @@
 
       <hint>
         <p>
-          Staged means a file has been modified and added to the commit.
+          Staged means a file has been modified and will be added to the commit.
         </p>
       </hint>
-    </task>-->
+    </exercise>
 
 
   <exercise xml:id="ex-staging-changes-diff" label="ex-staging-changes-diff">
