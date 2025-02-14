@@ -122,7 +122,8 @@
         Your command is in the proper format, please make sure the commit message is meaningful.
       </p>
     </feedback>
-    </condition> <condition string=".*">
+    </condition>
+    <condition string=".*">
 
     <feedback>
       <p>
@@ -258,14 +259,14 @@
       <statement>
         <p>
           Now use the <c>git status</c> command again.
-          Compare your output to the output in <xref ref="ex-verify-changes-new-a" />.
+          Compare your output to the output in <xref ref="ex-staging-changes-b" />.
           What two changes have occurred that reflect that your changes have been staged?
         </p>
       </statement>
 
 
       <choices>
-        <choice correct="no">
+        <choice>
           <statement>
             <p>
               No files appear listed as modified in red (meaning they are unstaged).
@@ -297,9 +298,9 @@
           </statement>
         </choice>
       </choices>
-          <hint>
+    <hint>
       <p>
-        All of your changes have been staged and committed. So there should be no modified files and nothing to commit.
+        You have staged and committed all modified files.
       </p>
     </hint>
     </task>

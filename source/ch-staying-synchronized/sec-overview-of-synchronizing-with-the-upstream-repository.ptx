@@ -5,25 +5,25 @@
 
   <introduction>
     <p>
-      As changes from pull requests (yours and others) are merged into upstream <c>main</c>, the <c>main</c> branches in your local and origin repos will get <em>out of synch with the upstream</em>.
+      As you saw in <xref ref="topic-understanding-changes-to-the-upstream-repository" />, as changes from pull requests (yours and others) are merged into upstream <c>main</c>, the <c>main</c> branches in your local and origin repos will get <em>out of synch with the upstream</em>.
     </p>
   </introduction>
 
   <p>
     Now, recall that upstream <c>main</c> should be the starting point for all new work.
-    So, before you can work on something new, you’ll want to make your <c>main</c> branches look like the upstream <c>main</c> (i.e.
+    So, before you can work on something new, you'll need to ensure that your <c>main</c> branches look like the upstream <c>main</c> (i.e.
     you will synchronize them with the upstream).
     This is a two-step process.
-    You will pull the upstream <c>main</c> into your local repository and then you will push it to your origin.
-    <xref ref="fig-synching-with-upstream" /> shows how pulling <c>main</c> from the upstream and then pushing it to your origin synchs the <c>main</c> branches.
+    First, you will <term>pull</term> the upstream <c>main</c> into your local repository and then you will <term>push</term> it to your origin.
+    <xref ref="fig-synching-with-upstream" /> shows how pulling <c>main</c> from the upstream and then pushing it to your origin synchronizes the <c>main</c> branches.
   </p>
 
   <p>
     <figure xml:id="fig-synching-with-upstream" >
-      <caption> Synch with Upstream. </caption>
+      <caption> Synchronizing the local and origin <c>main</c> branches with the upstream. </caption>
       <image source="images/ch-staying-synchronized/synching-with-upstream.png" width="75%">
         <description>
-          Cloud image of how upstream and the local repository are out of synch.
+          Cloud image showing how the <c>main</c> branches of the local and origin repository are synchronized with the upstream.
         </description>
       </image>
     </figure>
@@ -38,88 +38,74 @@
       </p>
     </introduction>
 
-
     <task xml:id="ex-over-synch-a" label="ex-over-synch-a">
       <statement>
         <p>
-          Which action copies changes from the upstream to your local repository?
+          Which action will copy changes from the upstream repository to your local repository?
         </p>
       </statement>
-
-
-      <choices>
+      <choices randomize="yes">
         <choice>
           <statement>
             <p>
-              Pushing to origin's main branch.
+              Pushing to your origin.
             </p>
           </statement>
-
           <feedback>
             <p>
-              Pushing to your origin's main is the left side of the figure and takes your local changes and puts them to GitHub.
+              The push operation copies changes from your local repository to a remote repository.
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
-              Pulling from origin's main branch.
+              Pulling from your origin.
             </p>
           </statement>
-
           <feedback>
             <p>
-              You don't pull from origin's main branch, you push your changes to it.
+               The pull operation copies changes from a remote repository to your local repo. But which remote repo do you need to copy from?
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
-              Pushing to upstream <c>main</c>.
+              Pushing to the upstream.
             </p>
           </statement>
-
           <feedback>
             <p>
-              You don't have permission to push to upstream <c>main</c>.
-              Code gets merged into upstream <c>main</c> when a pull request is accepted by the manager.
+              The push operation copies changes from your local repository to a remote repository.  But, recall that you do not have permission to push to upstream.
             </p>
           </feedback>
         </choice>
-
         <choice correct="yes">
           <statement>
             <p>
-              Pulling from upstream <c>main</c>.
+              Pulling from the upstream .
             </p>
           </statement>
-
           <feedback>
             <p>
-              Pulling from upstream <c>main</c> takes the changes that have been merged into the main branch and pulls them to your local repository.
+              Correct. Pulling from the upstream copies the changes that have been merged into upstream into your local repository.
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
               Switching to your feature branch.
             </p>
           </statement>
-
           <feedback>
             <p>
-              Switching to your feature branch is done on your local machine so you can make changes that will eventually be part of a pull request.
+              Switching branches does not move information between your local repository and a remote repository.
             </p>
           </feedback>
         </choice>
       </choices>
-
       <hint>
         <p>
           Look back to at the figure to see which arrow goes from the upstream to your local repository.
@@ -127,73 +113,62 @@
       </hint>
     </task>
 
-
     <task xml:id="ex-over-synch-b" label="ex-over-synch-b">
       <statement>
         <p>
           Which action copies changes from your local repository to your origin repository?
         </p>
       </statement>
-
-
-      <choices>
+      <choices randomize="yes">
         <choice correct="yes">
           <statement>
             <p>
-              Pushing to origin's main branch.
+              Pushing to your origin.
             </p>
           </statement>
 
           <feedback>
             <p>
-              Pushing to your origin's main is the left side of the figure and takes your local changes and puts them to GitHub.
+              Correct. Pushing to your origin will copy changes from your local repository to your origin repository.
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
-              Pulling from origin's main branch.
+              Pulling from your origin.
             </p>
           </statement>
-
           <feedback>
             <p>
-              You don't pull from origin's main branch, you push your changes to it.
+              Pulling copies changes from a remote repository into your local repository.
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
-              Pushing to upstream <c>main</c>.
+              Pushing to the upstream.
             </p>
           </statement>
-
           <feedback>
             <p>
-              You don't have permission to push to upstream <c>main</c>.
-              Code gets merged into upstream <c>main</c> when a pull request is accepted by the manager.
+              Pushing copies changes from your local repository to a remote repository. But recall that you do not have permission to push to upstream <c>main</c>.
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
-              Pulling from upstream <c>main</c>.
+              Pulling from the upstream.
             </p>
           </statement>
-
           <feedback>
             <p>
-              Pulling from upstream <c>main</c> takes the changes that have been merged into the main branch and pulls them to your local repository.
+              Correct. Pulling from the upstream copies changes that have been merged into the upstream to your local repository.
             </p>
           </feedback>
         </choice>
-
         <choice>
           <statement>
             <p>
@@ -203,12 +178,11 @@
 
           <feedback>
             <p>
-              Switching to your feature branch is done on your local machine so you can make changes that will eventually be part of a pull request.
+              Switching branches does not move information between your local repository and a remote repository.
             </p>
           </feedback>
         </choice>
       </choices>
-
       <hint>
         <p>
           Look back to at the figure to see which arrow goes from your local repository to the origin.

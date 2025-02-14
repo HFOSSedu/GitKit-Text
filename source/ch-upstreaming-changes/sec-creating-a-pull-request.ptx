@@ -263,11 +263,7 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string="^https://github\.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/pull/[0-9]+$">
-    <feedback>
-      <p>
-        Thank you.
-      </p>
+    <setup> <var> <condition string='^https://github.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2))(.+/.+)/pull/[0-9]+$'>
     </feedback>
     </condition> <condition string=".*">
 

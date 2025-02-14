@@ -28,42 +28,65 @@
   <title/>
   <introduction>
     <p>
-      The exercises in this section will walk you through staging the changes you made to your <em>Local Files</em>.
+    The exercises in this section will walk you through staging the changes you made to your <em>Local Files</em>.
+    </p>
+      
+    <p>
+    The <c>git stage &lt;file&gt;</c> command adds the indicated file to the stage, preparing it to become a part of the next commit.
     </p>
   </introduction>
 
   <exercise xml:id="ex-staging-changes" label="ex-staging-changes">
-    <introduction>
-      <p>
-        The <c>git stage &lt;file&gt;</c> command adds the indicated file to the stage, preparing it to become a part of the next commit.
-        Use the <c>git stage &lt;file&gt;</c> command now to stage the file that you edited.
+    <statement>
+            <p>
+        Write a <c>git stage &lt;file&gt;</c> command to stage the file that you edited.
       </p>
-    </introduction>
-
-
-    <task xml:id="ex-staging-changes-a" label="ex-staging-changes-a">
-      <statement>
-        <p>
-          Paste the output of the <c>git stage</c> command here.
+              <p>
+          Enter the command you wrote below.
         </p>
-      </statement>
-      <response />
-    </task>
-    <!--
-    <task xml:id="ex-staging-changes-a" label="ex-staging-changes-a">
-      <statement>
         <p>
-          Provide the command you entered.
+          <var width="55" />
         </p>
-      </statement>
-      <response />
-    </task>
-    --> <!-- QUESTIONS C & D BELOW NEED TO BE UPDATED BASED UP COMPARING THE TWO OUTPUTS -->
-    <task xml:id="ex-staging-changes-c" label="ex-staging-changes-c">
+        </statement>
+          <setup>
+        <var>
+          <condition string="^git stage(\s+)(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+            <feedback>
+              <p>
+                Thank you.
+              </p>
+            </feedback>
+          </condition>
+          <condition string="^git stage(\s+)!(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+            <feedback>
+              <p>
+                Are you sure that is the file that the issue asked you to edit?
+              </p>
+            </feedback>
+          </condition>
+        </var>
+      </setup>
+      <hint>
+        <p>
+          Check your issue again to see which file you should have edited.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise xml:id="ex-staging-changes-b" label="ex-staging-changes-b">
       <statement>
         <p>
           Now run the <c>git status</c> command again.
-          Compare your output in <xref ref="ex-staging-changes-a" /> to the output in <xref ref="ex-verify-changes-new-a" />.
+          Paste the output of the <c>git status</c> command below.
+        </p>
+      </statement>
+      <response />
+    </exercise>
+
+    <exercise xml:id="ex-staging-changes-c" label="ex-staging-changes-c">
+      <statement>
+        <p>
+          Compare your output in <xref ref="ex-staging-changes-b" /> to the output in <xref ref="ex-verify-changes-new-a" />.
         </p>
 
         <p>
@@ -82,7 +105,7 @@
 
           <feedback>
             <p>
-              Correct! After issuing the <c>git stage</c> (or <c>git add</c>) command the file will be staged.
+              Correct! After issuing the <c>git stage</c> command the file will be staged.
             </p>
           </feedback>
         </choice>
@@ -96,7 +119,7 @@
 
           <feedback>
             <p>
-              Once you have issued the <c>git stage</c> command it show that the file is ready to be committed.
+              Did you change more than 1 file by accident? Verify that you only changed the file specified in your issue.
             </p>
           </feedback>
         </choice>
@@ -132,13 +155,12 @@
 
       <hint>
         <p>
-          Staged means a file has been modified and added to the commit.
+          Staged means a file has been modified and will be added to the commit.
         </p>
       </hint>
-    </task>
+    </exercise>
 
-
-    <task xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
+    <exercise xml:id="ex-staging-changes-d" label="ex-staging-changes-d">
       <statement>
         <p>
           How many files are listed as ready to be committed?
@@ -206,11 +228,11 @@
 
       <hint>
         <p>
-          Staged means a file has been modified and added to the commit.
+          Staged means a file has been modified and will be added to the commit.
         </p>
       </hint>
-    </task>
-  </exercise>
+    </exercise>
+
 
   <exercise xml:id="ex-staging-changes-diff" label="ex-staging-changes-diff">
     <statement>
