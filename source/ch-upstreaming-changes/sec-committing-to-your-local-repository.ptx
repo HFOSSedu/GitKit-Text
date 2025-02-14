@@ -115,7 +115,9 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string='^git commit -m ["].+["]$'>
+    <setup> 
+    <var> 
+    <condition string='^git commit -m ["].+["]$'>
     <feedback>
       <p>
         Thank you.
@@ -130,7 +132,9 @@
         Double check the format of your command.
       </p>
     </feedback>
-    </condition> </var> </setup>
+    </condition> 
+    </var>
+    </setup>
   </exercise>
 
   <exercise xml:id="ex-committing-changes-new-a" label="ex-committing-changes-new-a">
@@ -149,7 +153,7 @@
       <choice>
         <statement>
           <p>
-            It shows the name of the file changed in [].
+            It shows the name of the file changed in the square brackets [ ].
           </p>
         </statement>
 
@@ -163,7 +167,7 @@
       <choice correct="yes">
         <statement>
           <p>
-            It shows the name of the feature branch that contains the  change in [].
+            It shows the name of the feature branch that contains the  change in the square brackets [ ].
           </p>
         </statement>
 
@@ -177,7 +181,7 @@
       <choice correct="yes">
         <statement>
           <p>
-            It shows the SHA code of the commit in [].
+            It shows the SHA code of the commit in the square brackets [ ].
           </p>
         </statement>
 
@@ -259,7 +263,7 @@
       <statement>
         <p>
           Now use the <c>git status</c> command again.
-          Compare your output to the output in <xref ref="ex-staging-changes-b" />.
+          Compare your output to the output in <xref ref="ex-staging-changes-b"/>.
           What two changes have occurred that reflect that your changes have been staged?
         </p>
       </statement>
@@ -304,7 +308,6 @@
       </p>
     </hint>
     </task>
-
 
     <task xml:id="ex-committing-changes-c" label="ex-committing-changes-c">
       <statement>
@@ -481,7 +484,7 @@
 
 
     <task xml:id="ex-committing-changes-f" label="ex-committing-changes-f">
-      <statement correct="false">
+      <statement correct="no">
         <p>
           The output of the <c>git log</c> command now shows the information about the commit you made.
         </p>
