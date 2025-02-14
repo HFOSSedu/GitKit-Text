@@ -670,7 +670,7 @@
     <task xml:id="ex-git-status-command-c" label="ex-git-status-command-c">
       <statement>
         <p>
-          Your output should contain the text “nothing to commit, working tree clean.”  What do you think it means that you have “nothing to commit.” Hint: when would you have something to commit?  This is the opposite of that!
+          Your output should contain the text “nothing to commit, working tree clean.”  What do you think it means that you have “nothing to commit.”
         </p>
       </statement>
 
@@ -735,8 +735,7 @@
 
       <hint>
         <p>
-          Think about what the next step might be after you have cloned the repo.
-          What would you want to do next?
+          When would you have something to commit?  This is the opposite of that!
         </p>
       </hint>
     </task>
