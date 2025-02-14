@@ -235,59 +235,51 @@
         </hint>
       </task>
 
-
-      <task xml:id="ex-explore-the-issue-tracker-d" label="ex-explore-the-issue-tracker-d" >
-        <statement>
-          <p>
-            Which of the following indicate an order by which the issues can be sorted?
-          </p>
-        </statement>
-
-
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              Newest
-            </statement>
-          </choice>
-
-          <choice correct="yes">
-            <statement>
-              Oldest
-            </statement>
-          </choice>
-
-          <choice correct="yes">
-            <statement>
-              Recently updated
-            </statement>
-          </choice>
-
-          <choice correct="yes">
-            <statement>
-              Most commented
-            </statement>
-          </choice>
-
-          <choice correct="no">
-            <statement>
-              Most difficult
-            </statement>
-          </choice>
-
-          <choice correct="no">
-            <statement>
-              Highest priority
-            </statement>
-          </choice>
-        </choices>
-
-        <hint>
-          <p>
-            Find the "Sort" drop-down in the issue tracker and see what "Sort by" options there are.
-          </p>
-        </hint>
-      </task>
+        <task
+            xml:id="ex-explore-the-issue-tracker-d"
+            label="ex-explore-the-issue-tracker-d"
+            >
+          <statement>
+            <p>
+              Which of the following indicate an order by which the issues can be sorted?
+            </p>
+          </statement>
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>  
+                Newest
+              </statement>
+            </choice>
+            <choice correct="yes">
+              <statement>  
+                Oldest
+              </statement>
+            </choice>
+            <choice correct="yes">
+              <statement>  
+                Recently updated
+              </statement>
+            </choice>
+            <choice correct="yes">
+              <statement>  
+                Most commented
+              </statement>
+            </choice>
+            <choice correct="no">
+              <statement>  
+                Most difficult
+              </statement>
+            </choice>
+            <choice correct="no">
+              <statement>  
+                Highest priority
+              </statement>
+            </choice>
+          </choices>
+          <hint>
+            Find the sort drop-down (which will be headed either "Newest" or "Oldest" depending on how it was last set) in the issue tracker and see what sort by options are available.
+          </hint>        
+        </task>
 
 
       <task xml:id="ex-explore-the-issue-tracker-e" label="ex-explore-the-issue-tracker-e" >
