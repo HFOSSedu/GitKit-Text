@@ -209,6 +209,18 @@
           <choice>
             <statement>
               <p>
+                The dotted orange arrow on the right that points from your local repository to the upstream.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The arrow on the right represents a Git remote associated with your local repository, but it is not the origin.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
                 The dotted orange arrow at the top that points from your origin repository to the upstream.
               </p>
             </statement>
@@ -277,7 +289,7 @@
             </statement>
             <feedback>
               <p>
-                The arrow on the left represents the origin Git remote.
+                The arrow on the left represents a git remote associated with your local repository, but it is not the upstream.
               </p>
             </feedback>
           </choice>
