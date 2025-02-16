@@ -30,7 +30,9 @@
     <title />
     
     <introduction>
-      The exercises in this section will help to familiarize you with the terminology and the process of this basic FOSS workflow.
+      <p>
+        The exercises in this section will help to familiarize you with the terminology and the process of this basic FOSS workflow.
+      </p>
     </introduction>
 
     <exercise 
