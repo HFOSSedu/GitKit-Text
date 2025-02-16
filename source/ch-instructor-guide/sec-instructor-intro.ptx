@@ -12,7 +12,7 @@
 		</p>	
 
 		<p>
-			For help with GitKit, you can <url href="https://discord.gg/83Sb4csCeT">chat with us on Discord.</url> 
+			For questions or assistance with GitKit, you can <url href="https://discord.gg/83Sb4csCeT">chat with us on Discord.</url>
 		</p>
   </introduction>
 
@@ -28,26 +28,18 @@
 				<li>
 					<p>
 						<url href="https://guide.runestone.academy/InstructorGuide-6.html">Create a Runestone course</url> using the 
-						<url href="https://runestone.academy/ns/books/published/gitkitlinux/the-gitkit-book.html?mode=browsing">GitKit (Linux Desktop Edition)</url> or the
-						<url href="https://runestone.academy/ns/books/published/gitkitvscode/the-gitkit-book.html?mode=browsing">GitKit (VSCode Edition)</url>.
-					</p>
-					<p>
-						Note that you are currently viewing the 
-						<term component="linux-kit-client">GitKit (Linux Desktop Edition)</term>
-						<term component="vscode-kit-client">GitKit (VSCode Edition)</term>
-						.
+						<url href="https://runestone.academy/ns/books/published/gitkit/the-gitkit-book.html?mode=browsing">GitKit</url> text.
 					</p>
 				</li>
 				<li>
 					<p>
 						<url href="https://guide.runestone.academy/working-with-assignments-chap.html#instructor-interface_copying-assignments-4">Copy the Course Pack</url> for the GitKit from the 
-						<term component="linux-kit-client">gitkitlinux</term>
-						<term component="vscode-kit-client">gitkitvscode</term>
+						<term>gitkit</term>
 						base course into your course if you would like to use the provided assignments.
 					</p>
 
 					<p>
-						Note that the reading assignments in the course pack include sections that allow students to elect to participate in a research project aimed at (1) understanding what they think and know about open source tools and techniques and (2) assessing the effectiveness of the GitKit. The inclusion of these sections is option and may be removed at the discretion of the instructor. See <xref ref="topic-adopt-gitkit-text" text="type-global-title" /> for additional information.
+						Note that the reading assignments in the course pack include sections that allow students to elect to participate in a research project aimed at (1) understanding what they think and know about open source tools and techniques and (2) assessing the effectiveness of the GitKit. The inclusion of these sections is optional and they may be removed at the discretion of the instructor. See <xref ref="topic-adopt-gitkit-text" text="type-global-title" /> for additional information.
 					</p>
 				</li>
 				<li>
@@ -57,10 +49,10 @@
 				</li>
 				<li>
 					<p>
-						Click to <url href="https://gitpod.io/?autostart=true&amp;useLatest=true&amp;editor=xterm#script_url=https%3A%2F%2Fgitlab.com%2Fhfossedu%2Fkits%2Fgitkit-deployer-gitpod%2F-%2Fraw%2Fmain%2Fdeploy.yaml%3Fref_type%3Dheads/https://github.com/HFOSSedu/GitKit-Deployer-GitPod"> Deploy the GitKit FarmData2 repository </url> to use as the upstream.
+						Click to <url href="https://codespaces.new/HFOSSedu/GitKit-Deployer-Codespaces?quickstart=1">deploy the GitKit FarmData2 repository</url> to use as the upstream.
 					</p>
 					<p>
-						One deploy of the GitKit FarmData2 repository can support up to 32 students. Perform as many deploys as necessary for your course.  Be sure to give each deploy a distinct name.
+						One deploy of the GitKit FarmData2 repository can support up to 32 students. Perform as many deploys as necessary for your course.  Be sure to give each deploy a distinct name when prompted by the deployer.
 					</p>
 				</li>
 				<li>
@@ -70,7 +62,7 @@
 				</li>
 				<li>
 					<p>
-						Please consider clicking the link to the brief survey that is included in the output of the GitKit deployer. Your feedback  helps us to better understand where and how the GitKit is being used. This survey can also be accessed <url href="https://drexel.qualtrics.com/jfe/form/SV_81y8BL0zy3fBw22">here</url>.
+						Please consider clicking the link to the brief survey that is included in the output of the GitKit deployer. Your feedback helps us to better understand where and how the GitKit is being used. This survey can also be accessed <url href="https://drexel.qualtrics.com/jfe/form/SV_81y8BL0zy3fBw22">here</url>.
 					</p>
 				</li>
 				<li>
@@ -111,7 +103,7 @@
 				</li>
 				<li>
 					<p>
-						Read <xref ref="topic-gitkit-development-environments" text="type-global-title" /> to learn about the two development environments that can be used with the GitKit and select one for use in your course.
+						Read <xref ref="topic-gitkit-development-environments" text="type-global-title" /> to learn about the development environment that students use with the GitKit.
 					</p>
 				</li>
 				<li>
@@ -122,7 +114,7 @@
 				</li>
 				<li>
 					<p>
-						Consider doing the GitKit for yourself as described in <xref ref="topic-do-the-gitkit" />.  It is by far the best way to prepare to deliver the GitKit to a class.
+						Consider doing the GitKit for yourself as described in <xref ref="topic-do-the-gitkit" />. This is by far the best way to prepare to deliver the GitKit to a class.
 					</p>
 				</li>
 				<li>
@@ -132,7 +124,7 @@
 				</li>
 				<li>
 					<p>
-						Follow the steps in <xref ref="topic-gitkit-deploy" text="type-global-title" /> to deploy the GitKit for use in your course.
+						Follow the steps in <xref ref="topic-gitkit-deploy" text="type-global-title" /> to deploy the upstream repository needed to use GitKit in your course.
 					</p>
 				</li>
 				<li>
@@ -142,7 +134,7 @@
 				</li>
 				<li>
 					<p>
-						Refer to <xref ref="topic-gitkit-contributing" text="type-global-title" /> for information about contributing to the GitKit including where to report typos, errors, suggested improvements or bugs.
+						Refer to <xref ref="topic-gitkit-contributing" text="type-global-title" /> for information about contributing to the GitKit including where to report typos, errors, suggested improvements, feature requests or bugs.
 					</p>
 				</li>
 			</ol>
@@ -154,7 +146,7 @@
 		<title>Delivering GitKit</title>
 		
 		<p>
-			The GitKit content is broken into 4 chapters (See <xref ref="topic-gitkit-content" />). Each chapter of the text contains the set of hands-on exercises to be completed by the students. <em>These exercises are not intended to stand alone.</em>  They require some prior introduction to the concepts and terminology that they use. A separate set of slides are provided that instructors can use or adapt to introduce the necessary concepts and terminology before students complete the hands-on exercises.
+			The GitKit content is broken into 4 chapters (See <xref ref="topic-gitkit-content" />). Each chapter of the text contains the set of hands-on exercises to be completed by the students. <em>These exercises are not intended to stand alone.</em>  Each requires some prior introduction to the concepts and terminology that they use. A separate set of slides are provided for each topic that instructors can use or adapt to introduce the necessary concepts and terminology before students complete each set of hands-on exercises.
 		</p>
 
 		<p>
@@ -167,18 +159,18 @@
 				</li>
 				<li>
 					<p>
-						Students complete the hands-on activities contained in the chapters of this text as 2-3 hours of homework or during an assigned lab period.
+						Students complete the hands-on activities contained in each chapters of this text as 2-3 hours of homework or during assigned lab periods.
 					</p>
 				</li>
 			</ul> 
 		</p>
 
 		<p>
-			While the GitKit was designed for nominal delivery in four 50-75-minute periods with 2-3 hours of additional hands-on work by the students, instructors have found the GitKit to be adaptable to different educational settings, student experience levels and learning objectives.
+			While the GitKit was designed for nominal delivery in four 50-75-minute periods with 2-3 hours of additional hands-on work by the students, instructors have found the GitKit to be adaptable to different educational settings, student experience levels and learning objectives.  Some examples include:
 			<ul>
 				<li>
 					<p>
-						Limited Coverage: The first two GitKit topics form a cohesive unit and can be completed without continuing onto the final two topics. Two examples of how this can be used include:
+						Limited Coverage: The first two GitKit topics form a cohesive unit and can be completed without continuing onto the final two topics.
 					</p>
 				</li>
 				<li>
@@ -188,12 +180,12 @@
 				</li>
 				<li>
 					<p>
-						A One Day Workshop: An organization delivered the GitKit as a one-day workshop for students from low-income, first-generation, underrepresented minority backgrounds. This workshop covered just the first two GitKit topics.
+						A One Day Workshop: An organization has delivered the GitKit as a one-day workshop for students from low-income, first-generation, underrepresented minority backgrounds. This workshop covered just the first two GitKit topics.
 					</p>
 				</li>
 				<li>
 					<p>
-						Students with Prior git Experience: An instructor with students who have had prior exposure to git fundamentals (but not GitHub or the forking workflow) have skipped most of the class materials and used the hands-on activities as in-class lab activities rather than homework.
+						Students with Prior Git Experience: An instructor with students who have had prior exposure to Git fundamentals (but not GitHub or the forking workflow) have skipped most of the class materials and used the hands-on activities as in-class lab activities rather than homework.
 					</p>
 				</li>
 				<li>
@@ -210,7 +202,7 @@
 		<title>GitKit Content</title>
 
 		<p>
-			The content of the GitKit is broken into the chapters below.  For each chapter the key topics and activities are outlined and links are given to the slides, the chapter of the text containing the hands-on exercises and instructor notes for the chapter.
+			The content of the GitKit is broken into the chapters below.
 			<ul>
 				<li>
 					<p>
@@ -235,7 +227,7 @@
 						<ul>
 							<li>
 								<p>
-									 Introduces feature branches, commits, and pull requests as part of the forking workflow.
+									Introduces feature branches, commits, and pull requests as part of the forking workflow.
 								</p>
 							</li>
 							<li>
@@ -275,7 +267,7 @@
 							</li>
 							<li>
 								<p>
-									Provides practice with understanding merge conflicts, merging main into a feature branch, using a graphical merge tool and updating a pull request.
+									Provides practice with understanding merge conflicts, merging <c>main</c> into a feature branch, using a basic merge tool, and updating a pull request.
 								</p>
 							</li>
 						</ul>
@@ -289,87 +281,46 @@
 		<title>Student Development Environments</title>
 		<introduction>
 			<p>
-				The GitKit provides a cloud based development environment that students use to complete the hands-on GitKit activities. This development environment is called a <term>KitClient</term>. A KitClient is a pre-configured containerized development environment that provides all of the tools and configuration necessary to complete the activities.  The KitClient also includes the Kit-tty Virtual Assistant (See <xref ref="topic-kitty-virtual-assistant" /> and a set of automations that simulate project community (See <xref ref="topic-community-automations" />). 
+				The GitKit provides a cloud based development environment that students use to complete the hands-on GitKit activities. This development environment, which we call a <term>KitClient</term>, runs on GitHub Codespaces. It provides all of the tools and configuration necessary to complete the activities.  The development environment also includes the Kit-tty Virtual Assistant (See <xref ref="topic-kitty-virtual-assistant" /> and a set of automations that simulate aspects of an open source project community (See <xref ref="topic-community-automations" />). 
 			</p>
 
 			<p>
-				There are currently two KitClients that can be used with GitKit and the instructor may choose the KitClient to use based on the needs of their course and students.
+				<xref ref="fig-instructor-guide-codespace-kit-client" /> shows the development environment where students complete the hands-on activities.
 
-				<ul>
-					<li>
-						<p>
-							<term>Linux Desktop KitClient</term>: <xref ref="fig-instructor-guide-linux-kit-client" /> shows the Linux KitClient where students complete the hands-on activities in a complete Linux virtual desktop environment.
-
-							<figure 
-                xml:id="fig-instructor-guide-linux-kit-client"
-                >
-                <caption>
-                  The Linux KitClient development environment.
-                </caption>
-                <image source="images/ch-instructor-guide/linux-kitclient.png"
-                  width="75%">
-                  <description>
-                    The Linux KitClient development environment window displaying the Linux desktop.
-                  </description>
-                </image>
-              </figure>
-						</p>
-					</li>
-					<li>
-						<p>
-							<term>VSCode KitClient</term>: <xref ref="fig-instructor-guide-vscode-kit-client" /> shows the VSCode KitClient in which students complete the hands-on activities in the VSCode interface.
-
-							<figure 
-                xml:id="fig-instructor-guide-vscode-kit-client"
-                >
-                <caption>
-                  The VSCode development environment.
-                </caption>
-                <image source="images/ch-instructor-guide/vscode-kitclient.png"
-                  width="75%">
-                  <description>
-                    The VSCode development environment window showing the VS Code interface.
-                  </description>
-                </image>
-              </figure>
-						</p>
-					</li>
-				</ul>
-
-				Both of these KitClients run remotely within GitPod Workspaces and students interact with them through a Web browser. To run a KitClient, students will need will need to have a free GitPod account, which they will created as a part of the activities.
+				<figure xml:id="fig-instructor-guide-codespace-kit-client">
+					<caption>
+					The KitClient development environment running in Codespaces.
+					</caption>
+					<image source="images/ch-instructor-guide/codespace-kitclient.png"
+					width="75%">
+					<description>
+						Screenshot showing the KitClient development environment running in GitHub Codespaces.
+					</description>
+					</image>
+              	</figure>
 			</p>
-				
+
 			<p>
-				There is a different edition of this text for each of the KitClients. The texts provide an equivalent experience, but adapt content to the specifics (e.g. user interface elements) of the KitClient as necessary. The instructor will adopt the text for the KitClient that has been chosen for the course (see <xref ref="topic-adopt-gitkit-text" />).
-			</p>
-			
-			<p>
-				You are currently viewing the 
-				<term component="linux-kit-client">GitKit (Linux Desktop Edition)</term> 
-				<term component="vscode-kit-client">GitKit (VSCode Edition)</term> 				
-				of the text. You can use the following link to find the
-				<url href="https://runestone.academy/ns/books/published/gitkitlinux/the-gitkit-book.html?mode=browsing"  component="vscode-kit-client">GitKit (Linux Desktop Edition)</url>
-				<url href="https://runestone.academy/ns/books/published/gitkitvscode/the-gitkit-book.html?mode=browsing" component="linux-kit-client">GitKit (VSCode Edition)</url> if you would like to review it.
-				.
+				<alert>Note:</alert> If you are familiar with GitHub Codespaces, you will find that the interface familiar.  However, the KitClient works slightly differently than a standard Codespace. In particular, when students open the KitClient no repository will be opened. Instead they are given a blank development environment into which they <c>git clone</c> the repository they will be using for the GitKit.  This make explicit the important concept of a clone, which Codespaces hide.
 			</p>
 		</introduction>
 
 		<subsubsection xml:id="topic-kitty-virtual-assistant">
 			<title>The Kit-tty Virtual Assistant</title>
 			<p>
-				The Kit-tty (a play on Kit and TTY), pronounced kitty, is a virtual assistant built into the development environments (i.e. KitClients) that catches common student errors and provides hints on how to perform activity steps correctly. The Kit-tty has been designed to catch and correct student errors that were frequently observed in early uses of the GitKit. Many of the errors recognized by the Kit-tty are those that typically are not discovered until students progress several steps further into the activity, at which point they require more advanced git skills to undo.
+				The Kit-tty (a play on Kit and TTY), pronounced kitty, is a virtual assistant built into the development environment. The Kit-tty has been designed to catch and correct student errors that were frequently observed in early uses of the GitKit. Many of the errors caught by the Kit-tty are those that would not be discovered until students progress several steps further into the activity, at which point they can be difficult to undo.
 			</p>
 			<p>
 				For example, the Kit-tty intervenes when a student attempts to:
 				<ul>
 					<li>
 						<p>
-							commit to the main branch (an action that should not happen in the forking workflow).
+							commit to the <c>main</c> branch (an action that should not happen in the forking workflow).
 						</p>
 					</li>
 					<li>
 						<p>
-							merge a feature branch into main (instead of vice versa).
+							merge a feature branch into <c>main</c> (instead of vice versa).
 						</p>
 					</li>
 					<li>
@@ -401,7 +352,7 @@
 				<ul>
 					<li>
 						<p>
-							When claiming an issue by adding a comment to its ticket in the issue tracker. An automation notices this comment, assigns the issue to the student (if it hasn't already been assigned to someone else). The automation then also responds personally as a maintainer might: "Great! I assigned you (@TheirUsername) to the issue.  Have fun working on it!"
+							Students claim an issue by adding a comment to its ticket in the issue tracker. An automation notices this comment and assigns the issue to the student (if it hasn't already been assigned to someone else). The automation then also responds personally as a maintainer might: "Great! I assigned you (@TheirUsername) to the issue.  Have fun working on it!"
 						</p>
 					</li>
 				</ul>
@@ -421,7 +372,7 @@
 		</p>
 
 		<p>
-			Current development work on FarmData2 is occurring in the <url href="https://github.com/FarmData2">FarmData2 Organization</url> on GitHub.
+			The captured repository is from an earlier version of FarmData2. Current active development work on FarmData2 is occurring in the <url href="https://github.com/FarmData2">FarmData2 Organization</url> on GitHub.
 		</p>
 	</subsection>
 
@@ -429,7 +380,7 @@
 		<title>Creating a Runestone Course using the GitKit Text</title>
 		
 		<p>
-			The GitKit text is an e-text that is available on <url href="https://runestone.academy/">Runestone Academy</url>. It contains a large number of interactive elements, many of which are auto-graded and provide instant feedback to students as they work through the GitKit.	If you are not familiar with Runestone Academy it is recommended that you read the first 6 sections of the <url href="https://runestone.academy/ns/books/published/instructorguide/InstructorGuide.html">Using eBooks with Runestone Academy</url> guide to familiarize yourself with it.
+			The GitKit text is an e-text that is available on <url href="https://runestone.academy/">Runestone Academy</url>. It contains a large number of interactive elements, (nearly) all of which are auto-graded and provide immediate feedback to students as they work through the GitKit.	If you are not familiar with Runestone Academy it is recommended that you read the first 6 sections of the <url href="https://runestone.academy/ns/books/published/instructorguide/InstructorGuide.html">Using eBooks with Runestone Academy</url> guide to familiarize yourself with it.
 		</p>
 
 		<p>
@@ -438,30 +389,23 @@
 				<li>
 					<p>
 						<url href="https://guide.runestone.academy/InstructorGuide-6.html">Create a Runestone course</url> using the 
-						<url href="https://runestone.academy/ns/books/published/gitkitlinux/the-gitkit-book.html?mode=browsing">GitKit (Linux Desktop Edition)</url> or the
-						<url href="https://runestone.academy/ns/books/published/gitkitvscode/the-gitkit-book.html?mode=browsing">GitKit (VSCode Edition)</url> 
-						of the text.
-					</p>
-					<p>
-						Note that you are currently viewing the 
-						<term component="linux-kit-client">GitKit (Linux Desktop Edition)</term>
-						<term component="vscode-kit-client">GitKit (VSCode Edition)</term>
-						.
+						<url href="https://runestone.academy/ns/books/published/gitkit/the-gitkit-book.html?mode=browsing">GitKit</url> text.
 					</p>
 				</li>
 				<li>
 					<p>
 						You can either <url href="https://guide.runestone.academy/working-with-assignments-chap.html">create assignments</url> for your students from the GitKit sections and exercises, or you can <url href="https://guide.runestone.academy/working-with-assignments-chap.html#instructor-interface_copying-assignments-4">Copy the Course Pack</url> for the GitKit from the 
-						<term component="linux-kit-client">gitkitlinux</term>
-						<term component="vscode-kit-client">gitkitvscode</term>
-						base course into your course. 
+						<term>gitkit</term> base course into your course. 
 					</p>
 					<p>
-						The course pack includes a <term>reading assignment</term> and a <term>problem assignment</term> for each of the chapter of the GitKit text (except <xref ref="topic-instructor-guide" text="type-global-title" />). The provided reading assignment for each chapter includes all sections of the chapter and is auto-grading based on student interaction with each of he chapter's sections. The provided problem assignment for each chapter includes every interactive exercise in the chapter. Every exercise that can be auto-graded is graded using <term>% Correct</term> and the students <term>last answer</term>. If you adopt the course pack you can modify the sections and questions that are included in the assignments, how they are graded and also add your own questions. See the <url href="https://guide.runestone.academy/working-with-assignments-chap.html">Working with Assignments</url> section of the <url href="https://guide.runestone.academy/InstructorGuide-3.html">Using eBooks with Runestone Academy</url> guide for more details.
+						The course pack includes a <term>reading assignment</term> and a <term>problem assignment</term> for each of the chapter of the GitKit text (except <xref ref="topic-instructor-guide" text="type-global-title" />). The provided reading assignment for each chapter includes all sections of the chapter and is auto-graded based on student interaction with each of he chapter's sections. The provided problem assignment for each chapter includes every interactive exercise in the chapter. Exercises are auto-graded graded using <term>% Correct</term> and the students <term>last answer</term>. 
+					</p>
+					<p>
+						If you adopt the course pack you can modify the sections and questions that are included in the assignments, how they are graded and also add your own questions. See the <url href="https://guide.runestone.academy/working-with-assignments-chap.html">Working with Assignments</url> section of the <url href="https://guide.runestone.academy/InstructorGuide-3.html">Using eBooks with Runestone Academy</url> guide for more details.
 					</p>
 
 					<p>
-						The reading assignments in the course pack include sections that allow students to elect to participate in a research project aimed at (1) understanding what they think and know about open source tools and techniques and (2) assessing the effectiveness of the GitKit. In addition, there are surveys at the end of each chapter by which students can provide feedback to help improve the GitKit for future students.
+						<alert>Note:</alert> The reading assignments in the course pack include sections that allow students to elect to participate in a research project aimed at (1) understanding what they think and know about open source tools and techniques and (2) assessing the effectiveness of the GitKit. In addition, there are surveys at the end of each chapter by which students can provide feedback to help improve the GitKit for future students.
 				
 						<ul>
 							<li>
@@ -470,7 +414,7 @@
 								</p>
 
 								<p>
-									The <xref ref="topic-gitkit-pre-survey" /> also allows students to consent to providing the GitKit authors with their responses to all of the GitKit exercises. If you would like to provide the GitKit authors with exercise responses from students in your course who consented please contact Dr. Braught (braught@dickinson.edu) Professor of Computer Science at Dickinson College for additional information.
+									<xref ref="topic-gitkit-pre-survey" /> also allows students to consent to providing the GitKit authors with their responses to all of the GitKit exercises. If you would like to provide the GitKit authors with exercise responses from students in your course who consented please contact Dr. Braught (braught@dickinson.edu) Professor of Computer Science at Dickinson College for additional information.
 								</p>
 							</li>
 							<li>
@@ -517,7 +461,7 @@
 							</li>
 							<li>
 								<p>
-									Review the <em>Slide Notes</em> for the chapter.
+									Review the <em>Slide Notes</em> for the chapter for helpful instructor tips.
 								</p>
 							</li>
 							<li>
@@ -589,7 +533,29 @@
 				</li>
 				<li>
 					<p>
-						Click this link to <url href="https://gitpod.io/?autostart=true&amp;useLatest=true&amp;editor=xterm#script_url=https%3A%2F%2Fgitlab.com%2Fhfossedu%2Fkits%2Fgitkit-deployer-gitpod%2F-%2Fraw%2Fmain%2Fdeploy.yaml%3Fref_type%3Dheads/https://github.com/HFOSSedu/GitKit-Deployer-GitPod"> Deploy the GitKit FarmData2 repository </url>.
+						Click this link to <url href="https://codespaces.new/HFOSSedu/GitKit-Deployer-Codespaces?quickstart=1"> deploy the GitKit FarmData2 repository </url>.
+					</p>
+				</li>
+				<li>
+					<p>
+						Click the green "Create new codespace" button.
+					</p>
+				</li>
+				<li>
+					<p>
+						Creating the codespace requires a few minutes.  When it is complete  will see the prompt in <xref ref="fig-deployer-kitscript" />.
+
+						<figure xml:id="fig-deployer-kitscript">
+							<caption>
+								The deployer prompting for the new repository name.
+							</caption>
+							<image source="images/ch-instructor-guide/deployer-kitscript.png"
+							width="75%">
+								<description>
+									Screenshot showing the deployer prompting for the new repository name.
+								</description>
+							</image>
+						</figure>
 					</p>
 				</li>
 				<li>
@@ -603,7 +569,7 @@
 							</li>
 							<li>
 								<p>
-									You GitHub username to deploy into your GitHub space, or the name of a GitHub organization to which you have write permission to deploy into that organization's GitHub space.
+									The GitHub username or the name of a GitHub organization to which you have write permission as the location to deploy the upstream repository.
 								</p>
 							</li>
 							<li>
@@ -616,18 +582,26 @@
 				</li>
 				<li>
 					<p>
-						Wait for the deployer to complete.  This typically takes several minutes because the deployer must create the issues in the issue tracker slowly to avoid being rate-limited by the GitHub API.
+						Wait for the deployer to complete. This typically takes several minutes because the deployer must create the issues in the issue tracker slowly to avoid being rate-limited by the GitHub API.
 					</p>
 				</li>
 				<li>
 					<p>
-						When the deployer completes it will generate output similar to the following that shows the URL of your deployed GitKit FarmData2 repository.
+						When the deployer completes it will generate output similar <xref ref="fig-deployer-done" />, which shows the URL of your deployed GitKit FarmData2 repository.
+
+						<figure xml:id="fig-deployer-done">
+							<caption>
+								The deployer showing the URL of the deployed GitKit FarmData2 repository.
+							</caption>
+							<image source="images/ch-instructor-guide/deployer-done.png"
+							width="90%">
+								<description>
+									Screenshot of the deployer showing the URL of the deployed GitKit FarmData2 repository.
+								</description>
+							</image>
+						</figure>
 					</p>
-<p>
-<c>Your new repository is ready. Give the URL below to your students.
-https://github.com/someLocation/GitKit-FarmData2                           
-</c>
-</p>
+
 					<p>
 						Copy the URL of the repository and distribute it to your students using e-mail, LMS or whatever means is convenient for you.
 					</p>
@@ -642,7 +616,7 @@ https://github.com/someLocation/GitKit-FarmData2
 				</li>
 				<li>
 					<p>
-						Please consider clicking the link to the brief survey that is included in the output of the GitKit deployer. Your feedback  helps us to better understand where and how the GitKit is being used. This survey can also be accessed <url href="https://drexel.qualtrics.com/jfe/form/SV_81y8BL0zy3fBw22">here</url>.
+						Please consider visiting the link to the brief survey that is included in the output of the GitKit deployer. Your feedback helps us to better understand where and how the GitKit is being used. This survey can also be accessed <url href="https://drexel.qualtrics.com/jfe/form/SV_81y8BL0zy3fBw22">here</url>.
 					</p>
 				</li>
 			</ol>
@@ -733,7 +707,7 @@ https://github.com/someLocation/GitKit-FarmData2
 		</p>
 			
 		<p>
-			For any kind of question, difficulty, suggestion, or suspected bug, <url href="https://discord.gg/83Sb4csCeT">chatting with us on Discord</url> is a great place to start.
+			For any kind of question, difficulty, suggestion, or suspected bug, <url href="https://discord.gg/83Sb4csCeT">chatting with us on Discord</url> is the place to start.
 		</p>
 
 		<p>
@@ -741,7 +715,7 @@ https://github.com/someLocation/GitKit-FarmData2
 		</p>
 
 		<p>
-			Active work on the deployer and the KitClients takes place in the <url href="https://gitlab.com/hfossedu/kits">Kits section</url> of the <url href="https://gitlab.com/hfossedu/kits">HFOSSedu GitLab Organization</url>.
+			Active work on the deployer and the KitClient takes place in the <url href="https://github.com/HFOSSedu">HFOSSedu Github Organization</url>. Work on HFOSS Kits more generally occurs in <url href="https://gitlab.com/hfossedu/kits">Kits section</url> of the <url href="https://gitlab.com/hfossedu/kits">HFOSSedu GitLab Organization</url>.
 		</p>
 	</subsection>
 </section>
