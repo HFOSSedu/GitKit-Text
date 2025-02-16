@@ -33,7 +33,7 @@
 
     <exercises>
     <title />
-    <exercise xml:id="ex-find-clone-url-linux-a" label="ex-find-clone-url-linux-a">
+    <exercise xml:id="ex-find-clone-url-a" label="ex-find-clone-url-a">
       <statement>
         <p>
           Visit the GitHub page for your origin repository.
@@ -48,7 +48,7 @@
       </hint>
     </exercise>
 
-    <exercise xml:id="ex-find-clone-url-linux-b" label="ex-find-clone-url-linux-b">
+    <exercise xml:id="ex-find-clone-url-b" label="ex-find-clone-url-b">
       <statement>
         <p>
           Find and click the green "Code" button.
@@ -61,7 +61,7 @@
       </statement>
     </exercise>
 
-    <exercise xml:id="ex-find-clone-url-linux-c" label="ex-find-clone-url-linux-c">
+    <exercise xml:id="ex-find-clone-url-c" label="ex-find-clone-url-c">
       <statement>
         <p>
           Open the "Local" and "HTTPS" tabs as shown here: <image source="images/ch-communities-and-collaboration/gitHubCloneURL.png" width="50%">
@@ -74,7 +74,7 @@
       </statement>
     </exercise>
 
-    <exercise xml:id="ex-clone-url-linux" label="ex-clone-url-linux">
+    <exercise xml:id="ex-clone-url" label="ex-clone-url">
       <statement>
         <p>
           Copy and paste the clone URL that you will use to clone your origin as your answer to this exercise.
@@ -140,7 +140,7 @@
 <exercises>
 <title />
   
-<exercise xml:id="ex-clone-origin-linux" label="ex-clone-origin-linux">
+<exercise xml:id="ex-clone-origin" label="ex-clone-origin">
   <statement>
     <p>
       The <c>git clone &lt;URL&gt;</c> command is used to clone your origin repository into your development environment.
@@ -176,21 +176,21 @@
 
   <feedback>
     <p>
-      Be sure to replace <c>&lt;URL&gt;</c> with the clone URL you found in <xref ref="ex-clone-url-linux" />. The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.  
+      Be sure to replace <c>&lt;URL&gt;</c> with the clone URL you found in <xref ref="ex-clone-url" />. The clone URL should have the format <c>https://github.com/yourGitHubUsername/theRepoName.git</c>.  
     </p>
   </feedback>
   </condition> </var> </setup>
 </exercise>
-<exercise xml:id="ex-clone-origin-linux-a" label="ex-clone-origin-linux-a">
+<exercise xml:id="ex-clone-origin-a" label="ex-clone-origin-a">
   <p>
-    Execute your command from <xref ref="ex-clone-origin-linux" /> in your terminal.
+    Execute your command from <xref ref="ex-clone-origin" /> in your terminal.
   </p>
 </exercise>
 
-<exercise xml:id="ex-clone-origin-linux-b" label="ex-clone-origin-linux-b">
+<exercise xml:id="ex-clone-origin-b" label="ex-clone-origin-b">
           <statement>
             <p>
-              Which of the following appear in the output from entering the command from <xref ref="ex-clone-origin-linux-a" />?
+              Which of the following appear in the output from entering the command from <xref ref="ex-clone-origin-a" />?
             </p>
           </statement>
 
@@ -240,10 +240,10 @@
         </hint>
 </exercise>
 
-<exercise xml:id="ex-clone-origin-linux-c" label="ex-clone-origin-linux-c">
+<exercise xml:id="ex-clone-origin-c" label="ex-clone-origin-c">
           <statement>
             <p>
-              Which line of output from entering the command from <xref ref="ex-clone-origin-linux-a" /> indicates the directory into which the repository was cloned?
+              Which line of output from entering the command from <xref ref="ex-clone-origin-a" /> indicates the directory into which the repository was cloned?
             </p>
           </statement>
 
@@ -293,21 +293,21 @@
   </hint>
 </exercise>
 
-<exercise xml:id="ex-clone-origin-linux-d" label="ex-clone-origin-linux-d">
+<exercise xml:id="ex-clone-origin-d" label="ex-clone-origin-d">
   <statement>
     <p>
-      Use the <c>ls</c> command to confirm that the directory you identified in <xref ref="ex-clone-origin-linux-c" /> now exists.
+      Use the <c>ls</c> command to confirm that the directory you identified in <xref ref="ex-clone-origin-c" /> now exists.
     </p>
 
     <p>
-      If it it does not, check the output in <xref ref="ex-clone-origin-linux-b" /> for error messages and try <xref ref="ex-clone-origin-linux-a" /> again.
+      If it it does not, check the output in <xref ref="ex-clone-origin-b" /> for error messages and try <xref ref="ex-clone-origin-a" /> again.
     </p>
   </statement>
 </exercise>
 </exercises>
 </subsection>
 
-<subsection xml:id="topic-explore-clone-linux">
+<subsection xml:id="topic-explore-clone">
   <title>Exploring Your Cloned Repository In Your Development Environment</title>
   
     <p>
@@ -316,19 +316,19 @@
 
 <exercises>
 <title />
-<exercise xml:id="ex-explore-clone-linux-a" label="ex-explore-clone-linux-a">
+<exercise xml:id="ex-explore-clone-a" label="ex-explore-clone-a">
   <statement>
       <p>
         Use the <c>cd</c> command in the Terminal to change into the directory containing your clone of the GitKit FarmData2 repository.
       </p>
 
       <p>
-        See <xref ref="ex-clone-origin-linux-c" /> for the name of the directory.
+        See <xref ref="ex-clone-origin-c" /> for the name of the directory.
       </p>
   </statement>
 </exercise>
 
-  <exercise xml:id="ex-explore-clone-linux-b" label="ex-explore-clone-linux-b">
+  <exercise xml:id="ex-explore-clone-b" label="ex-explore-clone-b">
     <statement>
       <p>
         Use the <c>ls -a</c> command to display the names of all of the files and directories in your clone of the GitKit FarmData2 repository.
@@ -633,7 +633,7 @@
   <title>Opening the GitKit FarmData2 Repository Folder</title>
   
   <p>
-    You cloned your fork of the GitKit FarmData2 upstream repository into a folder in your development environment with the command in <xref ref="ex-clone-origin-linux-a" />.
+    You cloned your fork of the GitKit FarmData2 upstream repository into a folder in your development environment with the command in <xref ref="ex-clone-origin-a" />.
   </p>
 
   <p>
@@ -663,7 +663,7 @@
   </statement>
   </exercise>
 
-  <exercise xml:id="ex-kit-tty-linux" label="ex-kit-tty-linux">
+  <exercise xml:id="ex-kit-tty" label="ex-kit-tty">
   <statement>
     <p>
       The the output in <xref ref="ex-open-repo-folder" /> should contain a message from the <term>Kit-tty</term>.

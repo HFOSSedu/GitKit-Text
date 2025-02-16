@@ -175,7 +175,7 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-clone-url-linux" /> 
+              <xref ref="ex-clone-url" /> 
             </p>
           </em>
           <p>
@@ -185,7 +185,7 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-clone-origin-linux" /> 
+              <xref ref="ex-clone-origin" /> 
             </p>
           </em>
           <p>
