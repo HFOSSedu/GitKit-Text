@@ -114,7 +114,6 @@
         </hint>
       </task>
 
-
       <task xml:id="ex-explore-the-issue-tracker-b" label="ex-explore-the-issue-tracker-b" >
         <statement>
           <p>
@@ -281,12 +280,11 @@
             </statement>
           </choice>
         </choices>
-
         <hint>
           <p>
-            Find the "Sort" drop-down in the issue tracker and see what "Sort by" options there are.
+            Find the sort drop-down (which will be headed either "Newest" or "Oldest" depending on how it was last set) in the issue tracker and see what sort by options are available.
           </p>
-        </hint>
+        </hint>  
       </task>
 
 
