@@ -51,28 +51,28 @@
       
       <setup>
         <var>
-          <condition string="^https://github.com/((?!(yourClass|theRepoName|FarmData2/FarmData2|DickinsonCollege/FarmData2))).*$">
+          <condition string="^https://github\.com/(?!(yourClass|theRepoName|FarmData2/FarmData2|DickinsonCollege/FarmData2)).*$">
             <feedback>
               <p>
                 Thank you.
               </p>
             </feedback>
           </condition>
-          <condition string="^https://github.com/DickinsonCollege/FarmData2">
+          <condition string="^https://github\.com/DickinsonCollege/FarmData2">
             <feedback>
               <p>
                 Looks like you might be trying to use the real FarmData2 upstream. Be sure to use the URL that your instructor has given you.
               </p>
             </feedback>
           </condition>
-          <condition string="^https://github.com/FarmData2/FarmData2">
+          <condition string="^https://github\.com/FarmData2/FarmData2">
             <feedback>
               <p>
                 Looks like you might be trying to use the real FarmData2 upstream. Be sure to use the URL that your instructor has given you.
               </p>
             </feedback>
           </condition>
-          <condition string="^https://github.com/yourClass/theRepoName">
+          <condition string="^https://github\.com/yourClass/theRepoName">
             <feedback>
               <p>
                 Looks like you might be trying to use the example above. That was just for illustration. Be sure to use the URL that your instructor has given you.
@@ -156,28 +156,28 @@
 
       <setup>
         <var>
-          <condition string="^https://github.com/((?!(yourGitHub|theRepoName|FarmData2/FarmData2|DickinsonCollege/FarmData2))).*$">
+          <condition string="^https://github\.com/(?!(yourGitHub|theRepoName|FarmData2/FarmData2|DickinsonCollege/FarmData2)).*$">
             <feedback>
               <p>
                 Thank you.
               </p>
             </feedback>
           </condition>
-          <condition string="^https://github.com/DickinsonCollege/FarmData2">
+          <condition string="^https://github\.com/DickinsonCollege/FarmData2">
             <feedback>
               <p>
                 Looks like you might be giving the URL of the real FarmData2 upstream. Be sure to give the URL of the fork you created in your GitHub space.
               </p>
             </feedback>
           </condition>
-          <condition string="^https://github.com/FarmData2/FarmData2">
+          <condition string="^https://github\.com/FarmData2/FarmData2">
             <feedback>
               <p>
                 Looks like you might be trying to use the real FarmData2 upstream. Be sure to give the URL of the fork you created in your GitHub space.
               </p>
             </feedback>
           </condition>
-          <condition string="^https://github.com/yourGitHub/theRepoName$">
+          <condition string="^https://github\.com/yourGitHub/theRepoName">
             <feedback>
               <p>
                 Looks like you might be trying to use the example above. That was just for illustration. Be sure to use the URL that your instructor has given you.

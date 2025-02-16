@@ -38,7 +38,7 @@
           <var width="45" />
         </p>
       </statement>
-      <setup> <var> <condition string="^https://github.com/.+">
+      <setup> <var> <condition string="^https://github\.com/.+">
       <feedback>
         <p>
           Thank you.

@@ -84,20 +84,20 @@
           <var width="55" />
         </p>
       </statement>
-      <setup> <var> <condition string="^https://github.com/(?!(FarmData2|DickinsonCollege)).+/.+.git$">
+      <setup> <var> <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
       <feedback>
         <p>
           Thank you.
         </p>
       </feedback>
-      </condition> <condition string="^https://github.com/DickinsonCollege/.+.git">
+      </condition> <condition string="^https://github\.com/DickinsonCollege/.+\.git">
 
       <feedback>
         <p>
           It looks like you might be trying to use the upstream repository instead of your origin.
         </p>
       </feedback>
-      </condition> <condition string="^https://github.com/FarmData2/.+.git">
+      </condition> <condition string="^https://github\.com/FarmData2/.+\.git">
 
       <feedback>
         <p>
@@ -152,20 +152,20 @@
       <var width="65" />
     </p>
   </statement>
-  <setup> <var> <condition string="^https://github.com/(?!(FarmData2|DickinsonCollege)).+/.+.git$">
+  <setup> <var> <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
   <feedback>
     <p>
       Thank you.
     </p>
   </feedback>
-  </condition> <condition string="^https://github.com/DickinsonCollege/.+.git">
+  </condition> <condition string="^https://github\.com/DickinsonCollege/.+\.git">
 
   <feedback>
     <p>
       It looks like you might be trying to use the upstream repository instead of your origin.
     </p>
   </feedback>
-  </condition> <condition string="^https://github.com/FarmData2/.+.git">
+  </condition> <condition string="^https://github\.com/FarmData2/.+\.git">
 
   <feedback>
     <p>

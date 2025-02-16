@@ -238,13 +238,6 @@
             <condition string=".*">
               <feedback>
                 <p>
-                  Review the format of the <c>git merge</c> command above.
-                </p>
-              </feedback>
-            </condition>
-            <condition string=".*">
-              <feedback>
-                <p>
                   The command you want is in <xref ref="ex-merge-main-into-had-pig" />.
                 </p>
               </feedback>

@@ -64,6 +64,13 @@
               </p>
             </feedback>
           </condition>
+          <condition string=".*">
+            <feedback>
+              <p>
+                Check the format of your <c>git stage</c> command.
+              </p>
+            </feedback>
+          </condition>
         </var>
       </setup>
       <hint>

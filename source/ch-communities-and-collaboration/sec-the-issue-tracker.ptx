@@ -472,13 +472,21 @@
           <var width="60" />
         </p>
       </statement>
-      <setup> <var> <condition string="^https://github.com/.+/issues/[0-9]+$">
+      <setup> <var> <condition string="^https://github\.com/(?!(my-class/GitKit-FarmData2|FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/issues/[0-9]+$">
       <feedback>
         <p>
           Thank you.
         </p>
       </feedback>
-      </condition> <condition string=".*">
+      </condition> 
+      <condition string="https://github\.com/my-class/GitKit-FarmData2/issues/2">
+        <feedback>
+          <p>
+            Looks like you are trying to use the example above. Be sure to use the URL for your actual issue.
+          </p>
+        </feedback>
+      </condition>
+      <condition string=".*">
 
       <feedback>
         <p>
