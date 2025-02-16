@@ -630,10 +630,10 @@
   </subsection>
 
 <subsection xml:id="topic-open-repo-folder">
-  <title>Opening the GitKit-FarmData2 Repository Folder</title>
+  <title>Opening the GitKit FarmData2 Repository Folder</title>
   
   <p>
-  You cloned your GitKit-FarmData2 respitory into a folder in your development environment with the command in <xref ref="ex-clone-origin-linux-a" />.
+    You cloned your fork of the GitKit FarmData2 upstream repository into a folder in your development environment with the command in <xref ref="ex-clone-origin-linux-a" />.
   </p>
 
   <p>
@@ -646,7 +646,7 @@
   <exercise xml:id="ex-open-repo-folder" label="ex-open-repo-folder">
   <statement>
     <p>
-      Open the GitKit-FarmData2 folder.
+      Open your clone of the GitKit FarmData2 repository.
     </p>
     <p>
       You can do this by going to the "hamburger" (&#8801;) menu in the upper left of your development environment window.
@@ -655,7 +655,7 @@
       Choose <c>File > Open Folder...</c>
     </p>
     <p>
-      Select the <c>GitKit-FarmData2</c> folder and click <c>OK</c>.
+      Select the folder containing your clone of the <c>GitKit FarmData2</c> and click <c>OK</c>.
     </p>
     <p>
       You will see <c>Setting up your Codespace</c>, and then your terminal will show a message from the <term>Kit-tty</term>.
