@@ -373,7 +373,7 @@
           <choice>
           <statement>
             <p>
-              The feature branch can be merged automatically because there all of the changes are non-conflicting.
+              The feature branch can be merged automatically because all of the changes are non-conflicting.
             </p>
           </statement>
           <feedback>
@@ -516,7 +516,7 @@
         xml:id="ex-merge-conflict-2-computation" label="ex-merge-conflict-2-computation">
         <statement>
           <p>
-            Study the program in <xref ref="fig-merge-conflicts-2" />. Then choose the statement below that best describes the computation the program is trying to perform. gNote: The <c>**</c> operator indicates exponentiation, so <c>x**2</c> computes x squared.  
+            Study the program in <xref ref="fig-merge-conflicts-2" />. Then choose the statement below that best describes the computation the program is trying to perform. Note: The <c>**</c> operator indicates exponentiation, so <c>x**2</c> computes x squared.  
           </p>
         </statement>
         <choices randomize="yes">
@@ -695,7 +695,7 @@
           <choice correct="yes">
             <statement>
               <p>
-                The feature branch can be merged automatically because there all of the changes are non-conflicting.
+                The feature branch can be merged automatically because all of the changes are non-conflicting.
               </p>
             </statement>
             <feedback>

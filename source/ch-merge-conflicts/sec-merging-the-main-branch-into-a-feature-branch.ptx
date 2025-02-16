@@ -252,7 +252,9 @@
           </var>
         </setup>
         <hint>
-          Be sure you are using your GitHub origin repository (see <xref ref="ex-fork-url" />). This clone URL should contain your GitHub username and end in <c>.git</c>.
+          <p>
+            Review what you did in <xref ref="ex-merge-main-into-had-pig" />.
+          </p>
         </hint>
       </exercise>
 
@@ -261,7 +263,7 @@
         label="ex-merge-main-into-feature">
         <introduction>
           <p>
-            Now let's try top merge the changes in the <c>main</c> branch into your feature branch.
+            Now let's try to merge the changes in the <c>main</c> branch into your feature branch.
           </p>
         </introduction>
         <task>

@@ -45,7 +45,7 @@
       <task>
         <statement>
           <p>
-            Use the following command to get this feature branch from the upstream into your local repo: <c>git fetch upstream merge-conflict-practice</c>
+            Ensure that you are in the directory for your GitKit FarmData2 repository.  Then use the following command to get this feature branch from the upstream into your local repo: <c>git fetch upstream merge-conflict-practice</c>
           </p>
         </statement>
       </task>
@@ -252,7 +252,7 @@
           </p>
         </statement>
         <choices randomize="no">
-          <choice correct="yes">
+          <choice>
             <statement>
               <p>
                 1
@@ -264,7 +264,7 @@
               </p>
             </feedback>
           </choice>
-          <choice>
+          <choice correct="yes">
             <statement>
               <p>
                 2
@@ -344,7 +344,7 @@
       </blocks>
     </exercise>
 
-    <exercise xml:id="ex-extra-practice-do-it" label="ex-extra-practice-merging-do-it">
+    <exercise xml:id="ex-extra-practice-pr-link" label="ex-extra-practice-pr-link">
       <statement>
         <p>
           Carry out the steps you identified above in <xref ref="ex-extra-practice-resolving-conflicts" /> and give a link to your pull request.
@@ -355,8 +355,7 @@
       </statement>
       <setup> 
         <var> 
-          <condition string='^https://github\.com/DickinsonCollege/FarmData2).)/pulls[0-9]+$'>
-        
+          <condition string="^https://github\.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2)).*/pulls/[0-9]+$">
             <feedback>
               <p>
                 Thank you.
@@ -366,7 +365,7 @@
           <condition string=".*">
             <feedback>
               <p>
-                Be sure that your URL is from your pull request to the upstream repository.
+                Be sure that your URL is from your pull request to the upstream repository.  It should have the format <c>https://github.com/upstreamLocation/upstreamReop/pulls/xx</c>, where <c>xx</c> is a number.
               </p>
             </feedback>
           </condition>
