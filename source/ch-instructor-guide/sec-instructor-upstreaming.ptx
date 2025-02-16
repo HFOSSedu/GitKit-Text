@@ -7,7 +7,7 @@
   <title>Working Locally and Upstreaming Changes Instructor Notes</title>
   <introduction>
     <p>
-      This chapter focuses on the upstreaming process.  Students learn about feature branches, staging and committing changes, pushing feature branches to their origin repository, and making a pull request. At the end of the hands-on activity each student will have experienced the full forking workflow, resulting in a pull request to the upstream GitKit-FarmData2 repository for changes that fix the "Round 1" issue that they were assigned.  The "Round 1" issues have been created such that they do not conflict with each other.  Thus, all of the student pull requests should be able to be merged automatically.  The instructor will typically perform these merges as a demonstration at the start of <xref ref="topic-staying-synchronized" />.
+      This chapter focuses on the upstreaming process.  Students learn about feature branches, staging and committing changes, pushing feature branches to their origin repository, and making a pull request. At the end of the hands-on activity each student will have experienced the full forking workflow, resulting in a pull request to the upstream GitKit-FarmData2 repository for changes that fix the "Round 1" issue that they were assigned.  The "Round 1" issues have been created such that they do not conflict with each other.  Thus, all of the student pull requests should be able to be merged automatically.  The instructor will typically perform these merges as a demonstration at the start of the class introducing <xref ref="topic-staying-synchronized" />.
     </p>
     <p>
       The exercises in this chapter have the students perform the following major tasks:
@@ -138,11 +138,11 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-understanding-project-history" /> 
+              <xref ref="subsec-understanding-git-log-output" /> 
             </p>
           </em>
           <p>
-            If a student is seeing commit dates, usernames and messages that differ from the correct answers then it is likely that they created their fork after PRs were merged at the start of <xref ref="topic-staying-synchronized" />.  Other than difficulty answering these questions this will not cause an issue with continuing with this chapter. Issues will arise with the exercises in <xref ref="topic-staying-synchronized"/> and <xref ref="topic-resolving-a-merge-conflict"/>. Each of those chapters provide the students with instructions for resolving the issues at the point where they arise.
+            If a student is seeing commit dates, usernames and messages that differ from the correct answers then it is likely that they created their fork after PRs were merged at the start of <xref ref="topic-staying-synchronized" />.  Other than difficulty answering these questions this will not cause an issue with continuing with this chapter. Issues will arise with the exercises in <xref ref="topic-staying-synchronized"/> and <xref ref="topic-resolving-a-merge-conflict"/>. Each of those locations provide the students with instructions for resolving the issues at the point where they arise.
           </p>
         </li>
         <li>
@@ -153,16 +153,6 @@
           </em>
           <p>
             The <code>git status</code> command here should show one untracked file with modifications and that file should agree with the file that they identified in <xref ref="ex-claimed-issue-url" />.
-          </p>
-        </li>
-        <li>
-          <em>
-            <p>
-              <xref ref="ex-committing-changes-d" />
-            </p>
-          </em>
-          <p>
-            This question is a good checkpoint to ensure that they have done things correctly to this point.  The most recent commit in the <code>git log</code> output should show that they committed changes to the correct file (i.e. the one from <xref ref="ex-claimed-issue-url" />) and that they have used a meaningful commit message.
           </p>
         </li>
         <li>

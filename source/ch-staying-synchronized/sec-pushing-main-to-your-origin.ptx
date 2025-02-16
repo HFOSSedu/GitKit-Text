@@ -4,106 +4,120 @@
   <title>Pushing <c>main</c> to Your Origin</title>
 
   <exercises>
-  <title />
-  <exercise xml:id="ex-synching-main-to-origin" label="ex-synching-main-to-origin">
+    <title />
     <introduction>
       <p>
-        Your local main branch is now in synch with the upstream main branch.
-        What’s left is to also synch the main branch in your origin repo.
+        Your local <c>main</c> branch is now in synch with the upstream <c>main</c> branch. However, the updates that you pulled into your local <c>main</c> branch are not yet in your origin repository. The exercises in this section will guide you the process of getting them there.
       </p>
     </introduction>
 
-
-    <task xml:id="ex-synching-main-to-origin-a" label="ex-synching-main-to-origin-a">
+    <exercise xml:id="ex-synching-main-to-origin-a" label="ex-synching-main-to-origin-a">
       <statement>
         <p>
           Recall that you previously used the
-        </p>
-
-        <p>
-          <c> git push &lt;remote repo name&gt; &lt;branch&gt; </c>
-        </p>
-
-        <p>
+          <c> git push &lt;remote&gt; &lt;branch&gt; </c>
           command to push your feature branch from your local repo to your origin repo.
-          Use the <c>git push</c> command to push the <c>main</c> branch of your local repo to your remote <c>origin</c> repo.
+        </p>
+        <p>
+          Give a <c>git push</c> command that will push the <c>main</c> branch of your local repo to your remote <c>origin</c> repo.
+        </p>
+        <p>
+          <var width="45" />
         </p>
       </statement>
-    </task>
-
-
-    <task xml:id="ex-synching-main-to-origin-b" label="ex-synching-main-to-origin-b">
-      <statement>
+      <setup> <var> <condition string="^git push origin main$">
+      <feedback>
         <p>
-          Examine the output from <xref ref="ex-synching-main-to-origin-a"/>.
-          You should see a lot of information about deltas and objects.
-          Those are terms related to the inner workings of git that we will not worry about.
-          If you don’t see this information about deltas and objects but see an error message instead, revisit <xref ref="ex-synching-main-to-origin-a"/> and try again.
+          Thank you.
         </p>
+      </feedback>
+      </condition> <condition string=".*">
 
+      <feedback>
         <p>
-          The last two lines of the output in part a should contain some recognizable information.
-          What do you think that these lines are telling you?
+          Please give the full <c>git push</c> command using the format indicated in the question.
+          Be sure not to leave in the &lt; and &gt; symbols.
+          Replace the words remote and branch with the appropriate names.
         </p>
-      </statement>
+      </feedback>
+      </condition> </var> </setup>
+    </exercise>
 
-
-      <choices randomize="yes">
-        <choice correct="yes">
-          <statement>
-            <p>
-              The URL of your origin on GitHub.
-            </p>
-          </statement>
-        </choice>
-
-        <choice correct="yes">
-          <statement>
-            <p>
-              The name of the branch pushed to GitHub.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              The URL of the upstream repository on GitHub.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              A list of all the files changed in the local repository.
-            </p>
-          </statement>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              A list of all the branches in the local repository.
-            </p>
-          </statement>
-        </choice>
-      </choices>
-
-      <hint>
+    <exercise xml:id="ex-synching-main-to-origin-b" label="ex-synching-main-to-origin-b">
+      <introduction>
         <p>
-          Only look at the last two lines, the one that starts with "To" and the one that starts with a SHA code.
+          Run the <c>git push</c> command you wrote in <xref ref="ex-synching-main-to-origin-a"/> in the Terminal and examine the output.
         </p>
-      </hint>
-    </task>
-  </exercise>
+      </introduction>
 
-  <conclusion>
-    <p>
-      As with most things related to Git and GitHub, there are a number of different ways to synchronize.
-      For example, you can also fetch the changes from the upstream main to your origin and then pull them from there to your local repository.
-      If you are curious, you can check out this GitHub link: <url href="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork" visual="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">Syncing a fork</url>
-    </p>
-  </conclusion>
+      <task xml:id="ex-synch-push-output-error">
+        <statement>
+        <p>
+          Examine the output from your <c>git push</c> command.
+          You should see a lot of information about <em>deltas</em> and <em>objects</em>. Those are terms related to the inner workings of Git that we will not worry about.
+        </p>
+        <p>
+          If you don't see information about deltas and objects but see an error message instead, revisit <xref ref="ex-synching-main-to-origin-a"/> and try again.
+        </p>
+        </statement>
+      </task>
+
+      <task xml:id="ex-synch-push-output-info" label="ex-synch-push-output-info">
+        <statement>
+          <p>
+            The last two lines of the output should contain some recognizable information. What do you think that these lines are telling you?
+          </p>
+        </statement>
+        <choices randomize="yes">
+          <choice correct="yes">
+            <statement>
+              <p>
+                The URL of your origin on GitHub.
+              </p>
+            </statement>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                The name of the branch that you pushed to GitHub.
+              </p>
+            </statement>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The URL of the upstream repository on GitHub.
+              </p>
+            </statement>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                A list of all the files changed in the local repository.
+              </p>
+            </statement>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                A list of all the branches in the local repository.
+              </p>
+            </statement>
+          </choice>
+        </choices>
+        <hint>
+          <p>
+            Only look at the last two lines, the one that starts with "To" and the one that starts with a SHA code.
+          </p>
+        </hint>
+      </task>
+    </exercise>
   </exercises>
+
+  <p>
+    As with most things related to Git and GitHub, there are a number of different ways to synchronize.
+    For example, you can also fetch the changes from the upstream main to your origin and then pull them from there to your local repository.
+    If you are curious, you can check out this GitHub link: <url href="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork" visual="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork">Syncing a fork</url>
+  </p>
+
 </section>

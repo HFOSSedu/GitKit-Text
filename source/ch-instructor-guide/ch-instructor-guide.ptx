@@ -7,28 +7,23 @@
 
   <introduction>
     <p>
-      The GitKit provides an introduction to the fundamental skills and concepts used in collaborative Free and Open Source Software (FOSS) development.
-      It introduces Git and GitHub basics, and gives learners the experience of using the <url href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</url> to contribute to a FOSS project.
-    </p>
-
-    <p>
-      The GitKit is designed for use as a module within a traditional course to provide a first exposure to Git and GitHub.
-      It includes classroom materials, hands-on activities for labs or homework, project artifacts (repository, code, documentation, issues) captured from a genuine FOSS project, and a cloud-based development environment.
-      The classroom materials focus on the introduction of concepts and terminology.
-      The hands-on activities reinforce the in-class material while guiding learners through the forking workflow in the context of an authentic FOSS project.
-      The activities are structured such that each new Git command and GitHub operation is introduced as the need for it arises in the forking workflow.
-    </p>
-
-    <p>
-      The GitKit minimizes prerequisite knowledge and hardware requirements.
-      Learners are expected to have basic familiarity with files, directories and the Unix/Linux command line (e.g.
-      <c>cd</c> and <c>ls</c>). Hands-on activities focus on small changes to documentation in markdown files, and require no prior knowledge of markdown or any programming language.
-      The cloud-based development environment requires an internet connection and a modern web browser.
+      The GitKit provides an introduction to the fundamental skills and concepts used in collaborative Free and Open Source Software (FOSS) development. It introduces Git and GitHub basics, and gives learners the experience of using the <url href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</url> to contribute to a FOSS project.
     </p>
 
 		<p>
-			If you have questions about the GitKit, need help getting setup to use it in a class, or have feedback for us, please <url href="https://discord.gg/83Sb4csCeT">chat with us on Discord.</url> 
+			If at any point you have questions about the GitKit, need help getting setup to use it in a class, or have feedback for us, please <url href="https://discord.gg/83Sb4csCeT">chat with us on Discord.</url> 
 		</p>
+
+    <p><alert>GitKit Use</alert></p>
+
+    <p>
+      The GitKit is designed for use as a module within a traditional course to provide a first exposure to Git and GitHub.
+      It includes classroom materials, hands-on activities for labs or homework, project artifacts (repository, code, documentation, issues) captured from a genuine FOSS project, and a cloud-based development environment. The classroom materials focus on the introduction of concepts and terminology. The hands-on activities reinforce the in-class material while guiding learners through the forking workflow in the context of an authentic FOSS project. The activities are structured such that each new Git command and GitHub operation is introduced as the need for it arises in the forking workflow.
+    </p>
+
+    <p>
+      The GitKit minimizes prerequisite knowledge and hardware requirements. Learners are expected to have basic familiarity with files, directories and the Unix/Linux command line (e.g. <c>cd</c> and <c>ls</c>). Hands-on activities focus on small changes to documentation in markdown files, and require no prior knowledge of markdown or any programming language. The cloud-based development environment requires an internet connection and a modern web browser.
+    </p>
   </introduction>
   
   <!-- include sections -->

@@ -174,35 +174,32 @@
       <ul>
         <li>
           <em>
-            <p component="linux-kit-client">
-              <xref ref="ex-find-clone-url-linux" /> 
-            </p>
-            <p component="vscode-kit-client">
-              <xref ref="ex-create-kit-client-vscode-b" />
+            <p>
+              <xref ref="ex-clone-url-linux" /> 
             </p>
           </em>
           <p>
-            Some students will try to clone the upstream GitKit-FarmData2 repository instead of their origin repository.  A few may even attempt to clone the real FarmData2 repository.  The Kit-tty should prevent this and provide a helpful tip.
+            Some students will give the URL of the upstream GitKit-FarmData2 repository for the course instead of their origin repository.  A few may even give the URL of a real FarmData2 upstream repository.
           </p>
         </li>
         <li>
           <em>
             <p>
-              <xref ref="ex-check-remotes" /> 
+              <xref ref="ex-clone-origin-linux" /> 
+            </p>
+          </em>
+          <p>
+            Some students will try to clone the upstream GitKit-FarmData2 repository for the course or even give the URL of a real FarmData2 upstream repository.
+          </p>
+        </li>
+        <li>
+          <em>
+            <p>
+              <xref ref="ex-check-remotes-b" /> 
             </p>
           </em>
           <p>
             Checking the origin remote that is given as the answer to this question will confirm that the student has correctly cloned their origin.  Again, the Kit-tty should prevent them doing this incorrectly, but if somehow it did not catching and correcting this early is important.
-          </p>
-        </li>
-        <li>
-          <em>
-            <p>
-              <xref ref="ex-identifying-assigned-issues" />
-            </p>
-          </em>
-          <p>
-            The answer to this question will reasonably differ depending upon when students complete the exercise.  There are initially 3 issues that are pre-assigned to the user that deployed the GitKit.  Students who complete the exercise early are likely to all identify these issues. As additional students claim issues, other students will identify those claimed issues as well.
           </p>
         </li>
         <li>
