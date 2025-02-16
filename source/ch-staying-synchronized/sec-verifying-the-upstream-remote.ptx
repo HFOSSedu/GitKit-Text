@@ -180,10 +180,17 @@
         </task>
       </exercise>
 
-      <exercise xml:id="ex-origin-in-figure" label="ex-origin-in-figure">
+      <exercise xml:id="ex-remotes-in-figure" label="ex-remotes-in-figure">
+        <introduction>
+          <p>
+            The remotes you just examined with <c>git remote -v</c> are also represented in <xref ref="fig-synching-with-upstream" />.
+          </p>
+        </introduction>
+
+      <task xml:id="ex-origin-in-figure" label="ex-origin-in-figure">
         <statement>
           <p>
-            What in <xref ref="fig-changes-merged-into-upstream" /> represents the origin Git remote that is associated with your local repository?
+            How is the origin Git remote associated with your local repository represented in the figure?
           </p>
         </statement>
         <choices randomize="yes">
@@ -241,12 +248,12 @@
             Look at the diagram again. The origin Git remote will be associated with your local repo and will indicate where the origin repository is located.
           </p>
         </hint>
-      </exercise>
+      </task>
 
-      <exercise xml:id="ex-upstream-in-figure" label="ex-upstream-in-figure">
+      <task xml:id="ex-upstream-in-figure" label="ex-upstream-in-figure">
         <statement>
           <p>
-            You just added the upstream Git remote to your local repository.  How is this Git remote represented in <xref ref="fig-synching-with-upstream" />?
+            How is the upstream Git remote represented associated with your local repo represented in the figure?
           </p>
         </statement>
         <choices randomize="yes">
@@ -316,6 +323,7 @@
             Look at the diagram again. The upstream Git remote will be associated with your local repo and will indicate where the upstream repository is located.
           </p>
         </hint>
+        </task>
       </exercise>
     </exercises>
   </subsection>
