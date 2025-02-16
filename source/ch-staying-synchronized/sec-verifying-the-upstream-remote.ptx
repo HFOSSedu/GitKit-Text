@@ -12,7 +12,7 @@
     <p>
       In <xref ref="fig-synching-with-upstream" /> a dotted orange line was added pointing from your local repository to the upstream. Git needs to have this information so that it can pull changes from the upstream into your local repository. In this section, you will see that the <term>upstream remote</term> provides this information.
     </p>
-  </introduction>
+  </introduction>git 
 
 
   <subsection xml:id="topic-restarting-dev_environment-synch">
@@ -329,58 +329,25 @@
   </subsection>
 
   <subsection xml:id="topic-setting-the-upstream" label="topic-setting-the-upstream">
-    <title>Adding the Upstream Remote</title>
+    <title>Adding an Upstream Remote</title>
 
     <introduction>
       <p>
-        Notice that the output from the <c>git remote -v</c> command did not include the location of the upstream repository. Thus, before you will be able to pull changes from the upstream into your local repository you will need to <term>set the upstream remote</term>. This will tell Git where the upstream repository is located.
+        As you saw in <xref ref="topic-understanding-remotes" /> your local repository contains an upstream remote that points to the upstream being used for your course.  This upstream was set automatically by the development environment when you opened your local repository.     
       </p>
       <p>
-        The exercises in this section will walk you through the process of setting the upstream remote.
+        Not all development environments are able to automatically set the upstream remote when you open your local repository.  The exercises in this section will walk you through how you can manually set the upstream remote if you need to.
       </p>
     </introduction>
 
-    <exercises>
-    <title/>
-    <exercise xml:id="ex-getting-upstream-url" label="ex-getting-upstream-url">
-      <statement>
-        <p>
-          Use your browser to navigate to the GitHub page for the <em>upstream Gitkit FarmData2 repo</em> that you are using for this course.  Hint: You can find the GitHub page for the upstream using the "forked from:" link at the top of the GitHub page for your origin repository.
-        </p>
-        <p>
-          Once you find the GitHub page for the upstream, you can get its URL by clicking the “Code” button and using the "Local" tab. This URL will end in <c>.git</c>.
-        </p>
-        <p>
-          Enter the URL of the upstream GitKit FarmData2 you are using for your course below.
-        </p>
-        <p>
-          <var width="45" />
-        </p>
-      </statement>
-      <setup> 
-        <var> 
-          <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
-            <feedback>
-              <p>
-                Looks good! But just to be sure, double check that this URL agrees with the one you gave in <xref ref="ex-upstream-url" />.
-              </p>
-            </feedback>
-          </condition> 
-          <condition string=".*">
-            <feedback>
-              <p>
-                Be sure you are copying the URL of the upstream for your class as given by your instructor.
-              </p>
-            </feedback>
-          </condition> 
-        </var>
-      </setup>
-    </exercise>
 
+    <exercises>
+      <title></title>
+      
     <exercise xml:id="ex-setting-upstream-remote" label="ex-setting-upstream-remote">
       <statement>
         <p>
-          The <c>git remote</c> command you used to display the Git remotes is also used to add a new Git remote.
+          The <c>git remote</c> command you used to display the Git remotes is also used to add new Git remotes.
         </p>
         <p>
           The format for this command is: <c>git remote add &lt;name&gt; &lt;URL&gt;</c>
@@ -397,7 +364,7 @@
           <condition string="^git remote add upstream https://github\.com/(?!(FarmData2|DickinsonCollege)).+/.+\.git$">
             <feedback>
               <p>
-                Looks good! But just to be sure, double check that the URL you used agrees with the one you gave in <xref ref="ex-getting-upstream-url" />.
+                Looks good! But just to be sure, double check that the URL you used agrees with the one you gave in <xref ref="ex-upstream-url" />.
               </p>
             </feedback>
           </condition> 
@@ -410,66 +377,20 @@
           </condition> 
         </var>
       </setup>
-    </exercise>
-
-    <exercise xml:id="ex-checking-upstream-remote" label="ex-checking-upstream-remote">
-      <statement>
+      <hint>
         <p>
-          Use the <c>git remote -v</c> command.
-          What do you see that confirms that you have successfully added the upstream Git remote?
+          The URL of the upstream for your class was given by your instructor and should be in <xref ref="ex-upstream-url" />.
         </p>
-      </statement>
-        <choices>
-          <choice>
-            <statement>
-              <p>
-                Two lines beginning with origin and giving the URL of the upstream repository.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The lines beginning with <c>origin</c> are the origin remote and give the URL of your origin repository.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                Two lines beginning with upstream and giving the URL of the upstream repository.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct! The URL of the upstream is where you will be pulling changes from.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              Neither of the above.
-            </statement>
-            <feedback>
-              <p>
-                One of the above answers is correct.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Think about the different between origin vs.
-            upstream.
-          </p>
-        </hint>
-      </exercise>
-
-
+      </hint>
+    </exercise>
       
     </exercises>
 
     <p>
-      Note that you will only need to set the upstream remote once for a repository.
-      Once the upstream remote is set you will be able to pull from the upstream repo as often as is necessary.
+      Note that if you are using a development environment that does not automatically set the upstream remote for you, you will still only need to set it once.  Once the upstream remote is set for a repository you will be able to pull from the upstream repo as often as is necessary.
+    </p>
+    <p>
+      It is also worth mention that there is nothing particularly special about the names of the remotes. The names origin and upstream are used by convention by most developers.  However, you could name your remotes anything you like and they would still work. 
     </p>
 
   </subsection>
