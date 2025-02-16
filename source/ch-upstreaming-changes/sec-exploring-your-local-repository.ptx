@@ -151,8 +151,7 @@
     <task xml:id="ex-understanding-project-history-new-aa" label="ex-understanding-project-history-new-aa">
       <statement>
         <p>
-          Ensure that you are in your cloned repo (i.e.
-          the <em>GitKit-FarmData2</em> directory is your working directory).
+          Ensure that you are in the directory containing your cloned GitKit FarmData2 repository (use the <c>cd</c> command if necessary).
           Then use the <c>git log</c> command from <xref ref="ex-understanding-project-history-new-a"/> to display the information about the 4 most recent commits.
           (If you don't see all four recent commits, press "return" or "spacebar" to see more; when you are done, press "q" to quit.)
         </p>
@@ -509,7 +508,7 @@
   <introduction>
     <p>
       The <c>git status</c> command provides the current status of your local repository.
-      Use the <c>git status</c> command to see the current status of your local <em>GitKit-FarmData2</em> repository.
+      Use the <c>git status</c> command to see the current status of your local GitKit FarmData2 repository.
     </p>
   </introduction>
 
