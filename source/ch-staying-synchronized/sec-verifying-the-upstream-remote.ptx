@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="topic-verifying-the-upstream-remote" xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Setting the Upstream Remote</title>
+  <title>The Upstream Remote</title>
 
   <introduction >
     <p>
-      Before you will be able to pull changes from the upstream you will need to tell your local repository where the upstream is.
+      Before you will be able to pull changes from the upstream your local repository will need to know where to find the upstream repository.
       In earlier figures (e.g. <xref ref="fig-changes-merged-into-upstream" />), there were dotted orange lines indicating that your local repository knew about your origin and that your origin knew about the upstream.
-      However, there was no orange dotted line from your local repository to the upstream. That is because, by default, your local repository isn’t aware of the upstream.
+      However, there was no orange dotted line from your local repository to the upstream. That is because, by default, your local repository does not know the location of the upstream repository.
     </p>
     <p>
-      In <xref ref="fig-synching-with-upstream" /> a dotted orange line was added pointing from your local repository to the upstream. Git will need this information so that it can pull changes from the upstream into your local repository. In this section, you will be adding this information by <term>setting the upstream remote</term>.
+      In <xref ref="fig-synching-with-upstream" /> a dotted orange line was added pointing from your local repository to the upstream. Git needs to have this information so that it can pull changes from the upstream into your local repository. In this section, you will see that the <term>upstream remote</term> provides this information.
     </p>
   </introduction>
 
@@ -73,14 +73,14 @@
       <exercise xml:id="ex-remotes-output" label="ex-remotes-output">
         <introduction>
           <p>
-            Examine the output of the <c>git remote -v</c> command from <xref ref="ex-listing-remotes" />.  You should see two lines labeled origin (fetch and push), that both show the same URL.
+            Examine the output of the <c>git remote -v</c> command.  You should see two lines labeled origin (fetch and push), and two lines labeled upstream (also fetch and push).
           </p>
         </introduction>
 
         <task xml:id="ex-checking-the-origin-remote" label="ex-checking-the-origin-remote">
           <statement>
             <p>
-              Where does the URL for the origin remote point?
+              Where does the URL associated with the origin remote point?
             </p>
           </statement>
           <choices randomize="yes">
@@ -123,61 +123,199 @@
           </choices>
           <hint>
             <p>
-              Look at the part of the origin remote's URL that comes after `github.com`. This part indicates where on GitHub the repository is located.  Is it in your GitHub space?
+              Look at the part of the origin remote's URL that comes after `github.com`. This part indicates where on GitHub the repository is located.
             </p>
           </hint>
         </task>
 
-        <task xml:id="ex-origin-in-figure" label="ex-origin-in-figure">
+        <task xml:id="ex-checking-the-upstream-remote" label="ex-checking-the-upstream-remote">
           <statement>
             <p>
-              What in <xref ref="fig-changes-merged-into-upstream" /> represents the origin Git remote that is associated with your local repository?
+              Where does the URL associated with the upstream remote point?
             </p>
           </statement>
           <choices randomize="yes">
             <choice correct="yes">
               <statement>
                 <p>
-                  The dotted orange arrow on the left that points from your local repository to the origin.
+                  It points to the GitKit FarmData2 repository that your instructor created for the course.
                 </p>
               </statement>
               <feedback>
                 <p>
-                  Correct.
+                  The repository that your instructor create is serving as the upstream repository.
                 </p>
               </feedback>
             </choice>
             <choice>
               <statement>
                 <p>
-                  The dotted orange arrow at the top that points from your origin repository to the upstream.
+                  It points to your copy of the GitKit FarmData2 repository that you forked from the upstream.
                 </p>
               </statement>
               <feedback>
                 <p>
-                  The arrow at the top represents a Git remote associated with your origin repository, not your local repository.
+                  Correct! The origin is your fork that is contained in your GitHub space.
                 </p>
               </feedback>
             </choice>
             <choice>
               <statement>
                 <p>
-                  The blue cylinder at the top left of the figure.
+                  It points to the repository for the live FarmData2 project.
                 </p>
               </statement>
               <feedback>
                 <p>
-                  The blue cylinders represent remote repositories. This question is asking about the Git remote.
+                  That repository would be the upstream if you were working on the live project.
                 </p>
               </feedback>
             </choice>
           </choices>
           <hint>
             <p>
-              Look at the diagram again. The origin Git remote will be associated with your local repo and will indicate where the origin repository is located.
+              Look at the part of the origin remote's URL that comes after `github.com`. This part indicates where on GitHub the repository is located.
             </p>
           </hint>
         </task>
+      </exercise>
+
+      <exercise xml:id="ex-origin-in-figure" label="ex-origin-in-figure">
+        <statement>
+          <p>
+            What in <xref ref="fig-changes-merged-into-upstream" /> represents the origin Git remote that is associated with your local repository?
+          </p>
+        </statement>
+        <choices randomize="yes">
+          <choice correct="yes">
+            <statement>
+              <p>
+                The dotted orange arrow on the left that points from your local repository to the origin.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The dotted orange arrow at the top that points from your origin repository to the upstream.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The arrow at the top represents a Git remote associated with your origin repository, not your local repository.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The blue cylinder at the top left of the figure.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The blue cylinder at the top right of the figure.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+        <hint>
+          <p>
+            Look at the diagram again. The origin Git remote will be associated with your local repo and will indicate where the origin repository is located.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise xml:id="ex-upstream-in-figure" label="ex-upstream-in-figure">
+        <statement>
+          <p>
+            You just added the upstream Git remote to your local repository.  How is this Git remote represented in <xref ref="fig-synching-with-upstream" />?
+          </p>
+        </statement>
+        <choices randomize="yes">
+          <choice correct="yes">
+            <statement>
+              <p>
+                The dotted orange arrow on the right that points from your local repository to the upstream.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Correct.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The dotted orange arrow on the left that points from your local repository to the origin.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The arrow on the left represents the origin Git remote.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The dotted orange arrow at the top that points from your origin repository to the upstream.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The arrow at the top represents a Git remote associated with your origin repository, not your local repository.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The blue cylinder at the top left of the figure.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+              </p>
+            </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>
+                The blue cylinder at the top right of the figure.
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                The blue cylinders represent remote repositories. This question is asking about the Git remote.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+        <hint>
+          <p>
+            Look at the diagram again. The upstream Git remote will be associated with your local repo and will indicate where the upstream repository is located.
+          </p>
+        </hint>
       </exercise>
     </exercises>
   </subsection>
@@ -318,68 +456,7 @@
       </exercise>
 
 
-      <exercise xml:id="ex-upstream-in-figure" label="ex-upstream-in-figure">
-        <statement>
-          <p>
-            You just added the upstream Git remote to your local repository.  How is this Git remote represented in <xref ref="fig-synching-with-upstream" />?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                The dotted orange arrow on the right that points from your local repository to the upstream.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                The dotted orange arrow on the left that points from your local repository to the origin.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The arrow on the left represents the origin Git remote.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                The dotted orange arrow at the top that points from your origin repository to the upstream.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The arrow at the top represents a Git remote associated with your origin repository, not your local repository.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                The blue cylinder at the top right of the figure.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The blue cylinders represent remote repositories. This question is asking about the Git remote.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Look at the diagram again. The upstream Git remote will be associated with your local repo and will indicate where the upstream repository is located.
-          </p>
-        </hint>
-      </exercise>
+      
     </exercises>
 
     <p>
