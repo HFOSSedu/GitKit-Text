@@ -87,35 +87,7 @@
           The questions in this exercise will help you to better understand what this information means.
         </p>
       </introduction>
-      <!--
-      <task xml:id="ex-pull-request-b-i" label="ex-pull-request-b-i">
-        <introduction>
-          <p>
-            Copy the URLs from the gray bar into the textboxes below.
-          </p>
-        </introduction>
-
-
-        <task xml:id="ex-pull-request-b-i-a" label="ex-pull-request-b-i-a">
-          <statement>
-            <p>
-              Base Repository
-            </p>
-          </statement>
-          <response />
-        </task>
-
-
-        <task xml:id="ex-pull-request-b-i-b" label="ex-pull-request-b-i-b">
-          <statement>
-            <p>
-              Head Repository
-            </p>
-          </statement>
-          <response />
-        </task>
-      </task>
-      -->
+ 
       <task xml:id="ex-pull-request-b-ii" label="ex-pull-request-b-ii">
         <statement>
           <p>
@@ -154,7 +126,7 @@
         <hint>
           <p>
             The base is where you want your changes merged into.
-            The head is where your changes are being pulled from.
+            The compare is where your changes are being pulled from.
           </p>
         </hint>
       </task>
@@ -264,7 +236,7 @@
       </p>
     </statement>
     <setup> <var> <condition string='^https://github.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2))(.+/.+)/pull/[0-9]+$'>
-    </feedback>
+    <feedback></feedback>
     </condition> <condition string=".*">
 
     <feedback>
@@ -305,9 +277,6 @@
         It also indicates the changes you have made.
         The project maintainers will often use this diff to see the details of what you have changed.
       </p>
-      <!--
-      <task xml:id="ex-pull-request-files-a" label="ex-pull-request-files-a">
-        -->
         <p>
           Which of the following describes how the diff indicates the changes that you made?
         </p>

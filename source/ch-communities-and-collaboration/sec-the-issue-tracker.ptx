@@ -234,7 +234,6 @@
         </hint>
       </task>
 
-
       <task xml:id="ex-explore-the-issue-tracker-d" label="ex-explore-the-issue-tracker-d" >
         <statement>
           <p>
@@ -286,7 +285,6 @@
           </p>
         </hint>  
       </task>
-
 
       <task xml:id="ex-explore-the-issue-tracker-e" label="ex-explore-the-issue-tracker-e" >
        <statement>

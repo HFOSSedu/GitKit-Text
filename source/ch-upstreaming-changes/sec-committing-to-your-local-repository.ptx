@@ -115,7 +115,9 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string='^git commit -m ["].+["]$'>
+    <setup> 
+    <var> 
+    <condition string='^git commit -m ["].+["]$'>
     <feedback>
       <p>
         Thank you.
@@ -130,7 +132,9 @@
         Double check the format of your command.
       </p>
     </feedback>
-    </condition> </var> </setup>
+    </condition> 
+    </var>
+    </setup>
   </exercise>
 
   <exercise xml:id="ex-committing-changes-new-a" label="ex-committing-changes-new-a">
@@ -149,7 +153,7 @@
       <choice>
         <statement>
           <p>
-            It shows the name of the file changed in [].
+            It shows the name of the file changed in the square brackets [ ].
           </p>
         </statement>
 
@@ -163,7 +167,7 @@
       <choice correct="yes">
         <statement>
           <p>
-            It shows the name of the feature branch that contains the  change in [].
+            It shows the name of the feature branch that contains the  change in the square brackets [ ].
           </p>
         </statement>
 
@@ -177,7 +181,7 @@
       <choice correct="yes">
         <statement>
           <p>
-            It shows the SHA code of the commit in [].
+            It shows the SHA code of the commit in the square brackets [ ].
           </p>
         </statement>
 
@@ -259,7 +263,7 @@
       <statement>
         <p>
           Now use the <c>git status</c> command again.
-          Compare your output to the output in <xref ref="ex-staging-changes-b" />.
+          Compare your output to the output in <xref ref="ex-staging-changes-b"/>.
           What two changes have occurred that reflect that your changes have been staged?
         </p>
       </statement>
@@ -305,7 +309,6 @@
     </hint>
     </task>
 
-
     <task xml:id="ex-committing-changes-c" label="ex-committing-changes-c">
       <statement>
         <p>
@@ -313,68 +316,43 @@
         </p>
       </statement>
 
-
       <choices>
         <choice correct="yes">
           <statement>
             <p>
-              Option 1
+              The <c>git commit</c> message showed a new SHA.
             </p>
           </statement>
+        </choice>
 
-          <feedback>
+        <choice correct="yes">
+          <statement>
             <p>
-              Feedback 1
+              The <c>git status</c> command does not show the files you modified for your change.
             </p>
-          </feedback>
+          </statement>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 2
+              The <c>git status</c> command shows your modified files in green.
             </p>
           </statement>
-
-          <feedback>
-            <p>
-              Feedback 2
-            </p>
-          </feedback>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 3
+              The <c>git commit</c> message says "no changes added to commit".
             </p>
           </statement>
-
-          <feedback>
-            <p>
-              Feedback 3
-            </p>
-          </feedback>
-        </choice>
-
-        <choice>
-          <statement>
-            <p>
-              Option 4
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Feedback 4
-            </p>
-          </feedback>
         </choice>
       </choices>
 
       <hint>
         <p>
-          Hint here
+          There should be no modified files that are still staged and the <c>git commit</c> should have showed you the number of lines changed.
         </p>
       </hint>
     </task>
@@ -393,35 +371,24 @@
         <choice correct="yes">
           <statement>
             <p>
-              Option 1
+              The top commit shown is your latest commit.
             </p>
           </statement>
 
-          <feedback>
-            <p>
-              Feedback 1
-            </p>
-          </feedback>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 2
+              The bottom commit shown is your latest commit.
             </p>
           </statement>
-
-          <feedback>
-            <p>
-              Feedback 2
-            </p>
-          </feedback>
         </choice>
 
         <choice>
           <statement>
             <p>
-              Option 3
+            Your commit is not shown.
             </p>
           </statement>
 
@@ -431,25 +398,11 @@
             </p>
           </feedback>
         </choice>
-
-        <choice>
-          <statement>
-            <p>
-              Option 4
-            </p>
-          </statement>
-
-          <feedback>
-            <p>
-              Feedback 4
-            </p>
-          </feedback>
-        </choice>
       </choices>
 
       <hint>
         <p>
-          Hint here
+          The log shows the latest commits first.
         </p>
       </hint>
     </task>
@@ -531,7 +484,7 @@
 
 
     <task xml:id="ex-committing-changes-f" label="ex-committing-changes-f">
-      <statement correct="yes">
+      <statement correct="no">
         <p>
           The output of the <c>git log</c> command now shows the information about the commit you made.
         </p>
@@ -539,7 +492,7 @@
 
       <hint>
         <p>
-          What branch are you on, the <c>main</c> branch our your feature branch? In which branch did you make your changes?
+          What branch are you on, the <c>main</c> branch or your feature branch? In which branch did you make your changes?
         </p>
       </hint>
     </task>
