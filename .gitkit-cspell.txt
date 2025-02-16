@@ -1,5 +1,4 @@
 automations
-devenv
 farmdata
 foss
 gitkit
@@ -9,7 +8,6 @@ halign
 HFOSSedu
 inclusivity
 kitclient
-nbsp
 opensource
 POGIL
 Runestone

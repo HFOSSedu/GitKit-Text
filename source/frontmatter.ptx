@@ -5,10 +5,6 @@
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
-    <titlepage-items></titlepage-items>
-  </titlepage>
-
-  <bibinfo>
     <author>
       <personname>Grant Braught</personname>
       <institution>Dickinson College</institution>
@@ -36,18 +32,7 @@
     <date>
       <today />
     </date>
-
-    <website>
-      <url href="https://gitlab.com/hfossedu/kits">HFOSS Kits</url>
-    </website>
-
-    <copyright>
-      <year>2024<ndash /><today /></year>
-      <holder>HFOSS Kits</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-      </shortlicense>
-    </copyright>
-  </bibinfo>
+  </titlepage>
 
   <preface>
     <title>Overview</title>
@@ -116,7 +101,17 @@
   </acknowledgement>
 
   <colophon>
-    <colophon-items></colophon-items>
+
+    <website>
+      <url href="https://gitlab.com/hfossedu/kits">HFOSS Kits</url>
+    </website>
+
+    <copyright>
+      <year>2024<ndash /><today /></year>
+      <holder>HFOSS Kits</holder>
+      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      </shortlicense>
+    </copyright>
   </colophon>
 
 </frontmatter>

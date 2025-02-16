@@ -142,7 +142,7 @@
             Note
           </title>
           <p>
-            This set of materials may be a little short for a 75-minute class period. The remaining class time can be used to help students who had difficulties creating a PR, whose PR's cannot be merged automatically or are missing the "Closes" or "Fixes" lines.
+            This set of materials may be a little short for a 75-minute class period. The remaining class time can be used to help students who had difficulties creating a PR, who's PR's cannot be merged automatically or are missing the "Closes" or "Fixes" lines.
           </p>
         </li>
       </ol>
@@ -193,8 +193,11 @@
         </li>
         <li>
           <em>
-            <p>
-              <xref ref="ex-setting-upstream-remote" />
+            <p component="vscode-kit-client">
+              <xref ref="ex-setting-upstream-b-vscode" />
+            </p>
+            <p component="linux-kit-client">
+              <xref ref="ex-setting-upstream-e-linux" />
             </p>
           </em>
           <p>
@@ -214,7 +217,7 @@
         <li>
           <em>
             <p>
-              <xref ref="ex-fixing-issue-ordering" /> - <xref ref="ex-pull-request-info-b" />.
+              <xref ref="ex-fixing-issue-ordering" /> - <xref ref="ex-pull-request-info" />.
             </p>
           </em>
           <p>

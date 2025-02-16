@@ -7,385 +7,243 @@
     <p>
       If the upstream maintainers decide that the changes in your PR (pull request) are good for the project, they will merge them into the upstream <c>main</c> branch.
       That way they become a part of the main project, and everyone can benefit from your work.
-      In class your instructor played the role of a maintainer and demonstrated how the changes contained in pull requests are merged into the upstream. <xref ref="fig-changes-merged-into-upstream" /> shows the upstream with several new changes merged into it's <c>main</c> branch.
+      In class your instructor played the role of an upstream maintainer and demonstrated how the changes contained in pull requests are merged.
     </p>
   </introduction>
 
   <exercises>
-    <title />
+  <title />
+  <p>
+    <xref ref="fig-changes-merged-into-upstream" /> illustrates the state after several commits have been merged into upstream <c>main</c>.
+  </p>
+
+  <p>
+    <figure xml:id="fig-changes-merged-into-upstream" >
+      <caption> Changes Merged into Upstream. </caption>
+      <image source="images/ch-staying-synchronized/changes-merged-into-upstream.png" width="75%">
+        <description>
+          Cloud image of the changes merged into upstream.
+        </description>
+      </image>
+    </figure>
+  </p>
+
+  <exercise xml:id="ex-merged-commits" label="ex-merged-commits">
+    <introduction>
+      <p>
+        Answer the following questions using <xref ref="fig-changes-merged-into-upstream" />
+      </p>
+    </introduction>
+
+
+    <task xml:id="ex-merged-commits-a" label="ex-merged-commits-a">
+      <statement>
+        <p>
+          Which commits (give the colors) were merged into the upstream <c>main</c> since the contributor created the feature branch that is shown?
+        </p>
+      </statement>
+
+
+      <choices>
+        <choice>
+          <statement>
+            <p>
+              Red
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Yellow
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Green
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Blue
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              Pink
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              Lime Green
+            </p>
+          </statement>
+        </choice>
+      </choices>
+
+      <hint>
+        <p>
+          Look at which commits are new in upstream that are not part of the local repository's <c>main</c> or feature branch.
+        </p>
+      </hint>
+    </task>
+
+
+    <task xml:id="ex-merged-commits-b" label="ex-merged-commits-b">
+      <statement>
+        <p>
+          Which of the commits did the managers merge from the contributor's pull request?
+        </p>
+      </statement>
+
+
+      <choices>
+        <choice>
+          <statement>
+            <p>
+              Red
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Red was in <c>main</c> prior to the contributor creating the feature branch.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Yellow
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Yellow was in <c>main</c> prior to the contributor creating the feature branch.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Green
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Green was in <c>main</c> prior to the contributor creating the feature branch.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              Blue
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Blue was part of the contributor's feature branch.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Pink
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Pink was part of another contributor's pull request.
+            </p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Lime Green
+            </p>
+          </statement>
+
+          <feedback>
+            <p>
+              Lime green was part of another contributor's pull request.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+
+      <hint>
+        <p>
+          Look at which commits are in the local repository's feature branch.
+        </p>
+      </hint>
+    </task>
+
+
+    <task xml:id="ex-merged-commits-c" label="ex-merged-commits-c">
+      <statement>
+        <p>
+          Briefly explain how the pink commit could have gotten into the upstream <c>main</c>.
+        </p>
+      </statement>
+      <response />
+    </task>
+  </exercise>
+
+  <exercise xml:id="ex-origin-main-behind-main" label="ex-origin-main-behind-main" >
+    <introduction>
+      GitHub will inform you when the active branch in your origin repo is out of synch with the upstream.
+    </introduction>
+
+
+    <task xml:id="ex-origin-main-behind-main-a" label="ex-origin-main-behind-main-a">
+      <statement>
+        <p>
+          Use your browser to visit your origin repo on GitHub and ensure that the <c>main</c> branch is selected.
+          Find the part of the page that indicates that your <c>main</c> branch is <em>behind</em> (i.e.
+          not the same as, or out of synch with) the upstream <c>main</c>.
+        </p>
+      </statement>
+    </task>
+
     <p>
-      <xref ref="fig-changes-merged-into-upstream" /> illustrates the state after several commits have been merged into upstream <c>main</c>.
+      If you do not see a message that your main branch is behind the upstream <c>main</c> branch go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there.
+      Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to <xref ref="ex-origin-main-behind-main" />.
     </p>
 
-    <p>
-      <figure xml:id="fig-changes-merged-into-upstream" >
-        <caption> Changes Merged into Upstream. </caption>
-        <image source="images/ch-staying-synchronized/changes-merged-into-upstream.png" width="75%">
-          <description>
-            Cloud image showing some changes merged into the upstream <c>main</c> branch.
-          </description>
-        </image>
-      </figure>
-    </p>
 
-    <exercise xml:id="ex-merged-commits" label="ex-merged-commits">
-      <introduction>
+    <task xml:id="ex-origin-main-behind-main-b" label="ex-origin-main-behind-main-b">
+      <statement>
         <p>
-          Answer the following questions using <xref ref="fig-changes-merged-into-upstream" />
+          Briefly explain what has happened that caused your origin’s <c>main</c> branch to get <em>behind</em> the upstream <c>main</c>.
         </p>
-      </introduction>
-
-      <task xml:id="ex-merged-commits-a" label="ex-merged-commits-a">
-        <statement>
-          <p>
-            Which commits (give the colors) were merged into the upstream <c>main</c> after the contributor created their local feature branch?
-          </p>
-        </statement>
-        <choices>
-          <choice>
-            <statement>
-              <p>
-                Red
-              </p>
-            </statement>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Yellow
-              </p>
-            </statement>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Green
-              </p>
-            </statement>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                Blue
-              </p>
-            </statement>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                Pink
-              </p>
-            </statement>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                Lime Green
-              </p>
-            </statement>
-          </choice>
-        </choices>
-
-        <hint>
-          <p>
-            Look at which commits are in the upstream <c>main</c> branch that are not part of the local repository's <c>main</c> branch.
-          </p>
-        </hint>
-      </task>
-
-      <task xml:id="ex-merged-commits-b" label="ex-merged-commits-b">
-        <statement>
-          <p>
-            Which of the commits did the managers merge from the contributor's pull request?
-          </p>
-        </statement>
-        <choices>
-          <choice>
-            <statement>
-              <p>
-                Red
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Red was in <c>main</c> prior to the contributor creating the feature branch.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Yellow
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Yellow was in <c>main</c> prior to the contributor creating the feature branch.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Green
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Green was in <c>main</c> prior to the contributor creating the feature branch.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                Blue
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct. Blue was part of the contributor's feature branch.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Pink
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Pink was part of another contributor's pull request.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                Lime Green
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Lime green was part of another contributor's pull request.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Look at which commits are in the local repository's feature branch.
-          </p>
-        </hint>
-      </task>
-
-
-      <task xml:id="ex-merged-commits-c" label="ex-merged-commits-c">
-        <statement>
-          <p>
-            Which of the following statements explains how the pink commit might have gotten into the upstream <c>main</c> branch?
-          </p>
-        </statement>
-
-        <choices randomize="yes">
-          <choice>
-            <statement>
-              <p>
-                The contributor made the pink commit to their feature branch.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The contributor's feature branch did not contain the pink commit.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                A maintainer merged the contributor's pull request.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The contributor's pull request contained the blue commit, not the pink commit.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice correct="yes">
-            <statement>
-              <p>
-                A maintainer merged a pull request from another contributor which contained the pink commit.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct.  The pink commit was part of a feature branch that another contributor submitted via a pull request.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                The pink commit is not part of the upstream <c>main</c>.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                The pink commit is part of the upstream <c>main</c>.
-                It was merged after the pull request that contained the blue commit.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-
-        <hint>
-          <p>
-            Look at which commits are in the local repository's feature branch.
-            This shows the changes made by this contributor.
-            Other changes were made by other contributors and accepted by the maintainer as a pull request.
-          </p>
-        </hint>
-      </task>
-    </exercise>
-
-    <exercise xml:id="ex-origin-main-behind-main" label="ex-origin-main-behind-main" >
-      <introduction>
-        <p>
-          At this point the upstream <c>main</c> branch should have changes that are not contained in your origin and local <c>main</c> branches. That is, you <alert>are out of synch</alert> with the upstream.
-        
-          When your origin repository is out of synch with the upstream, GitHub will display a message that informs you.  Let's investigate this message.
-        </p>
-      </introduction>
-
-
-      <task xml:id="ex-origin-main-behind-main-a" label="ex-origin-main-behind-main-a">
-        <statement>
-          <p>
-            Use your browser to visit your origin repo on GitHub and ensure that the <c>main</c> branch is selected.
-          </p>
-          <p>
-            Which of the following messages do you see that indicates that your origin's main branch is behind the upstream <c>main</c>?
-          </p>
-        </statement>
-        <choices randomize="yes">
-          <choice correct="yes">
-            <statement>
-              <p>
-                This branch is x commits behind <c>main</c>.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct! Being behind means that the upstream <c>main</c> branch contains changes that your origin <c>main</c> branch does not.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                This branch is x commits ahead of <c>main</c>.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Being ahead means that your origin <c>main</c> branch contains changes that are not in the upstream <c>main</c> branch. However, right now your origin <c>main</c> should be behind the upstream <c>main</c> branch.
-              </p>
-              <p>
-                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to this exercise.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                I do not see either of those messages.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Seeing no message indicates that origin <c>main</c> branch is up to date with (i.e. identical to) the upstream <c>main</c> branch.
-                However, Right now your origin <c>main</c> should be behind the upstream <c>main</c> branch.
-              </p>
-              <p>
-                <alert>You will need to fix this before continuing.</alert> Go to <xref ref="topic-appendix-a-staying-synchronized" /> of this chapter and follow the instructions there. Once you complete <xref ref="topic-appendix-a-staying-synchronized" />, return to this exercise.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            You can find the relevant message in a box just below the branch name drop down near the top left of your origin's GitHub page.
-          </p>
-        </hint>
-      </task>
-
-      <task xml:id="ex-origin-main-behind-main-b" label="ex-origin-main-behind-main-b">
-        <statement>
-          <p>
-            Which of the following statements describes what could have happened to cause your origin's <c>main</c> branch to get behind the upstream <c>main</c>?
-          </p>
-        </statement>
-        <choices  randomize="yes">
-          <choice>
-            <statement>
-              <p>
-                Another contributor has made a pull request to the upstream for changes that they have made.
-              </p>
-            </statement>
-
-            <feedback>
-              <p>
-                In order for this to affect the upstream <c>main</c> a maintainer would have to have merged their pull request.
-              </p>
-            </feedback>
-          </choice>
-          <choice>
-            <statement>
-              <p>
-                You have made a pull request to the upstream for a feature branch on which you have been working.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                In order for this to affect the upstream <c>main</c> a maintainer would have to have merged your pull request.
-              </p>
-            </feedback>
-          </choice>
-
-          <choice>
-            <statement>
-              <p>
-                You have committed changes to your local <c>main</c> branch and pushed it to your origin.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Here your origin <c>main</c> branch would contain changes that are not in the upstream <c>main</c> branch, so your branch would be ahead, not behind.
-              </p>
-            </feedback>
-          </choice>
-          <choice correct="yes">
-            <statement>
-              <p>
-                A maintainer merged a pull request and you have not yet updated your origin's <c>main</c> branch to include these changes.
-              </p>
-            </statement>
-            <feedback>
-              <p>
-                Correct.  The manager merging the pull request will add changes to the upstream <c>main</c> branch that are not in your <c>main</c> branches.
-              </p>
-            </feedback>
-          </choice>
-        </choices>
-        <hint>
-          <p>
-            Think about how changes may been added to the upstream <c>main</c> after you made your feature branch, and while you were working.
-          </p>
-        </hint>
-      </task>
-    </exercise>
+      </statement>
+      <response />
+    </task>
+  </exercise>
   </exercises>
 </section>
