@@ -73,7 +73,7 @@
       <exercise xml:id="ex-remotes-output" label="ex-remotes-output">
         <introduction>
           <p>
-            Examine the output of the <c>git remote -v</c> command from <xref ref="ex-listing-remotes" />.  You should see two lines labeled origin (fetch and pull), that both show the same URL.
+            Examine the output of the <c>git remote -v</c> command from <xref ref="ex-listing-remotes" />.  You should see two lines labeled origin (fetch and push), that both show the same URL.
           </p>
         </introduction>
 
