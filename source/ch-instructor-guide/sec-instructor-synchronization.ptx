@@ -198,7 +198,7 @@
             </p>
           </em>
           <p>
-            It is a good idea to check here that the student's upstream remote points to the correct GitKit-FarmData2 repository.  The Kit-tty should have caught this error and directed students on the correct way to set the upstream remote. However, some students have still managed to set their upstream to point to their origin or to the live FarmData2 repository.
+            It is a good idea to check here that the student's upstream remote points to the correct GitKit FarmData2 repository.  The Kit-tty should have caught this error and directed students on the correct way to set the upstream remote. However, some students have still managed to set their upstream to point to their origin or to the live FarmData2 repository.
           </p>
         </li>
         <li>

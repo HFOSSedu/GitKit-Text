@@ -24,7 +24,7 @@
         </li>
         <li>
           <p>
-            Fork the upstream `GitKit-FarmData2` repository into their own GitHub space.
+            Fork the upstream of the GitKit FarmData2 repository into their own GitHub space.
           </p>
         </li>
         <li>
@@ -34,7 +34,7 @@
         </li>
         <li>
           <p>
-            Clone their fork (i.e. their origin) of the `GitKit-FarmData2` repository.
+            Clone their fork (i.e. their origin) of the GitKit FarmData2 repository.
           </p>
         </li>
       </ol>
@@ -146,7 +146,7 @@
             The slides conclude with a short introduction to the idea of an issue tracker and its role in a project. The use of the issue tracker tends to be fairly intuitive and the hands-on activities walk students through some of the details. The hands-on activity has each student claim an issue that is labeled as "Round 1." Note that they claim the issue in this activity, but do not fix it until the next activity. Each of these issues asks them to fix a typo that appears in one of the Markdown (<c>.md</c>) files in the root directory of the project.
           </p>
           <p>
-            If time permits, a live demo looking at the issue tracker in the upstream GitKit-FarmData2 repository, pointing out the "Round 1" label and how to tell if an issue has been assigned. Note that several of the issues will have been pre-assigned to whomever deployed the kit.
+            If time permits, a live demo looking at the issue tracker in the upstream GitKit FarmData2 repository, pointing out the "Round 1" label and how to tell if an issue has been assigned. Note that several of the issues will have been pre-assigned to whomever deployed the kit.
           </p>
         </li>
       </ul>
@@ -179,7 +179,7 @@
             </p>
           </em>
           <p>
-            Some students will give the URL of the upstream GitKit-FarmData2 repository for the course instead of their origin repository.  A few may even give the URL of a real FarmData2 upstream repository.
+            Some students will give the URL of the upstream GitKit FarmData2 repository for the course instead of their origin repository.  A few may even give the URL of a real FarmData2 upstream repository.
           </p>
         </li>
         <li>
@@ -189,7 +189,7 @@
             </p>
           </em>
           <p>
-            Some students will try to clone the upstream GitKit-FarmData2 repository for the course or even give the URL of a real FarmData2 upstream repository.
+            Some students will try to clone the upstream GitKit FarmData2 repository for the course or even give the URL of a real FarmData2 upstream repository.
           </p>
         </li>
         <li>
@@ -219,7 +219,7 @@
             </p>
           </em>
           <p>
-            Some students will attempt to clone the project that they select while they are inside the GitKit-FarmData2 repository that they already cloned.  If they do attempt this the Kit-tty should intervene, prevent the action and respond with a helpful message.
+            Some students will attempt to clone the project that they select while they are inside the directory containing their local GitKit FarmData2 repository.  If they do attempt this the Kit-tty should intervene, prevent the action and respond with a helpful message.
           </p>
         </li>
       </ul>
