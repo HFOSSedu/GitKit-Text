@@ -235,14 +235,17 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string='^https://github\.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2))(.+/.+)/pull/[0-9]+$'>
-    <feedback></feedback>
+    <setup> <var> <condition string='^https://github\.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2))(.+/.+)/pull/[1-9][0-9]*$'>
+    <feedback>
+      <p>
+        Thank you.
+      </p>
+    </feedback>
     </condition> <condition string=".*">
 
     <feedback>
       <p>
-        The upstream repository is the repository you forked from.
-        Double check that you aren't in your origin repository.
+        Double check the URL of your pull request to ensure that it is in the upstream for your course and is correct.
       </p>
     </feedback>
     </condition> </var> </setup>

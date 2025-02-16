@@ -112,18 +112,32 @@
       </p>
 
       <p>
-        <var width="55" />
+        <var width="75" />
       </p>
     </statement>
     <setup> 
     <var> 
-    <condition string='^git commit -m ["].+["]$'>
+    <condition string='^git commit -m ["].{20,72}["]$'>
     <feedback>
       <p>
         Thank you.
         Your command is in the proper format, please make sure the commit message is meaningful.
       </p>
     </feedback>
+    </condition>
+    <condition string='^git commit -m ["].{0,20}["]$'>
+      <feedback>
+        <p>
+          Try using a longer commit message to be more descriptive.  
+        </p>
+      </feedback>
+    </condition>
+        <condition string='^git commit -m ["].{73,}["]$'>
+      <feedback>
+        <p>
+          Try using a more concise commit message.  
+        </p>
+      </feedback>
     </condition>
     <condition string=".*">
 

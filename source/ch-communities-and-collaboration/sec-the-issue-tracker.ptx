@@ -472,7 +472,7 @@
           <var width="60" />
         </p>
       </statement>
-      <setup> <var> <condition string="^https://github\.com/(?!(my-class/GitKit-FarmData2|FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/issues/[0-9]+$">
+      <setup> <var> <condition string="^https://github\.com/(?!(my-class|FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/issues/[0-9]+$">
       <feedback>
         <p>
           Thank you.
