@@ -271,7 +271,7 @@
     <term>Pushing your Feature Branch: </term>
   </p>
 
-  <exercise xml:id="ex-push-branch-linux" label="ex-push-branch-linux">
+  <exercise xml:id="ex-push-branch" label="ex-push-branch">
     <statement>
       <p>
         The <c>git push &lt;remote&gt; &lt;branch&gt;</c> command will push the specified branch of your local repository to the specified remote repository (i.e.
@@ -361,7 +361,7 @@
     </hint>
   </exercise>
 
-  <exercise xml:id="ex-push-error-linux" label="ex-push-error-linux">
+  <exercise xml:id="ex-push-error" label="ex-push-error">
     <statement>
       <p>
         Visit your origin repository on GitHub and check that the branch was pushed.

@@ -111,8 +111,8 @@
     </exercise>
 
     <exercise
-      xml:id="ex-extra-practice-clone-linux"
-      label="ex-extra-practice-clone-linux">
+      xml:id="ex-extra-practice-clone"
+      label="ex-extra-practice-clone">
            <statement>
         <p>
            Pick and order the commands to change to your home directory, clone your fork of the project you chose and check its remotes.        
@@ -153,7 +153,7 @@
       label="ex-extra-practice-remotes">
           <statement>
             <p>
-              In your terminal enter the commands from <xref ref="ex-extra-practice-clone-linux" />.
+              In your terminal enter the commands from <xref ref="ex-extra-practice-clone" />.
             </p>
             <p>
               Which of the following do you see in the output of the <c>git remote -v</c> command?
