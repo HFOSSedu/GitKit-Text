@@ -627,6 +627,7 @@
 		<title>Instructor Materials</title>
 		
 		<introduction>
+			<p>
 			The following links provide easy access to the chapters with the hands-on exercises, the presentation slides for each chapter and a set of instructor notes for each chapter. 
 
 			The <term>Instructor Notes</term> for each chapter include <term>Slide Notes</term>, a <term>To-Do List</term>, and <term>Exercise Notes</term>. The Slide Notes give an overview of the slides and then slide-by-slide information for the instructor. The To-Do List enumerates any tasks that the instructor should be sure to do before the class meeting.  The Exercise Notes provide some helpful comments on specific hands-on exercises.
@@ -696,6 +697,7 @@
 					</p>
 				</li>
 			</ul>	
+			</p>
 		</introduction>
 	</subsection>
 
