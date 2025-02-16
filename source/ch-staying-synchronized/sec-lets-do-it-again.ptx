@@ -170,7 +170,7 @@
 
           <p>
             Pick one of the “Round2” issues to work on and make a comment on it to indicate your interest in working on it.
-            Note it is not necessary that the issue be assigned to you this time.
+            Note it is not necessary that the issue be assigned to you this time as it was in Round1.
             Try to spread out across the issues so that multiple people have commented that they are working on each one.
           </p>
           <p>
@@ -274,7 +274,7 @@
         <task xml:id="ex-fixing-issue-process-b" label="ex-fixing-issue-process-b">
           <statement>
             <p>
-              When creating branches you should always use name that describes what is being done in the branch, without being too long.  This will help you to remember the purpose of the branch, but not make it onerous to type.
+              When creating branches you should always use a name that describes what is being done in the branch, without being too long.  This will help you to remember the purpose of the branch, but not make it onerous to type.
             </p>
             <p>
               Which of the following would be the best name for a feature branch for issue #37 that adds a link to the NSF award in the Acknowledgements section?
