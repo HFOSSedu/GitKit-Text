@@ -89,7 +89,7 @@
       remark="no"
       objectives="no"
       outcomes="no"
-      figure="no"
+      figure="yes"
       table="no"
       listing="no"
       list="no"
