@@ -49,7 +49,7 @@
               </p>
             </feedback>
           </condition>
-          <condition string="^git .*">
+          <condition string=".*">
             <feedback>
               <p>
                 Review the <c>git push</c> command in <xref ref="topic-pushing-a-branch-to-your-origin" />. 

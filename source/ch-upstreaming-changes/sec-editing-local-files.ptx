@@ -27,7 +27,7 @@
         <var width="55" />
       </p>
     </statement>
-    <setup> <var> <condition string="^https://github.com/.+/issues/\b([1-9]|[12][0-9]|3[0-5])\b$">
+    <setup> <var> <condition string="^https://github\.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2)).+/issues/([4-9]|[12][0-9]|3[0-5])$">
     <feedback>
       <p>
         Thank you.
@@ -37,7 +37,7 @@
 
     <feedback>
       <p>
-        Make sure you have pasted the complete URL starting with https and ending with the issue number.
+        Make sure you have pasted the complete URL starting with https and ending with the issue number that you have been assigned.
       </p>
     </feedback>
     </condition> </var> </setup>

@@ -38,13 +38,21 @@
           <var width="45" />
         </p>
       </statement>
-      <setup> <var> <condition string="^https://github.com/.+">
+      <setup> <var> <condition string="^https://github\.com/(?!(yourUsername)).+$">
       <feedback>
         <p>
           Thank you.
         </p>
       </feedback>
-      </condition> <condition string=".*">
+      </condition>
+      <condition string="https://github\.com/yourUsername">
+      <feedback>
+        <p>
+          Looks like you are using the example given.  Be sure to give the URL of your actual GitHub profile.
+        </p>
+      </feedback>
+      </condition>  
+      <condition string=".*">
 
       <feedback>
         <p>

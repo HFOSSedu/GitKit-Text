@@ -50,17 +50,24 @@
         </statement>
           <setup>
         <var>
-          <condition string="^git stage(\s+)(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+          <condition string="^git stage (CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
             <feedback>
               <p>
                 Thank you.
               </p>
             </feedback>
           </condition>
-          <condition string="^git stage(\s+)!(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)$">
+          <condition string="^git stage (?!(CONTRIBUTING.md|INSTALL.md|ONBOARDING.md|README.md)).*">
             <feedback>
               <p>
                 Are you sure that is the file that the issue asked you to edit?
+              </p>
+            </feedback>
+          </condition>
+          <condition string=".*">
+            <feedback>
+              <p>
+                Check the format of your <c>git stage</c> command.
               </p>
             </feedback>
           </condition>

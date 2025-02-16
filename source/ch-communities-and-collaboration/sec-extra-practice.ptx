@@ -87,7 +87,7 @@
       </statement>
       <setup>
         <var>
-          <condition string="^https://github.com/((?!(openmrs/openmrs-distro-referenceapplication|apache/fineract|sahana/eden|oppia/oppia)).)*$">
+          <condition string="^https://github\.com/(?!(openmrs/openmrs-distro-referenceapplication|apache/fineract|sahana/eden|oppia/oppia)).*$">
             <feedback>
               <p>
                 Thank you.
@@ -105,7 +105,7 @@
       </setup>
       <hint>
         <p>
-          Make sure you are giving the URL for your fork, not the project's URL. Review <xref ref="topic-forking-the-upstream" /> for information on how to fork a repository on GitHub.
+          Make sure you are giving the URL for your fork, not the project's upstream URL. Review <xref ref="topic-forking-the-upstream" /> for information on how to fork a repository on GitHub.
         </p>
       </hint>
     </exercise>

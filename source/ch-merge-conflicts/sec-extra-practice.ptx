@@ -355,7 +355,7 @@
       </statement>
       <setup> 
         <var> 
-          <condition string="^https://github\.com/(?!(FarmData2/FarmData2|DickinsonCollege/FarmData2)).*/pull/[0-9]+$">
+          <condition string="^https://github\.com/(?!(FarmData2|DickinsonCollege/FarmData2)).+/pull/[0-9]+$">
             <feedback>
               <p>
                 Thank you.
@@ -365,7 +365,7 @@
           <condition string=".*">
             <feedback>
               <p>
-                Be sure that your URL is from your pull request to the upstream repository.  It should have the format <c>https://github.com/upstreamLocation/upstreamReop/pulls/xx</c>, where <c>xx</c> is a number.
+                Be sure that your URL is from your pull request to the upstream repository for your course.  It should have the format <c>https://github.com/yourCourse/repoName/pulls/xx</c>, where <c>xx</c> is a number.
               </p>
             </feedback>
           </condition>
